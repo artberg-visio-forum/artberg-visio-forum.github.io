@@ -1,0 +1,496 @@
+<html>
+
+<head>
+<title>Visio - Найти точку пересечения линий/окружностей</title>
+<meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" /><script language="JavaScript" type="text/javascript">
+<!-- hide from JavaScript-challenged browsers
+function openWindow(url) {
+	popupWin = window.open(url,'new_page','width=400,height=400')
+}
+function openWindow2(url) {
+	popupWin = window.open(url,'new_page','width=400,height=450')
+}
+function openWindow3(url) {
+	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
+}
+function openWindow4(url) {
+	popupWin = window.open(url,'new_page','width=400,height=525')
+}
+function openWindow5(url) {
+	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
+}
+function openWindow6(url) {
+	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
+}
+function openWindowHelp(url) {
+	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
+}
+// done hiding -->
+</script>
+<style type="text/css">
+<!--
+a:link    {color:darkblue;text-decoration:underline}
+a:visited {color:blue;text-decoration:underline}
+a:hover   {color:red;text-decoration:underline}
+a:active  {color:red;text-decoration:}
+.spnMessageText a:link    {color:darkblue;text-decoration:underline}
+.spnMessageText a:visited {color:blue;text-decoration:underline}
+.spnMessageText a:hover   {color:red;text-decoration:underline}
+.spnMessageText a:active  {color:red;text-decoration:underline}
+.spnSearchHighlight {background-color:yellow}
+input.radio {background:lightsteelblue;color:#000000}
+-->
+</style>
+</head>
+
+<body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
+<a name="top"></a>
+
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="100%">
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <table border="0" cellPadding="2" cellSpacing="0">
+        <tr>
+          <td align="center"><font face="Verdana, Arial, Helvetica" size="2"><b>Visio</b></font></td>
+        </tr>
+        <tr>
+          <td align="center"><font face="Verdana, Arial, Helvetica" size="1">
+</font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
+  <tr>
+    <td>
+    <script language="JavaScript" type="text/javascript">
+    <!--
+    function unsub_confirm(link){
+    	var where_to= confirm("Do you really want to Unsubscribe?");
+       if (where_to== true) {
+       	popupWin = window.open(link,'new_page','width=400,height=400')
+       }
+    }
+    //-->
+    </script>
+    <script language="JavaScript" type="text/javascript">
+    function ChangePage(fnum){
+    	if (fnum == 1) {
+    		document.PageNum1.submit();
+    	}
+    	else {
+    		document.PageNum2.submit();
+    	}
+    }
+    </script>
+    <script language="JavaScript" type="text/javascript">
+    <!--
+    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
+    // -->
+    </script>
+      <table border="0" width="100%">
+        <tr>
+          <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
+          <img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp.html">All Forums</a><br />
+          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">Категория Visio</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Форум Вопросы и ответы</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open_topic.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;Найти точку пересечения линий/окружностей</font></td>
+          <td align="center" width="50%">
+          <font face="Verdana, Arial, Helvetica" size="2">
+          </font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
+  <tr>
+    <td>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+          <td bgcolor="black">
+            <table border="0" width="100%" cellspacing="1" cellpadding="4">
+              <tr>
+                <td align="center" bgcolor="midnightblue" width="100" nowrap><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">Author</font></b></td>
+                <td align="center" bgcolor="midnightblue" width="100%"><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">
+                <a href="topic.asp@TOPIC_ID=2326.html"><img src="icon_go_left.gif" width="15" height="15" border="0" alt="Previous Topic" title="Previous Topic" align="top" hspace="6" /></a><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">&nbsp;Topic&nbsp;</font></b><a href="topic.asp@TOPIC_ID=571.html"><img src="icon_go_right.gif" width="15" height="15" border="0" alt="Next Topic" title="Next Topic" align="top" hspace="6" /></a></font></b></td>
+                <td align="right" bgcolor="midnightblue" nowrap><font face="Verdana, Arial, Helvetica" size="2">&nbsp;</font></td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font color="midnightblue" face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535" title="View bdfy's Profile" onMouseOver="(window.status='View bdfy\'s Profile'); return true" onMouseOut="(window.status=''); return true">bdfy</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Belarus</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>267 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" width="100%" colspan="2" valign="top">
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;09/29/2010&nbsp;:&nbsp; 03:01:44</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=TopicQuote&amp;TOPIC_ID=2364&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Необходимо выполнить ряд графических расчетов. Расчет упирается в необходимость находить координаты точек пересечения прямых и прямой с окружностью. Сделать это чисто аналитически сложно ( для прямых еще представляю - с окружностью плохо ). Как решить подобную задачу ?</span id="msg"></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535" title="View bdfy's Profile" onMouseOver="(window.status='View bdfy\'s Profile'); return true" onMouseOut="(window.status=''); return true">bdfy</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Belarus</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>267 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="4541"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;09/29/2010&nbsp;:&nbsp; 14:56:47</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4541&amp;TOPIC_ID=2364&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> все что нашел в сети по сути<br /><a href="http://msdn.itags.org/microsoft-visio/20432/" target="_blank">http://msdn.itags.org/microsoft-visio/20432/</a><br />предлагают использовать trim функцию. т.е рассекать прямую - потом смотреть координаты получившихся отрезков. в принципе идея неплохая... еще может есть ?</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2364.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1" title="View Tumanov's Profile" onMouseOver="(window.status='View Tumanov\'s Profile'); return true" onMouseOut="(window.status=''); return true">Tumanov</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>1198 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="4542"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;09/29/2010&nbsp;:&nbsp; 15:37:44</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4542&amp;TOPIC_ID=2364&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Я пару лет назад действовал примерно так же, лучше не придумал.<br />Создавал копию шейпов, использовал Trim, вычислял точки, а потом откатывал изменения. При этом весь мусор пропадал, а координаты оставались.<br />Делал не для себя, значит возможно, что в форуме об это написано.</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2364.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1" title="View Tumanov's Profile" onMouseOver="(window.status='View Tumanov\'s Profile'); return true" onMouseOut="(window.status=''); return true">Tumanov</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>1198 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="4543"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;09/29/2010&nbsp;:&nbsp; 15:40:27</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4543&amp;TOPIC_ID=2364&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Ага :) <a href="http://visio.artberg.ru/forum/topic.asp?TOPIC_ID=392&SearchTerms=trim" target="_blank">http://visio.artberg.ru/forum/topic.asp?TOPIC_ID=392&SearchTerms=trim</a></span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2364.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535" title="View bdfy's Profile" onMouseOver="(window.status='View bdfy\'s Profile'); return true" onMouseOut="(window.status=''); return true">bdfy</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Belarus</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>267 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="4544"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;09/30/2010&nbsp;:&nbsp; 11:52:00</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4544&amp;TOPIC_ID=2364&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> попробовал реализовать. не совсем получилось. <br />Предположим есть прямая A0F2 (A0 начало F2 конец), есть окружность okr<br />причем они не пересекаются. надо A0F2 продлить. и найти точку пересечения с окружностью со стороны F2<br /> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">UndoScopeID1 = Application.BeginUndoScope("temp")<br />ActiveWindow.DeselectAll<br />A0F2.Cells("width") = 10 * A0F2.Cells("width")<br /><br />ActiveWindow.Select A0F2, visSelect<br />ActiveWindow.Select okr, visSelect<br />ActiveWindow.Selection.Trim<br />Set temp = ActiveWindow.Selection(1)<br />x = temp.Cells("endX")<br />y = temp.Cells("endY")<br />Application.EndUndoScope UndoScopeID1, True 'false все отменит<br /><br />Set A2 = точка(x, y, "A_2") 'ставим точку в координатах<hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br />проблема в чем. Отрезок окружность пересечет дважды. соотв. разобьется на три отрезка. надо бы найти средний - будут координаты<br />trim<br /> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">The original shapes are deleted and no shapes are selected when the operation is complete.<hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br />Fragment<br /> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">The original shapes are deleted and there aren't any shapes selected when the operation is complete.<hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br />на самом деле врет хелп - один последний шейп все таки выделяется. <br />только это координат то не дает. как получить координаты новых шейпов то ?</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2364.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535" title="View bdfy's Profile" onMouseOver="(window.status='View bdfy\'s Profile'); return true" onMouseOut="(window.status=''); return true">bdfy</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Belarus</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>267 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="4545"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;09/30/2010&nbsp;:&nbsp; 13:34:31</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4545&amp;TOPIC_ID=2364&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> еще чуть подумал<br /><pre id="code"><font face="courier" size="2" id="code">UndoScopeID1 = Application.BeginUndoScope("temp")
+    ActiveWindow.DeselectAll
+    A0F2.Cells("width") = 10 * A0F2.Cells("width") 'extend 10 times to get 100% intersection
+    
+    ActiveWindow.Select A0F2, visSelect
+    ActiveWindow.Select okr, visSelect
+    shapeCount0 = ActivePage.Shapes.Count
+    ActiveWindow.Selection.Trim
+    shapeCount = ActivePage.Shapes.Count
+    Debug.Print shapeCount - shapeCount0
+    
+    ActiveWindow.DeselectAll
+    
+        For i = shapeCount0 - 1 To shapeCount
+            Set vsoShape1 = ActivePage.Shapes(i)
+            Debug.Print vsoShape1.name
+            ActiveWindow.Select vsoShape1, visSelect
+        Next</font id="code"></pre id="code"><br />в итоге имею все фигуры новые. пересечения вот только как сейчас искать ? координаты попарно у всех сравнивать ?</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2364.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1" title="View Tumanov's Profile" onMouseOver="(window.status='View Tumanov\'s Profile'); return true" onMouseOut="(window.status=''); return true">Tumanov</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>1198 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="4546"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;09/30/2010&nbsp;:&nbsp; 16:02:01</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4546&amp;TOPIC_ID=2364&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Относительно старой окружности использовать Shape.SpatialNeighbors с отношением visSpatialContainedIn. При этом в Selection войдут три новых шейпа: две дуги и одна прямая. Прямую среди них можно будет найти по типу строки в геометрии - LineTo в отличие от EllipticalArcTo. Останется только прочитать координаты BeginX,Y и EndX,Y.</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2364.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535" title="View bdfy's Profile" onMouseOver="(window.status='View bdfy\'s Profile'); return true" onMouseOut="(window.status=''); return true">bdfy</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Belarus</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>267 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="4547"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;10/03/2010&nbsp;:&nbsp; 15:03:01</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4547&amp;TOPIC_ID=2364&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> вот что получилось. ищет первую точку пересечения в направлении конца отрезка fig1<br /><pre id="code"><font face="courier" size="2" id="code">Function пересечение(ByVal fig1 As Object, ByVal fig2 As Object, Optional ByVal удлинять As Boolean = True) As Variant
+x = 0
+y = 0
+       UndoScopeID1 = Application.BeginUndoScope("temp")
+    ActiveWindow.DeselectAll
+    
+    If удлинять Then
+        ang = fig1.Cells("angle")
+        fig1.Cells("endX") = fig1.Cells("endX") + 100 * Cos(ang)
+        fig1.Cells("endY") = fig1.Cells("endY") + 100 * Sin(ang)
+    End If
+    
+    ActiveWindow.Select fig1, visSelect
+    ActiveWindow.Select fig2, visSelect
+    
+    shapeCount0 = ActivePage.Shapes.Count
+    ActiveWindow.Selection.Trim
+    shapeCount = ActivePage.Shapes.Count
+    'Debug.Print "*******************"
+    'Debug.Print shapeCount - shapeCount0 + 2
+
+    ActiveWindow.DeselectAll
+        k = 0
+        Dim shsi()  As Variant
+        Dim sh0, sh1 As Visio.Shape
+        For i = shapeCount0 - 1 To shapeCount 'две стартовые удаляются - остальные новые
+            Set sh1 = ActivePage.Shapes(i)
+              geom_c = sh1.GeometryCount 'число секций
+              geom1_r = sh1.RowCount(visSectionFirstComponent) 'рядов в секции
+              h = Round(sh1.Cells("height").Result("mm"), 1) 'рядов в секции
+                  
+              
+            ' Debug.Print h
+            If h = 0 Then
+                  ReDim Preserve shsi(k + 1)
+                  shsi(k) = i
+           '       Debug.Print shsi(k)
+                  k = k + 1
+                  ActiveWindow.Select sh1, visSelect
+            End If
+        Next
+
+
+         Set sh0 = ActivePage.Shapes(shsi(0))
+            Debug.Print k
+         For i = 1 To k - 1
+         '   Debug.Print shsi(k)
+            Set sh1 = ActivePage.Shapes(shsi(i))
+            
+                If (sh0.Cells("beginX") = sh1.Cells("beginX") And _
+                sh0.Cells("beginY") = sh1.Cells("beginY")) Then
+                    x = sh0.Cells("beginX")
+                    y = sh0.Cells("beginY")
+                    Exit For
+                End If
+                
+                If (sh0.Cells("beginX") = sh1.Cells("endX") And _
+                sh0.Cells("beginY") = sh1.Cells("endY")) Then
+                    x = sh0.Cells("beginX")
+                    y = sh0.Cells("beginY")
+                    Exit For
+                End If
+                
+                If (sh0.Cells("endX") = sh1.Cells("beginX") And _
+                sh0.Cells("endY") = sh1.Cells("beginY")) Then
+                    x = sh0.Cells("beginX")
+                    y = sh0.Cells("beginY")
+                    Exit For
+                End If
+                
+                If (sh0.Cells("endX") = sh1.Cells("endX") And _
+                sh0.Cells("endY") = sh1.Cells("endY")) Then
+                    x = sh0.Cells("beginX")
+                    y = sh0.Cells("beginY")
+                    Exit For
+                End If
+                 'ActiveWindow.Select sh1, visSelect
+        Next
+ 
+        
+    Application.EndUndoScope UndoScopeID1, False
+
+  'Debug.Print x & "-" & y
+пересечение = Array(x, y)
+End Function</font id="code"></pre id="code"><br />средняя часть правда быдлокод какой то... не покидает меня мысть что можно написать грамотнее. и заодно находить все точки пересечения если их несколько.</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2364.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1800" title="View GDK's Profile" onMouseOver="(window.status='View GDK\'s Profile'); return true" onMouseOut="(window.status=''); return true">GDK</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>90 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="4560"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;10/27/2010&nbsp;:&nbsp; 10:04:32</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1800"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4560&amp;TOPIC_ID=2364&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Для прямых совсем просто, для окружности может чуть сложнее, а может нет. Для прямых просто решается система уравнений (каждая прямая имеет ур-е). Окружности тоже можно описать уравнением.  Затем программа должна проверить принадлежит ли полученная точка отрезку, если нет, то отрезки не пересекаются, если система не имеет решений, то прямые параллельны. Систему удобно решать и проч. с помощью матрицы.<br /><br />Ур-е прямой для отрезков - составляем систему<br />Ax(нач)+By(нач)+C=0<br />Ax(кон)+By(кон)+C=0 , получаем коэффициенты A,B,C, для второго отрезка аналогично.  Затем решаем систему полученный ур-й и  находим x и y - это коорд. точки пересечения. Решение с помощью матрицы лучше вынести в отдельную процедуру, она используется неоднократно.<br /></span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom"><hr noshade size="1" color="whitesmoke"><font face="Verdana, Arial, Helvetica" size="1" color="midnightblue">Edited by - GDK on 10/27/2010  10:23:54</font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2364.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535" title="View bdfy's Profile" onMouseOver="(window.status='View bdfy\'s Profile'); return true" onMouseOut="(window.status=''); return true">bdfy</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Belarus</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>267 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="4561"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;10/27/2010&nbsp;:&nbsp; 17:35:45</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4561&amp;TOPIC_ID=2364&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> имхо привлекать сюда сложную математику с геометрией... несколько нецелесообразно. особенно что каждую фигуру придется описывать своей мат. моделью. а так все работает при любой форме фигур. даже самой дикой зигзагообразной</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2364.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" bgcolor="midnightblue" width="100" nowrap><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">&nbsp;</font></b></td>
+                <td align="center" bgcolor="midnightblue" width="100%"><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">
+                <a href="topic.asp@TOPIC_ID=2326.html"><img src="icon_go_left.gif" width="15" height="15" border="0" alt="Previous Topic" title="Previous Topic" align="top" hspace="6" /></a><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">&nbsp;Topic&nbsp;</font></b><a href="topic.asp@TOPIC_ID=571.html"><img src="icon_go_right.gif" width="15" height="15" border="0" alt="Next Topic" title="Next Topic" align="top" hspace="6" /></a></font></b></td>
+                <td align="right" bgcolor="midnightblue" nowrap><font face="Verdana, Arial, Helvetica" size="2">&nbsp;</font></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
+  <tr>
+    <td>
+      <table width="100%">
+        <tr>
+          <td align="center" valign="top" width="50%">
+          <font face="Verdana, Arial, Helvetica" size="2">
+          </font></td>
+          <td align="right" valign="top" width="50%" nowrap>
+          </td>
+        </tr>
+      </table>

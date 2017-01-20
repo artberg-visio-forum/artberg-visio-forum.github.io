@@ -1,0 +1,332 @@
+<html>
+
+<head>
+<title>Visio - Пакетно конвертировать ряд чертежей dwg-&gt;vsd</title>
+<meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" /><script language="JavaScript" type="text/javascript">
+<!-- hide from JavaScript-challenged browsers
+function openWindow(url) {
+	popupWin = window.open(url,'new_page','width=400,height=400')
+}
+function openWindow2(url) {
+	popupWin = window.open(url,'new_page','width=400,height=450')
+}
+function openWindow3(url) {
+	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
+}
+function openWindow4(url) {
+	popupWin = window.open(url,'new_page','width=400,height=525')
+}
+function openWindow5(url) {
+	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
+}
+function openWindow6(url) {
+	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
+}
+function openWindowHelp(url) {
+	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
+}
+// done hiding -->
+</script>
+<style type="text/css">
+<!--
+a:link    {color:darkblue;text-decoration:underline}
+a:visited {color:blue;text-decoration:underline}
+a:hover   {color:red;text-decoration:underline}
+a:active  {color:red;text-decoration:}
+.spnMessageText a:link    {color:darkblue;text-decoration:underline}
+.spnMessageText a:visited {color:blue;text-decoration:underline}
+.spnMessageText a:hover   {color:red;text-decoration:underline}
+.spnMessageText a:active  {color:red;text-decoration:underline}
+.spnSearchHighlight {background-color:yellow}
+input.radio {background:lightsteelblue;color:#000000}
+-->
+</style>
+</head>
+
+<body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
+<a name="top"></a>
+
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="100%">
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <table border="0" cellPadding="2" cellSpacing="0">
+        <tr>
+          <td align="center"><font face="Verdana, Arial, Helvetica" size="2"><b>Visio</b></font></td>
+        </tr>
+        <tr>
+          <td align="center"><font face="Verdana, Arial, Helvetica" size="1">
+</font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
+  <tr>
+    <td>
+    <script language="JavaScript" type="text/javascript">
+    <!--
+    function unsub_confirm(link){
+    	var where_to= confirm("Do you really want to Unsubscribe?");
+       if (where_to== true) {
+       	popupWin = window.open(link,'new_page','width=400,height=400')
+       }
+    }
+    //-->
+    </script>
+    <script language="JavaScript" type="text/javascript">
+    function ChangePage(fnum){
+    	if (fnum == 1) {
+    		document.PageNum1.submit();
+    	}
+    	else {
+    		document.PageNum2.submit();
+    	}
+    }
+    </script>
+    <script language="JavaScript" type="text/javascript">
+    <!--
+    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
+    // -->
+    </script>
+      <table border="0" width="100%">
+        <tr>
+          <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
+          <img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp.html">All Forums</a><br />
+          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">Категория Visio</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Форум Вопросы и ответы</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open_topic.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;Пакетно конвертировать ряд чертежей dwg-&gt;vsd</font></td>
+          <td align="center" width="50%">
+          <font face="Verdana, Arial, Helvetica" size="2">
+          </font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
+  <tr>
+    <td>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+          <td bgcolor="black">
+            <table border="0" width="100%" cellspacing="1" cellpadding="4">
+              <tr>
+                <td align="center" bgcolor="midnightblue" width="100" nowrap><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">Author</font></b></td>
+                <td align="center" bgcolor="midnightblue" width="100%"><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">
+                <a href="topic.asp@TOPIC_ID=143.html"><img src="icon_go_left.gif" width="15" height="15" border="0" alt="Previous Topic" title="Previous Topic" align="top" hspace="6" /></a><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">&nbsp;Topic&nbsp;</font></b><a href="topic.asp@TOPIC_ID=2364.html"><img src="icon_go_right.gif" width="15" height="15" border="0" alt="Next Topic" title="Next Topic" align="top" hspace="6" /></a></font></b></td>
+                <td align="right" bgcolor="midnightblue" nowrap><font face="Verdana, Arial, Helvetica" size="2">&nbsp;</font></td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font color="midnightblue" face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535" title="View bdfy's Profile" onMouseOver="(window.status='View bdfy\'s Profile'); return true" onMouseOut="(window.status=''); return true">bdfy</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Belarus</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>267 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" width="100%" colspan="2" valign="top">
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;03/19/2010&nbsp;:&nbsp; 19:12:32</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=TopicQuote&amp;TOPIC_ID=2326&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> В визио есть адд-он. конвертирует автокадовские чертежи. <br />есть у меня несколько десятков чертежей. я их хочу пакетно обработать.<br />- открыть новый документ визио <br />- конвертировать dwg-&gt;vsd<br />- получившийся чертеж сохранить на новом листе с опред. именем. <br /><br />из всего этого наиболее насущная проблема это как конвертировать dwg-&gt;vsd из под макроса ? <br /><br /></span id="msg"></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535" title="View bdfy's Profile" onMouseOver="(window.status='View bdfy\'s Profile'); return true" onMouseOut="(window.status=''); return true">bdfy</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Belarus</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>267 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="4399"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;03/19/2010&nbsp;:&nbsp; 21:20:34</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4399&amp;TOPIC_ID=2326&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> автокадовский файл можно просто открыть через open. в меню по правому клику тогда будет конвертация. но в макрос она не записывается (( как ее вызвать ?</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2326.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535" title="View bdfy's Profile" onMouseOver="(window.status='View bdfy\'s Profile'); return true" onMouseOut="(window.status=''); return true">bdfy</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Belarus</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>267 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="4400"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;03/20/2010&nbsp;:&nbsp; 08:13:58</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4400&amp;TOPIC_ID=2326&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> сделал. вот так вот кривенько правда )) <br /><pre id="code"><font face="courier" size="2" id="code">Sub test()
+
+nums = Array(2, 3, 5, 10, 12, 13, 16, 18, 19, 20, 22, 27, 29, 30, 32, 33, 34, 38, 40)
+
+For Each num In nums
+ 
+ 
+ found = False
+ 
+    Dim strMasterNames() As String
+    Dim intLowerBound As Integer
+    Dim intUpperBound As Integer
+
+
+    ActiveDocument.Pages.GetNames strMasterNames
+    intLowerBound = LBound(strMasterNames)
+    intUpperBound = UBound(strMasterNames)
+    Debug.Print ActiveDocument; " Lower bound:"; intLowerBound; "Upper bound:"; intUpperBound
+
+ 
+    While intLowerBound &lt;= intUpperBound
+    
+        
+       ' Debug.Print strMasterNames(intLowerBound) & vsoPage1
+
+        If strMasterNames(intLowerBound) = CStr(num) Then
+        found = True
+        End If
+        
+        intLowerBound = intLowerBound + 1
+    Wend
+
+Debug.Print found
+
+If Not (found) Then
+    Set vsoPage1 = ActiveDocument.Pages.Add
+    vsoPage1.Name = CStr(num)
+    vsoPage1.Background = False
+    vsoPage1.Index = ActiveDocument.Pages.Count + 1
+End If
+
+
+Set vsoPage1 = ActiveDocument.Pages.ItemU(CStr(num))
+ 
+    
+Visio.Application.Addons("Convert CAD Drawings...").Run ("I:\sx " & num & ".DWG")
+
+
+ActiveWindow.SelectAll
+
+
+ActiveWindow.Selection.Cut
+
+Application.AlertResponse = 7
+
+ActiveWindow.Close
+
+Application.AlertResponse = 0
+
+Application.ActiveWindow.Page = Application.ActiveDocument.Pages.ItemU(CStr(num))
+
+ActiveWindow.Paste
+Next num
+
+'Application.Settings.ShowFileSaveWarnings = True
+End Sub</font id="code"></pre id="code"><br />предложения по доработке приветсвуются )</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2326.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1" title="View Tumanov's Profile" onMouseOver="(window.status='View Tumanov\'s Profile'); return true" onMouseOut="(window.status=''); return true">Tumanov</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>1198 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="4402"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;03/20/2010&nbsp;:&nbsp; 20:25:15</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4402&amp;TOPIC_ID=2326&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> А что именно кажется кривым?<br />Со стороны посмотреть - вроде все в рамках приличия... :)</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2326.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535" title="View bdfy's Profile" onMouseOver="(window.status='View bdfy\'s Profile'); return true" onMouseOut="(window.status=''); return true">bdfy</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Belarus</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>267 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="4562"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;10/27/2010&nbsp;:&nbsp; 19:50:03</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4562&amp;TOPIC_ID=2326&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Кто нибудь знает как наиболее корректно сконвертировать dwg в vsd ? Пробовал в визио 2010 конвертировать - чертеж выходит маленьким (но это поправимо масштабом), хуже то что весь текст плывет - ибо по размеру намного больше картинки. что с этим делать ?</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2326.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" bgcolor="midnightblue" width="100" nowrap><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">&nbsp;</font></b></td>
+                <td align="center" bgcolor="midnightblue" width="100%"><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">
+                <a href="topic.asp@TOPIC_ID=143.html"><img src="icon_go_left.gif" width="15" height="15" border="0" alt="Previous Topic" title="Previous Topic" align="top" hspace="6" /></a><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">&nbsp;Topic&nbsp;</font></b><a href="topic.asp@TOPIC_ID=2364.html"><img src="icon_go_right.gif" width="15" height="15" border="0" alt="Next Topic" title="Next Topic" align="top" hspace="6" /></a></font></b></td>
+                <td align="right" bgcolor="midnightblue" nowrap><font face="Verdana, Arial, Helvetica" size="2">&nbsp;</font></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
+  <tr>
+    <td>
+      <table width="100%">
+        <tr>
+          <td align="center" valign="top" width="50%">
+          <font face="Verdana, Arial, Helvetica" size="2">
+          </font></td>
+          <td align="right" valign="top" width="50%" nowrap>
+          </td>
+        </tr>
+      </table>

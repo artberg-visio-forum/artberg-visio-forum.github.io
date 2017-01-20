@@ -1,0 +1,267 @@
+<html>
+
+<head>
+<title>Visio - Visio и MS SQL Server</title>
+<meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" /><script language="JavaScript" type="text/javascript">
+<!-- hide from JavaScript-challenged browsers
+function openWindow(url) {
+	popupWin = window.open(url,'new_page','width=400,height=400')
+}
+function openWindow2(url) {
+	popupWin = window.open(url,'new_page','width=400,height=450')
+}
+function openWindow3(url) {
+	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
+}
+function openWindow4(url) {
+	popupWin = window.open(url,'new_page','width=400,height=525')
+}
+function openWindow5(url) {
+	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
+}
+function openWindow6(url) {
+	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
+}
+function openWindowHelp(url) {
+	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
+}
+// done hiding -->
+</script>
+<style type="text/css">
+<!--
+a:link    {color:darkblue;text-decoration:underline}
+a:visited {color:blue;text-decoration:underline}
+a:hover   {color:red;text-decoration:underline}
+a:active  {color:red;text-decoration:}
+.spnMessageText a:link    {color:darkblue;text-decoration:underline}
+.spnMessageText a:visited {color:blue;text-decoration:underline}
+.spnMessageText a:hover   {color:red;text-decoration:underline}
+.spnMessageText a:active  {color:red;text-decoration:underline}
+.spnSearchHighlight {background-color:yellow}
+input.radio {background:lightsteelblue;color:#000000}
+-->
+</style>
+</head>
+
+<body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
+<a name="top"></a>
+
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="100%">
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <table border="0" cellPadding="2" cellSpacing="0">
+        <tr>
+          <td align="center"><font face="Verdana, Arial, Helvetica" size="2"><b>Visio</b></font></td>
+        </tr>
+        <tr>
+          <td align="center"><font face="Verdana, Arial, Helvetica" size="1">
+</font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
+  <tr>
+    <td>
+    <script language="JavaScript" type="text/javascript">
+    <!--
+    function unsub_confirm(link){
+    	var where_to= confirm("Do you really want to Unsubscribe?");
+       if (where_to== true) {
+       	popupWin = window.open(link,'new_page','width=400,height=400')
+       }
+    }
+    //-->
+    </script>
+    <script language="JavaScript" type="text/javascript">
+    function ChangePage(fnum){
+    	if (fnum == 1) {
+    		document.PageNum1.submit();
+    	}
+    	else {
+    		document.PageNum2.submit();
+    	}
+    }
+    </script>
+    <script language="JavaScript" type="text/javascript">
+    <!--
+    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
+    // -->
+    </script>
+      <table border="0" width="100%">
+        <tr>
+          <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
+          <img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp.html">All Forums</a><br />
+          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">Категория Visio</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Форум Вопросы и ответы</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open_topic.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;Visio и MS SQL Server</font></td>
+          <td align="center" width="50%">
+          <font face="Verdana, Arial, Helvetica" size="2">
+          </font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
+  <tr>
+    <td>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+          <td bgcolor="black">
+            <table border="0" width="100%" cellspacing="1" cellpadding="4">
+              <tr>
+                <td align="center" bgcolor="midnightblue" width="100" nowrap><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">Author</font></b></td>
+                <td align="center" bgcolor="midnightblue" width="100%"><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">
+                <a href="topic.asp@TOPIC_ID=696.html"><img src="icon_go_left.gif" width="15" height="15" border="0" alt="Previous Topic" title="Previous Topic" align="top" hspace="6" /></a><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">&nbsp;Topic&nbsp;</font></b><a href="topic.asp@TOPIC_ID=699.html"><img src="icon_go_right.gif" width="15" height="15" border="0" alt="Next Topic" title="Next Topic" align="top" hspace="6" /></a></font></b></td>
+                <td align="right" bgcolor="midnightblue" nowrap><font face="Verdana, Arial, Helvetica" size="2">&nbsp;</font></td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font color="midnightblue" face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=343" title="View Arsenyi's Profile" onMouseOver="(window.status='View Arsenyi\'s Profile'); return true" onMouseOut="(window.status=''); return true">Arsenyi</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Rwanda</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>4 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" width="100%" colspan="2" valign="top">
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;05/10/2005&nbsp;:&nbsp; 17:38:18</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=343"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=TopicQuote&amp;TOPIC_ID=524&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Подскажите, пожалуйста, можно ли документ Visio сохранить в MS SQL Server в поле Image и обратно считать его?</span id="msg"></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=280" title="View TuzhibaevTA's Profile" onMouseOver="(window.status='View TuzhibaevTA\'s Profile'); return true" onMouseOut="(window.status=''); return true">TuzhibaevTA</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>85 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="1511"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;05/12/2005&nbsp;:&nbsp; 06:33:28</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=280"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="JavaScript:openWindow6('pop_messengers.asp?mode=ICQ&ID=280')"><img src="icon_icq.gif" width="15" height="15" border="0" alt="Send TuzhibaevTA an ICQ Message" title="Send TuzhibaevTA an ICQ Message" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=1511&amp;TOPIC_ID=524&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Конечно можно! Но это будет уже извращенство :)<br />документ Visio это xml-подобный файл, делайте выводы сами...<br /><br />Тужибаев Тимур</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=524.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=280" title="View TuzhibaevTA's Profile" onMouseOver="(window.status='View TuzhibaevTA\'s Profile'); return true" onMouseOut="(window.status=''); return true">TuzhibaevTA</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>85 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="1512"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;05/12/2005&nbsp;:&nbsp; 07:37:30</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=280"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="JavaScript:openWindow6('pop_messengers.asp?mode=ICQ&ID=280')"><img src="icon_icq.gif" width="15" height="15" border="0" alt="Send TuzhibaevTA an ICQ Message" title="Send TuzhibaevTA an ICQ Message" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=1512&amp;TOPIC_ID=524&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote"><i>Originally posted by TuzhibaevTA</i><br /><br />Конечно можно! Но это будет уже извращенство :)<br />документ Visio это xml-подобный файл, делайте выводы сами...<br /><br />Тужибаев Тимур<br /><hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote"><br />Пардон, забыл сказать, xml-файл получиться при условии если будет выставлен соот отрибут в options/Save/Save Visio files as<br /><br />Тужибаев Тимур</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=524.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=452" title="View algama's Profile" onMouseOver="(window.status='View algama\'s Profile'); return true" onMouseOut="(window.status=''); return true">algama</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>2 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="2108"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;11/28/2005&nbsp;:&nbsp; 13:14:02</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=452"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=2108&amp;TOPIC_ID=524&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote"><i>Originally posted by TuzhibaevTA</i><br /><br />Конечно можно! Но это будет уже извращенство :)<br />документ Visio это xml-подобный файл, делайте выводы сами...<br /><br />Тужибаев Тимур<br /><hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote"><br />А можно подробностей. я так и не смог найти метода позволяющего загрузить документ из строки.</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=524.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=403" title="View Voland's Profile" onMouseOver="(window.status='View Voland\'s Profile'); return true" onMouseOut="(window.status=''); return true">Voland</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>91 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="2111"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;11/29/2005&nbsp;:&nbsp; 11:13:04</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=403"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=2111&amp;TOPIC_ID=524&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Можно и сохранить и считать, для этого поле должно быть BLOB.<br />Я делаю это в делфи так:<br />СОХРАНЯЮ<br /><br />      Len:=SCHEME.Size;<br />      index:=0;<br />      while index&lt;Len do begin<br />        if (Len-index) &gt;= BlockSize then Size:=BlockSize<br />          else Size:=Len-index;<br /><br />        buf:=AllocMem(Size);<br />        SCHEME.ReadBuffer(buf^, Size);<br />        CTLib.WriteText(buf,Len,Size);<br />        freemem(Buf,Size);<br /><br />        index:=index+size;<br />      end;<br /><br />ЧИТАЮ<br />Тут сложнее, нужны 2 хранимых на сервере <br /><br />  while Total&lt;Size do<br />  begin<br />    Count := min(Size-Total,32000);<br />    with Query do begin<br />      SQL.Text := Format('exec sp_meSchemePicDataBlock %d'+#13#10+',%d,'+#13#10+'%d', [SCHEME_CODE_NOW,Total,Count]);<br />      Open;<br />     (Fields[0] as TBlobField).SaveToStream(SCHEME);<br />    end;<br />    Total:=Total+Count;<br />  end;<br /><br />пишу и читаю блоками по 32000байта, т.к. больше не поддерживается...<br />Все это через временный файл потока SCHEME<br /><br />Тексты хранимых, одна для получения размера поля, вторая для непосредственного чтения<br /><br />if object_id("sp_meSchemePicDataLength") is not null drop proc sp_meSchemePicDataLength<br />go<br /><br />create proc sp_meSchemePicDataLength(@scheme_id T_SMALLINT) as<br />begin<br />	select 	datalength(SCHEME_DATA) as SIZE<br />	from 	SCHEMES<br />	where	SCHEME_CODE=@scheme_id<br />end<br />go<br /><br />if object_id("sp_meSchemePicDataBlock") is not null drop proc sp_meSchemePicDataBlock<br />go<br /><br />create proc sp_meSchemePicDataBlock(@scheme_id T_SMALLINT,@idx int,@length int) as<br />declare @val varbinary(16)<br />begin<br />	select 	@val = textptr(SCHEME_DATA)<br />	from 	SCHEMES<br />	where	SCHEME_CODE=@scheme_id<br /><br />	readtext SCHEMES.SCHEME_DATA @val @idx @length<br />end<br /><br /><br /><br /><br /><br />___ Кто ищет тот найдет __</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=524.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" bgcolor="midnightblue" width="100" nowrap><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">&nbsp;</font></b></td>
+                <td align="center" bgcolor="midnightblue" width="100%"><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">
+                <a href="topic.asp@TOPIC_ID=696.html"><img src="icon_go_left.gif" width="15" height="15" border="0" alt="Previous Topic" title="Previous Topic" align="top" hspace="6" /></a><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">&nbsp;Topic&nbsp;</font></b><a href="topic.asp@TOPIC_ID=699.html"><img src="icon_go_right.gif" width="15" height="15" border="0" alt="Next Topic" title="Next Topic" align="top" hspace="6" /></a></font></b></td>
+                <td align="right" bgcolor="midnightblue" nowrap><font face="Verdana, Arial, Helvetica" size="2">&nbsp;</font></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
+  <tr>
+    <td>
+      <table width="100%">
+        <tr>
+          <td align="center" valign="top" width="50%">
+          <font face="Verdana, Arial, Helvetica" size="2">
+          </font></td>
+          <td align="right" valign="top" width="50%" nowrap>
+          </td>
+        </tr>
+      </table>

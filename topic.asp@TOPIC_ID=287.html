@@ -1,0 +1,412 @@
+<html>
+
+<head>
+<title>Visio - Как программно добавить новый shape?</title>
+<meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" /><script language="JavaScript" type="text/javascript">
+<!-- hide from JavaScript-challenged browsers
+function openWindow(url) {
+	popupWin = window.open(url,'new_page','width=400,height=400')
+}
+function openWindow2(url) {
+	popupWin = window.open(url,'new_page','width=400,height=450')
+}
+function openWindow3(url) {
+	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
+}
+function openWindow4(url) {
+	popupWin = window.open(url,'new_page','width=400,height=525')
+}
+function openWindow5(url) {
+	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
+}
+function openWindow6(url) {
+	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
+}
+function openWindowHelp(url) {
+	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
+}
+// done hiding -->
+</script>
+<style type="text/css">
+<!--
+a:link    {color:darkblue;text-decoration:underline}
+a:visited {color:blue;text-decoration:underline}
+a:hover   {color:red;text-decoration:underline}
+a:active  {color:red;text-decoration:}
+.spnMessageText a:link    {color:darkblue;text-decoration:underline}
+.spnMessageText a:visited {color:blue;text-decoration:underline}
+.spnMessageText a:hover   {color:red;text-decoration:underline}
+.spnMessageText a:active  {color:red;text-decoration:underline}
+.spnSearchHighlight {background-color:yellow}
+input.radio {background:lightsteelblue;color:#000000}
+-->
+</style>
+</head>
+
+<body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
+<a name="top"></a>
+
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="100%">
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <table border="0" cellPadding="2" cellSpacing="0">
+        <tr>
+          <td align="center"><font face="Verdana, Arial, Helvetica" size="2"><b>Visio</b></font></td>
+        </tr>
+        <tr>
+          <td align="center"><font face="Verdana, Arial, Helvetica" size="1">
+</font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
+  <tr>
+    <td>
+    <script language="JavaScript" type="text/javascript">
+    <!--
+    function unsub_confirm(link){
+    	var where_to= confirm("Do you really want to Unsubscribe?");
+       if (where_to== true) {
+       	popupWin = window.open(link,'new_page','width=400,height=400')
+       }
+    }
+    //-->
+    </script>
+    <script language="JavaScript" type="text/javascript">
+    function ChangePage(fnum){
+    	if (fnum == 1) {
+    		document.PageNum1.submit();
+    	}
+    	else {
+    		document.PageNum2.submit();
+    	}
+    }
+    </script>
+    <script language="JavaScript" type="text/javascript">
+    <!--
+    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
+    // -->
+    </script>
+      <table border="0" width="100%">
+        <tr>
+          <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
+          <img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp.html">All Forums</a><br />
+          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">Категория Visio</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Форум Вопросы и ответы</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open_topic.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;Как программно добавить новый shape?</font></td>
+          <td align="center" width="50%">
+          <font face="Verdana, Arial, Helvetica" size="2">
+          </font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
+  <tr>
+    <td>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+          <td bgcolor="black">
+            <table border="0" width="100%" cellspacing="1" cellpadding="4">
+              <tr>
+                <td align="center" bgcolor="midnightblue" width="100" nowrap><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">Author</font></b></td>
+                <td align="center" bgcolor="midnightblue" width="100%"><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">
+                <a href="topic.asp@TOPIC_ID=209.html"><img src="icon_go_left.gif" width="15" height="15" border="0" alt="Previous Topic" title="Previous Topic" align="top" hspace="6" /></a><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">&nbsp;Topic&nbsp;</font></b><a href="topic.asp@TOPIC_ID=291.html"><img src="icon_go_right.gif" width="15" height="15" border="0" alt="Next Topic" title="Next Topic" align="top" hspace="6" /></a></font></b></td>
+                <td align="right" bgcolor="midnightblue" nowrap><font face="Verdana, Arial, Helvetica" size="2">&nbsp;</font></td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font color="midnightblue" face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=199" title="View Onegsky's Profile" onMouseOver="(window.status='View Onegsky\'s Profile'); return true" onMouseOut="(window.status=''); return true">Onegsky</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>10 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" width="100%" colspan="2" valign="top">
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/12/2004&nbsp;:&nbsp; 10:37:25</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=199"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=TopicQuote&amp;TOPIC_ID=287&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Здравствуйте, все!<br />Постарался лаконичнее.</span id="msg"></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=199" title="View Onegsky's Profile" onMouseOver="(window.status='View Onegsky\'s Profile'); return true" onMouseOut="(window.status=''); return true">Onegsky</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>10 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="537"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/12/2004&nbsp;:&nbsp; 10:39:39</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=199"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=537&amp;TOPIC_ID=287&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Да, еще забыл спросить, есть в Visio макрорекордер, как MS Word? Если есть, то как им пользоваться? Спасибо.</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=287.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=207" title="View immortal77's Profile" onMouseOver="(window.status='View immortal77\'s Profile'); return true" onMouseOut="(window.status=''); return true">immortal77</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>30 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="538"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/12/2004&nbsp;:&nbsp; 10:49:52</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=207"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=538&amp;TOPIC_ID=287&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> смотри внимательнее форум, вопросы про макросы.</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=287.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=199" title="View Onegsky's Profile" onMouseOver="(window.status='View Onegsky\'s Profile'); return true" onMouseOut="(window.status=''); return true">Onegsky</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>10 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="539"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/12/2004&nbsp;:&nbsp; 14:35:07</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=199"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=539&amp;TOPIC_ID=287&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote"><i>Originally posted by immortal77</i><br /><br />смотри внимательнее форум, вопросы про макросы.<br /><hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote"><br />К сожалению, просмотрев 3 листа топиков по ключевому слову "макрос", я так и не нашел ответа на вопрос, как программно добавить шейп. Про версию Visio-2003 прочитал. Спасибо.<br />Прошу вас, люди добрые, помогите кто не гордый, пожалуйста. В свою очередь, могу помочь по 1С, если кто-то нуждается в помощи.</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=287.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=199" title="View Onegsky's Profile" onMouseOver="(window.status='View Onegsky\'s Profile'); return true" onMouseOut="(window.status=''); return true">Onegsky</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>10 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="540"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/12/2004&nbsp;:&nbsp; 16:34:58</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=199"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=540&amp;TOPIC_ID=287&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Похоже, что этого сделать просто нельзя. Я просмотрел книжку по Visio, "прочесал" форум на сей предмет, излазил ObjectBrowser и Яндекс в поисках ответа, но так и не нашел у коллекции Shapes метода Add. Так что остается мне горемычному уповать на то, что придет мне в голову какое-нибудь нетривиальное решение. Например, сгенерировать событие ShapeAdded. Буду копать дальше. Ежели накопаю - поделюсь.</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=287.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=199" title="View Onegsky's Profile" onMouseOver="(window.status='View Onegsky\'s Profile'); return true" onMouseOut="(window.status=''); return true">Onegsky</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>10 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="541"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/12/2004&nbsp;:&nbsp; 17:27:34</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=199"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=541&amp;TOPIC_ID=287&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Всем спасибо за отзывчивость.<br />Set stnObj = appVisio.Documents("Basic Shapes.vss")<br />Set mastObj = stnObj.Masters("Rectangle")<br />'Перетаскивается с трафарета Basic Shapes.vss шейп Rectangle<br />Set shpObj = pagObj.Drop(mastObj, 4.25, 5.5)<br /><br />Ответ нашел в FAQ, потратив день. Будьте здоровы. До свидания.</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=287.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=207" title="View immortal77's Profile" onMouseOver="(window.status='View immortal77\'s Profile'); return true" onMouseOut="(window.status=''); return true">immortal77</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>30 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="543"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/13/2004&nbsp;:&nbsp; 06:23:23</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=207"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=543&amp;TOPIC_ID=287&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> зачем рыться в форуме целый день, в моем сообщении все о макросах все было написано, берешь нажимаешь "записать макрос", добавляешь шейп, жмешь "остановить запись", и смотришь текст макроса.</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=287.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=199" title="View Onegsky's Profile" onMouseOver="(window.status='View Onegsky\'s Profile'); return true" onMouseOut="(window.status=''); return true">Onegsky</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>10 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="548"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/13/2004&nbsp;:&nbsp; 09:38:22</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=199"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=548&amp;TOPIC_ID=287&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote"><i>Originally posted by immortal77</i><br /><br />зачем рыться в форуме целый день, в моем сообщении все о макросах все было написано, берешь нажимаешь "записать макрос", добавляешь шейп, жмешь "остановить запись", и смотришь текст макроса.<br /><hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote"><br />Я вижу, что всех, кто приходит на этот форум с вопросами встречают очень радушно и держат за наивнейшие создания.<br />Может быть, многоуважаемый, 77-й бессмертный, подарит мне версию Visio-2003 для решения одной скромной задачи? У меня, слабоумного, 1С-программиста ну нет "быстрого" канала и за траффиик в 190 Mb меня руководство по головке не погладит. А тратить 150 р. на новый (пусть даже пиратский) диск для решения одной мааленькой задачки, на мой взгляд, совсем неразумно. Гораздо проще было бы помочь мне, скопировав ссылку или пару строк кода, когда я просил или хотя бы ткнуть носом в FAQ.<br />P.S. Когда к нам на форум приходят новички, над ними опытные хоть и поглумятся, но помогут в память о том, что когда-то сами были такими.</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=287.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=5" title="View Digitall's Profile" onMouseOver="(window.status='View Digitall\'s Profile'); return true" onMouseOut="(window.status=''); return true">Digitall</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>389 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="550"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/13/2004&nbsp;:&nbsp; 09:59:51</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=5"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://prodigitall.narod.ru" target="_blank"><img src="icon_homepage.gif" width="15" height="15" border="0" alt="Visit Digitall's Homepage" title="Visit Digitall's Homepage" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="JavaScript:openWindow6('pop_messengers.asp?mode=ICQ&ID=5')"><img src="icon_icq.gif" width="15" height="15" border="0" alt="Send Digitall an ICQ Message" title="Send Digitall an ICQ Message" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=550&amp;TOPIC_ID=287&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <font color="green">Я вижу, что всех, кто приходит на этот форум с вопросами встречают очень радушно и держат за наивнейшие создания.</font id="green"><br />Ну почему же... просто человек общается на несколько другом уровне и в другой версии программы. Вы же не указали версию программы.<br /><font color="green">Может быть, многоуважаемый, 77-й бессмертный, подарит мне версию Visio-2003 для решения одной скромной задачи? У меня, слабоумного, 1С-программиста ну нет "быстрого" канала и за траффиик в 190 Mb меня руководство по головке не погладит. А тратить 150 р. на новый (пусть даже пиратский) диск для решения одной мааленькой задачки, на мой взгляд, совсем неразумно. Гораздо проще было бы помочь мне, скопировав ссылку или пару строк кода, когда я просил или хотя бы ткнуть носом в FAQ.</font id="green"><br />Просто Вы должны понимать, что народ здесь не все время сидит. Просто он ответил первым. Вот и все...<br /><font color="green">P.S. Когда к нам на форум приходят новички, над ними опытные хоть и поглумятся, но помогут в память о том, что когда-то сами были такими.</font id="green"><br />Советую Вам, да и всем пользователям не Visio 2003, почитать данный документ.<br /><a href="http://www.math.hcmuns.edu.vn/Public/Soft/WinSoft/Visio2000/Docs/DVS.pdf" target="_blank">http://www.math.hcmuns.edu.vn/Public/Soft/WinSoft/Visio2000/Docs/DVS.pdf</a>[6.3 Мб]<br />Developing Visio Solutions for Visio. Данный документ для Visio 2000, но все примеры прекрасно работают и в 2002.</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=287.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=127" title="View immortal's Profile" onMouseOver="(window.status='View immortal\'s Profile'); return true" onMouseOut="(window.status=''); return true">immortal</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>391 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="552"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/13/2004&nbsp;:&nbsp; 12:02:17</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=127"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://www.immortal.vstu.edu.ru" target="_blank"><img src="icon_homepage.gif" width="15" height="15" border="0" alt="Visit immortal's Homepage" title="Visit immortal's Homepage" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="JavaScript:openWindow6('pop_messengers.asp?mode=ICQ&ID=127')"><img src="icon_icq.gif" width="15" height="15" border="0" alt="Send immortal an ICQ Message" title="Send immortal an ICQ Message" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=552&amp;TOPIC_ID=287&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Application.ActiveWindow.Page.Drop Application.Documents.Item(путь к трафарету).Masters.ItemU(имя мастера), координата, координата<br /><br />это тоже вставляет, но, во первых вы не уточнили куда, откуда это будет запускаться, если быть дотошным  <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">Как программно добавить новый shape? <hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote">, програмно это из программы, или как? а трафорет будет присутствовать в документе или нет? а откуда будет запускаться программа или макрос? а всегда из одного места,а всегда на одной машине? я мог конечно написать вам с учетом всех этих вопросов. поэтому для более точного ответа, надо точный вопрос.   <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">смотри внимательнее форум, вопросы про макросы<hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote"> да я отвечал на вопрос  <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">Да, еще забыл спросить, есть в Visio макрорекордер, как MS Word? Если есть, то как им пользоваться? Спасибо.<hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote">, со всеми вытекающими последствиями.<br /><br /> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">Может быть, многоуважаемый, 77-й бессмертный, подарит мне версию Visio-2003 для решения одной скромной задачи? У меня, слабоумного, 1С-программиста ну нет "быстрого" канала и за траффиик в 190 Mb меня руководство по головке не погладит. А тратить 150 р. на новый (пусть даже пиратский) диск для решения одной мааленькой задачки, на мой взгляд, совсем неразумно<hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote"><br />сегодня у вас эта маленькая проблема, которая решается в визио 2002, а завтра другая маленькая проблема, которая тоже решается в визио 2002, но вот послезавтра ... опять проблема которая в визио 2002 уже не решается, но решается в визио 2003, и в итоге либо я вам дарю диск с визио 2003 либо вы покупаете его за 150 руб. (у нас 70).<br /></span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=287.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=199" title="View Onegsky's Profile" onMouseOver="(window.status='View Onegsky\'s Profile'); return true" onMouseOut="(window.status=''); return true">Onegsky</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>10 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="563"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/19/2004&nbsp;:&nbsp; 08:20:16</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=199"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=563&amp;TOPIC_ID=287&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Спасибо <b>огромное</b>! Создателю сего сайта за то, что Факи здесь такие подробные, а то совсем бы я пропал. <img src="icon_smile_big.gif" width="15" height="15" border="0" alt="" title="" align="middle" /></span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=287.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" bgcolor="midnightblue" width="100" nowrap><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">&nbsp;</font></b></td>
+                <td align="center" bgcolor="midnightblue" width="100%"><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">
+                <a href="topic.asp@TOPIC_ID=209.html"><img src="icon_go_left.gif" width="15" height="15" border="0" alt="Previous Topic" title="Previous Topic" align="top" hspace="6" /></a><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">&nbsp;Topic&nbsp;</font></b><a href="topic.asp@TOPIC_ID=291.html"><img src="icon_go_right.gif" width="15" height="15" border="0" alt="Next Topic" title="Next Topic" align="top" hspace="6" /></a></font></b></td>
+                <td align="right" bgcolor="midnightblue" nowrap><font face="Verdana, Arial, Helvetica" size="2">&nbsp;</font></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
+  <tr>
+    <td>
+      <table width="100%">
+        <tr>
+          <td align="center" valign="top" width="50%">
+          <font face="Verdana, Arial, Helvetica" size="2">
+          </font></td>
+          <td align="right" valign="top" width="50%" nowrap>
+          </td>
+        </tr>
+      </table>

@@ -1,0 +1,708 @@
+<html>
+
+<head>
+<title>Visio - Как программно определить связи между фигурами</title>
+<meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" /><script language="JavaScript" type="text/javascript">
+<!-- hide from JavaScript-challenged browsers
+function openWindow(url) {
+	popupWin = window.open(url,'new_page','width=400,height=400')
+}
+function openWindow2(url) {
+	popupWin = window.open(url,'new_page','width=400,height=450')
+}
+function openWindow3(url) {
+	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
+}
+function openWindow4(url) {
+	popupWin = window.open(url,'new_page','width=400,height=525')
+}
+function openWindow5(url) {
+	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
+}
+function openWindow6(url) {
+	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
+}
+function openWindowHelp(url) {
+	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
+}
+// done hiding -->
+</script>
+<style type="text/css">
+<!--
+a:link    {color:darkblue;text-decoration:underline}
+a:visited {color:blue;text-decoration:underline}
+a:hover   {color:red;text-decoration:underline}
+a:active  {color:red;text-decoration:}
+.spnMessageText a:link    {color:darkblue;text-decoration:underline}
+.spnMessageText a:visited {color:blue;text-decoration:underline}
+.spnMessageText a:hover   {color:red;text-decoration:underline}
+.spnMessageText a:active  {color:red;text-decoration:underline}
+.spnSearchHighlight {background-color:yellow}
+input.radio {background:lightsteelblue;color:#000000}
+-->
+</style>
+</head>
+
+<body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
+<a name="top"></a>
+
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="100%">
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <table border="0" cellPadding="2" cellSpacing="0">
+        <tr>
+          <td align="center"><font face="Verdana, Arial, Helvetica" size="2"><b>Visio</b></font></td>
+        </tr>
+        <tr>
+          <td align="center"><font face="Verdana, Arial, Helvetica" size="1">
+</font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
+  <tr>
+    <td>
+    <script language="JavaScript" type="text/javascript">
+    <!--
+    function unsub_confirm(link){
+    	var where_to= confirm("Do you really want to Unsubscribe?");
+       if (where_to== true) {
+       	popupWin = window.open(link,'new_page','width=400,height=400')
+       }
+    }
+    //-->
+    </script>
+    <script language="JavaScript" type="text/javascript">
+    function ChangePage(fnum){
+    	if (fnum == 1) {
+    		document.PageNum1.submit();
+    	}
+    	else {
+    		document.PageNum2.submit();
+    	}
+    }
+    </script>
+    <script language="JavaScript" type="text/javascript">
+    <!--
+    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
+    // -->
+    </script>
+      <table border="0" width="100%">
+        <tr>
+          <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
+          <img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp.html">All Forums</a><br />
+          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">Категория Visio</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Форум Вопросы и ответы</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open_topic.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;Как программно определить связи между фигурами</font></td>
+          <td align="center" width="50%">
+          <font face="Verdana, Arial, Helvetica" size="2">
+          </font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="1" width="95%">
+  <tr>
+    <td align="right" valign="top"><font face="Verdana, Arial, Helvetica" size="1"><a href="topic.asp@TOPIC_ID=827&amp;whichpage=2.html" title="Goto the Next page in this Topic" onMouseOver="(window.status='Goto the Next page in this Topic'); return true" onMouseOut="(window.status=''); return true">Next Page</a></td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
+  <tr>
+    <td>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+          <td bgcolor="black">
+            <table border="0" width="100%" cellspacing="1" cellpadding="4">
+              <tr>
+                <td align="center" bgcolor="midnightblue" width="100" nowrap><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">Author</font></b></td>
+                <td align="center" bgcolor="midnightblue" width="100%"><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">
+                <a href="topic.asp@TOPIC_ID=2291.html"><img src="icon_go_left.gif" width="15" height="15" border="0" alt="Previous Topic" title="Previous Topic" align="top" hspace="6" /></a><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">&nbsp;Topic&nbsp;</font></b><a href="topic.asp@TOPIC_ID=2288.html"><img src="icon_go_right.gif" width="15" height="15" border="0" alt="Next Topic" title="Next Topic" align="top" hspace="6" /></a></font></b></td>
+                <form name="PageNum1" action="http://nikolay-256e33c/topic.asp">
+                <td bgcolor="midnightblue" nowrap><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">
+                <input type="hidden" name="TOPIC_ID" value="827">
+                <b>Page: </b><select name="whichpage" size="1" onchange="ChangePage(1);">
+                	<option selected value="1">1</option>
+                	<option value="2">2</option>
+                </select><b> of 2</b>
+                </font></td>
+                </form>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font color="midnightblue" face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=558" title="View Victorm72's Profile" onMouseOver="(window.status='View Victorm72\'s Profile'); return true" onMouseOut="(window.status=''); return true">Victorm72</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>7 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" width="100%" colspan="2" valign="top">
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/07/2006&nbsp;:&nbsp; 17:45:47</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=558"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=TopicQuote&amp;TOPIC_ID=827&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Здравствуйте, Знатоки Visio!<br /><br />Задача в кратце следующая:<br />Вывести информацию о сущностях и их связях в Excel для дальнейшего анализа.<br /><br />Просмотрел Ваши посты по программированию на VBA в Visio, нашел много полезного и вывод в таблицу информации об объектах сделал, но как быть со связями? Очень хочется их тоже сохранить! :)<br />Пример:<br />На диаграмме есть объекты Shape: Entity.1, Entity.2 и connector.1, который их связывает, подскажите пожалуйста, как можно программно определить связи между этими объектами Shape?<br /><br />С уважением,<br />Виктор</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom"><hr noshade size="1" color="whitesmoke"><font face="Verdana, Arial, Helvetica" size="1" color="midnightblue">Edited by - Victorm72 on 07/07/2006  17:46:33</font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1" title="View Tumanov's Profile" onMouseOver="(window.status='View Tumanov\'s Profile'); return true" onMouseOut="(window.status=''); return true">Tumanov</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>1198 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="2767"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/07/2006&nbsp;:&nbsp; 19:49:42</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=2767&amp;TOPIC_ID=827&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> 1. С точки зрения склеивания шейпы можно различить на пассивные и активные. Пассивные - это Entity.1, Entity.2. К ним клеится нечто. Активный - connector.1. Он клеится.<br />2. Точка склейки - это такой объект Connect. <br />3. У активных шейпов объекты Connect собираются в коллекцию Connects. Свойство Connect.ToCell укажет на ячейку в пассивном шейпе, к которой приклеено. Сам шейп, естественно, можно определить через Connect.ToCell.Shape.<br />У пассивных - они же собираются в коллекцию FromConnects. Соответственно, вместо ToCell используется Connect.FromCell, а Connect.FromCell.Shape покажет шейп-коннектор.<br />Вот и все правила.<br />Просматриваем в шейпах коллекции Connects и FromConnects, через объекты Connect переходим на приклееные шейпы, просматриваем их коллекции и так пока не переберем все цепочки. Важно только не перепутать, когда From, когда To.</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=827.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=558" title="View Victorm72's Profile" onMouseOver="(window.status='View Victorm72\'s Profile'); return true" onMouseOut="(window.status=''); return true">Victorm72</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>7 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="2770"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/10/2006&nbsp;:&nbsp; 09:42:16</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=558"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=2770&amp;TOPIC_ID=827&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Видимо я упустил одну очень существенную деталь - у меня Visio 2000, а эти свойства, как я понял появились в Visio 2003.<br />Как связи реализовывались в Visio 2000?<br /><br />С уважением,<br />Виктор</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=827.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1" title="View Tumanov's Profile" onMouseOver="(window.status='View Tumanov\'s Profile'); return true" onMouseOut="(window.status=''); return true">Tumanov</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>1198 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="2773"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/10/2006&nbsp;:&nbsp; 12:58:03</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=2773&amp;TOPIC_ID=827&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Вот уж нет...<br />Вот цитата из DVS 2000, в которой говорится о тех же самых объектах:<br />A Shape object has two connection-related properties:<br />• A Connects property, which returns a Connects collection that includes a<br />Connect object for each shape, group, or guide to which that shape is glued<br />• A FromConnects property, which returns a Connects collection that includes a<br />Connect object for each shape, group, or guide glued to that shape</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=827.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=558" title="View Victorm72's Profile" onMouseOver="(window.status='View Victorm72\'s Profile'); return true" onMouseOut="(window.status=''); return true">Victorm72</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>7 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="2774"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/11/2006&nbsp;:&nbsp; 09:05:25</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=558"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=2774&amp;TOPIC_ID=827&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Я был не прав - подвело незнание "мат.части"... :(<br />На моей тестовой схеме фактически не было связей - фигуры соприкосались, но линки установленны не были... Исправил и получил правильный ответ. :)<br /><br />Теперь появился следующий вопрос:<br />как определить в сторону какого объекта направленна стрелка - в какой точке начало, а в какой конец связи? есть ли для этого соответствующие признаки?</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=827.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1" title="View Tumanov's Profile" onMouseOver="(window.status='View Tumanov\'s Profile'); return true" onMouseOut="(window.status=''); return true">Tumanov</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>1198 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="2776"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/11/2006&nbsp;:&nbsp; 10:10:27</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=2776&amp;TOPIC_ID=827&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> В Visio все есть... :)<br />Сама связь не ориентированна, но, рассматривая части коннектора, можно понять, начало это или конец.<br />Выше уже говорилось, что Connect.ToCell (со стороны активного шейпа) укажет на ячейку в пассивном шейпе.<br />Но можно посмотреть и на себя - Connect.FromCell покажет свою приконнекченную ячейку. Это одна из ячеек шейпа, которые доступны через шейп-лист. Значит по имени ячейки можно понять, какая это часть шейпа.<br />То есть Connect.FromCell.Name скажет нам либо BeginX, либо EndX.<br />Но это не лучший способ, а только иллюстрация выхода на ячейку.<br />Точнее пользоваться свойством FromPart. Оно указывает часть шейпа, участвующую в соединении.<br />Для коннектора Connect.FromPart даст Вам либо visBegin (константа 9), либо visEnd (константа 12). Для пассивных шейпов разнообразие констант больше, их можно посмотреть в Help на слово FromPart (ToPart).</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=827.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=558" title="View Victorm72's Profile" onMouseOver="(window.status='View Victorm72\'s Profile'); return true" onMouseOut="(window.status=''); return true">Victorm72</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>7 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="2779"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/11/2006&nbsp;:&nbsp; 14:54:59</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=558"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=2779&amp;TOPIC_ID=827&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Разобрался. Огромное спасибо! :)<br />Но задачи усложняются...<br />Начал работать с реальной схемой и выяснил, что в ней кроме отсутствия некоторых точек соединения присутствует еще один не очень приятный момент - надписи относящиеся к связям выполнены в виде отдельных объектов (прямоугольников с текстом) размещенных над линией связи. Как объяснили разработчики схемы это сделано из-за невозможности правильно спозиционировать текст надписи выполненный по правилам, что снижало "читаемость схемы".<br />Есть ли возможность программно определить "визуальное перекрытие" объектов shape, а именно коннекторов (Connector) и надписей (Sheet) не прибегая к сложным геометрическим вычислениям?</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=827.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=194" title="View Sign's Profile" onMouseOver="(window.status='View Sign\'s Profile'); return true" onMouseOut="(window.status=''); return true">Sign</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>16 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="2780"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/11/2006&nbsp;:&nbsp; 15:49:35</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=194"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=2780&amp;TOPIC_ID=827&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote"><i>Originally posted by Victorm72</i><br /><br /><br />Есть ли возможность программно определить "визуальное перекрытие" объектов shape, а именно коннекторов (Connector) и надписей (Sheet) не прибегая к сложным геометрическим вычислениям?<br /><hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote"><br />На счет специальных возможностей не скажу. Но и без этих возможностей сложных расчетов, думаю, производить не придется. По опыту знаю, что такие надписи, как правило, стараются поставить поближе к середине соединеля. Посему задача сведется к нахождению минимального расстояния по PinX,PinY пар твоя_надпись-соединитель. Естественно соединители брать только из тех, что "ниже" твоей надписи, с учетом ориентации текста.</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=827.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1" title="View Tumanov's Profile" onMouseOver="(window.status='View Tumanov\'s Profile'); return true" onMouseOut="(window.status=''); return true">Tumanov</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>1198 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="2782"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/11/2006&nbsp;:&nbsp; 16:54:52</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=2782&amp;TOPIC_ID=827&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Для позиционирования таких надписей в коннектор часто вводят управляющую точку, перемещением которой задается позиция текстового блока (это если не хотят пользоваться инструментом Text Block Tool). Получается и текст в шейпе и двигается он довольно легко...<br />А в Вашем случае придется воспользоваться свойством SpatialNeighbors, которое вернет объект Selection, содержащий коллекцию шейпов, находящихся в заданной зависимости от коннектора. В данном случае наверное следует искать шейпы с отношением "visSpatialTouching". Только нужно не забыть, что приконнекченные шейпы тоже будут включены в коллекцию. Надо будет отсеять их от надписей. Скорее всего это можно сделать по типу шейпа.<br />Вот такой код на подключенном коннекторе с дополнительной надписью возвращает троечку.<br />Sub ttt()<br />Dim Sel As Visio.Selection<br />Set Sel = ActiveWindow.Selection(1).SpatialNeighbors(visSpatialTouching, 0.2, 0)<br />Debug.Print Sel.Count<br />End Sub</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=827.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=558" title="View Victorm72's Profile" onMouseOver="(window.status='View Victorm72\'s Profile'); return true" onMouseOut="(window.status=''); return true">Victorm72</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>7 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="2783"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/11/2006&nbsp;:&nbsp; 18:58:30</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=558"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=2783&amp;TOPIC_ID=827&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Это то что мне нужно - интересующие меня объекты я вижу! :)))<br />Следующим шагом я хочу избавится от пересекающихся соединений, которые тоже попадают в список объектов, каким свойством объекта мне можно воспользоваться для определения типа содержащейся в объекте фигуры?<br />Я попробовал через Master, но столкнулся с тем, что для объектов "типа" Sheet.123 (я их идентифицирую только по имени, т.к. где на самом деле тип объекта я не знаю), значение этого свойства равно Nothing, а определить это программно мне не удается - попадаю на ошибку исполнения... :(<br /><br />Sub ttt()<br />Dim Sel As Visio.Selection<br />Set Sel = ActiveWindow.Selection(1).SpatialNeighbors(visSpatialTouching, 0.2, 0)<br />    For Each oSel In Sel<br />        If Not IsEmpty(oSel.Master) Then<br />            MsgBox (oSel.Name & " - " & oSel.Master.Name) '- здесь валимся по ошибке<br />        End If<br />    Next<br />End Sub<br /><br />На объекте который называется Sheet.123 этот код валится, т.к. для этого объекта oSel.Master=Nothing, а я к нему обращаюсь... :(((<br />Как этого избежать? Понятно, что не обращаться к такому объекту, но как его идентифицировать? Не по имени-же?</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=827.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1" title="View Tumanov's Profile" onMouseOver="(window.status='View Tumanov\'s Profile'); return true" onMouseOut="(window.status=''); return true">Tumanov</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>1198 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="2784"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/11/2006&nbsp;:&nbsp; 19:53:11</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=2784&amp;TOPIC_ID=827&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> А почему не по имени? Все равно имя мастера включается в имя шейпа.<br />Если набор используемых мастеров небольшой, то вполне нормально будет работать.<br />Кстати, коннекторы у Вас не на отдельном слое? Можно было бы еще по принадлежности к слою. Хотя... по именам все равно проще.</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=827.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=558" title="View Victorm72's Profile" onMouseOver="(window.status='View Victorm72\'s Profile'); return true" onMouseOut="(window.status=''); return true">Victorm72</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>7 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="2786"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/12/2006&nbsp;:&nbsp; 09:05:01</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=558"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=2786&amp;TOPIC_ID=827&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Очень не хочется связываться с операциями со строками...<br />К тому-же, с точки зрения программирования проводить типизацию по имени я бы отнес к не самому удачному стилю - если кому-то придет в голову создавать объекты программно, то не факт, что они будут названы так-же как при "ручном" добавлении, или я не прав?<br />А другого способа определить тип элемента действительно не существует?<br />Каким условием можно обойти обращение к Nothing?</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=827.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1" title="View Tumanov's Profile" onMouseOver="(window.status='View Tumanov\'s Profile'); return true" onMouseOut="(window.status=''); return true">Tumanov</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>1198 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="2787"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/12/2006&nbsp;:&nbsp; 11:27:40</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=2787&amp;TOPIC_ID=827&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> 1. Visio сам создает имена. Этот процесс не зависит от того, как создается объект (вручную или программно).<br />2. В данном случае слово "тип" не совсем удачно. В данном случае, как я понял, нас интересует только, существует ли у шейпа прототип-мастер.<br />3. Можно просто спросить у него:<br />If oSel.Master Is Nothing Then<br />    Debug.Print "Nothing"<br />End If</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=827.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535" title="View bdfy's Profile" onMouseOver="(window.status='View bdfy\'s Profile'); return true" onMouseOut="(window.status=''); return true">bdfy</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Belarus</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>267 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="4285"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;08/02/2009&nbsp;:&nbsp; 20:45:20</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4285&amp;TOPIC_ID=827&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> задача:<br />1. есть несколько шейпов. <br />2. запускается скрипт который заменяет эти несколько шейпов одним. <br />при этом помещает этот новый шейп в те же коорд. с тем же углом. <br />3. нужно еще коннекты перенести. т.е создать для нового шейпа все склейки которые были у неск. старых (ну кроме как между собой )<br />замена проходит примерно так<br /><pre id="code"><font face="courier" size="2" id="code">
+Set vs = Application.ActiveWindow.Selection
+Application.ActiveWindow.Page.Drop Application.ActiveDocument.Masters.ItemU("X"), 0, 0
+Set Xsh = Application.ActiveWindow.Selection
+
+params = Array("BeginX", "BeginY", "EndX", "EndY")
+    For Each p In params
+    Xsh(1).Cells(p) = vs(1).Cells(p)
+    Next p
+   
+vs.Delete</font id="code"></pre id="code"><br />т.е новому шейпу задаются коорд. первого из выдел. группы (хотя надо бы всей группы по-хорошему ). <br />нужно еще снять пассивные и активные соед. и создать их для нового шейпа. <br />подсмотрел тут в соседней ветке функцию возвращающую соединения <br /><pre id="code"><font face="courier" size="2" id="code">Public Function ConnectedShapes(ByVal sh As Visio.Shape)
+Dim Passive() As Visio.Shape
+Dim Active() As Visio.Shape
+
+    'Set sh = ActiveWindow.Selection.Item(1) 'выделенный шейп
+    'Активные связи 2D-шейпа
+    If sh.Connects.Count &gt; 0 Then 'условие наличия активных связей
+    For I = 1 To sh.Connects.Count 'цикл перебора всех активных связей
+    ReDim Preserve Active(I)
+    Set Active(I - 1) = sh.Connects().ToSheet 'активные связи (к чему приклеен)
+   ' Debug.Print "active " & Active(I - 1).Name
+    Next
+    End If
+
+    'Пассивные связи 2D-шейпа
+    If sh.FromConnects.Count &gt; 0 Then 'условие наличия пассивных связей
+    For I = 1 To sh.FromConnects.Count 'цикл перебора всех пассивных связей
+    ReDim Preserve Passive(I)
+    Set Passive(I - 1) = sh.FromConnects(I).FromSheet 'пассивные связи (какие шейпы приклеены к выделенному)
+  '  Debug.Print "passive " & Passive(I - 1).Name
+    Next
+    End If
+    
+    ConnectedShapes = Array(Active, Passive)
+End Function</font id="code"></pre id="code"><br />если вызвать <br />    ar = ConnectedShapes(sh)<br />    Active = ar(0)<br />    Passive = ar(1)<br />я получу ячейки указывающие место склейки на другой фигуре. а место склеики на обрабатываемой где искать ?</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=827.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1" title="View Tumanov's Profile" onMouseOver="(window.status='View Tumanov\'s Profile'); return true" onMouseOut="(window.status=''); return true">Tumanov</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>1198 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="4286"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;08/03/2009&nbsp;:&nbsp; 16:13:00</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4286&amp;TOPIC_ID=827&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Если Вам нужны места склейки, то цитируемый макрос не подходит. Он пользуется свойством .ToSheet, которое возвращает шейп.<br />sh.Connects().ToSheet<br />А у Connect есть еще свойства ToPart и FromPart. Вот они показывают именно части шейпа.</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=827.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535" title="View bdfy's Profile" onMouseOver="(window.status='View bdfy\'s Profile'); return true" onMouseOut="(window.status=''); return true">bdfy</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Belarus</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>267 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="4287"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;08/06/2009&nbsp;:&nbsp; 15:56:35</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3535"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4287&amp;TOPIC_ID=827&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> поковырял. написал такую функцию<br /><pre id="code"><font face="courier" size="2" id="code">Public Function ConnectedCells(ByVal sh As Visio.Shape)
+
+Dim strFrom(), strTo() As String
+Dim vsoConnectTo(), vsoConnectFrom() As Visio.Shape
+
+        Set vsoConnects = sh.Connects
+
+        'For each connection, get the shape it connects to
+        'and the part of the shape it connects to,
+        'and print that information in the Immediate window.
+        For intCounter = 0 To vsoConnects.Count - 1
+            ReDim Preserve strTo(intCounter + 1), vsoConnectTo(intCounter + 1)
+            
+            Set vsoConnect = vsoConnects(intCounter + 1)
+            Set vsoConnectTo(intCounter) = vsoConnect.ToSheet
+            intToData = vsoConnect.ToPart
+
+            If intToData = visConnectError Then
+                strTo(intCounter) = "error"
+            ElseIf intToData = visNone Then
+                strTo(intCounter) = "none"
+            ElseIf intToData = visGuideX Then
+                strTo(intCounter) = "guideX"
+            ElseIf intToData = visGuideY Then
+                strTo(intCounter) = "guideY"
+            ElseIf intToData = visWholeShape Then
+                strTo(intCounter) = "dynamic glue"
+            ElseIf intToData &gt;= visConnectionPoint Then
+                strTo(intCounter) = "connection point " & _
+                    CStr(intToData - visConnectionPoint + 1)
+            Else
+                strTo(intCounter) = "???"
+            End If
+
+            'Print the name and part of the shape the
+            'Connect object connects to.
+           ' Debug.Print "To " & vsoConnectTo(intCounter).Name & " " & strTo(intCounter) & "."
+    Next intCounter
+
+
+        'For each connection, get the shape it originates from
+        'and the part of the shape it originates from,
+        'and print that information in the Immediate window.
+        For intCounter = 0 To vsoConnects.Count - 1
+            ReDim Preserve strFrom(intCounter + 1), vsoConnectFrom(intCounter + 1)
+            Set vsoConnect = vsoConnects(intCounter + 1)
+            Set vsoConnectFrom(intCounter) = vsoConnect.FromSheet
+            intFromData = vsoConnect.FromPart
+            
+'Debug.Print "vsoFrom " & vsoConnectFrom(intCounter).Name
+
+            'FromPart property values
+            If intFromData = visConnectError Then
+                strFrom(intCounter) = "error"
+            ElseIf intFromData = visNone Then
+                strFrom(intCounter) = "none"
+            ElseIf intFromData = visLeftEdge Then
+                strFrom(intCounter) = "left"
+            ElseIf intFromData = visCenterEdge Then
+                strFrom(intCounter) = "center"
+            ElseIf intFromData = visRightEdge Then
+                strFrom(intCounter) = "right"
+            ElseIf intFromData = visBottomEdge Then
+                strFrom(intCounter) = "bottom"
+            ElseIf intFromData = visMiddleEdge Then
+                strFrom(intCounter) = "middle"
+            ElseIf intFromData = visTopEdge Then
+                strFrom(intCounter) = "top"
+            ElseIf intFromData = visBeginX Then
+                strFrom(intCounter) = "beginX"
+            ElseIf intFromData = visBeginY Then
+                strFrom(intCounter) = "beginY"
+            ElseIf intFromData = visBegin Then
+                strFrom(intCounter) = "begin"
+            ElseIf intFromData = visEndX Then
+                strFrom(intCounter) = "endX"
+            ElseIf intFromData = visEndY Then
+                strFrom(intCounter) = "endY"
+            ElseIf intFromData = visEnd Then
+                strFrom(intCounter) = "end"
+            ElseIf intFromData &gt;= visControlPoint Then
+                strFrom(intCounter) = "controlPt_" & _
+                    str(intFromData - visControlPoint + 1)
+            Else
+                strFrom(intCounter) = "???"
+            End If
+
+          '  Debug.Print "From " & vsoConnectFrom(intCounter).Name & " " & strFrom(intCounter)
+
+        Next intCounter
+
+    ConnectedCells1 = Array(vsoConnectTo, strTo, vsoConnectFrom, strFrom)
+
+        If False Then 'debug
+        For j = 0 To UBound(ConnectedCells1) - 1
+            ar = ConnectedCells1(j)
+            text = ""
+            For I = 0 To UBound(ar) - 1
+            text = text & ar(I) & "  "
+            Next I
+            'Debug.Print j & " " & text
+        Next j
+        End If
+    ConnectedCells = ConnectedCells1
+End Function</font id="code"></pre id="code"><br />возвращает массив указывающий на активные и пассивные соедининия. насколько я понимаю то для каждой сцепки должен быть To и From shape ?<br />тогда почему так вот странно работает прилагаемый пример ? почему для X.260 не показывается соединение с X.300 ?<br />вот пример<br /><a href="http://rapidshare.de/files/48047960/glue.vsd.html" target="_blank">http://rapidshare.de/files/48047960/glue.vsd.html</a><br />выделить 24ый прямоугольник ( на нем номер) , запустить aarestore_glues. макрос покажет только одну связь :<br />0 line  <br />1 connection point 1  <br />2 X.260  <br />3 end  <br />но очевидно же что этот шейп еще к соседнему прямугольнику привязан. <br /><br /></span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=827.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <form name="PageNum2" action="http://nikolay-256e33c/topic.asp">
+                <td bgcolor="midnightblue" nowrap><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">
+                <input type="hidden" name="TOPIC_ID" value="827">
+                <b>Page: </b><select name="whichpage" size="1" onchange="ChangePage(2);">
+                	<option selected value="1">1</option>
+                	<option value="2">2</option>
+                </select><b> of 2</b>
+                </font></td>
+                </form>
+                <td align="center" bgcolor="midnightblue" width="100%"><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">
+                <a href="topic.asp@TOPIC_ID=2291.html"><img src="icon_go_left.gif" width="15" height="15" border="0" alt="Previous Topic" title="Previous Topic" align="top" hspace="6" /></a><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">&nbsp;Topic&nbsp;</font></b><a href="topic.asp@TOPIC_ID=2288.html"><img src="icon_go_right.gif" width="15" height="15" border="0" alt="Next Topic" title="Next Topic" align="top" hspace="6" /></a></font></b></td>
+                <td align="right" bgcolor="midnightblue" nowrap><font face="Verdana, Arial, Helvetica" size="2">&nbsp;</font></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="1" width="95%">
+  <tr>
+    <td align="left" valign="top"><font face="Verdana, Arial, Helvetica" size="1"><a href="topic.asp@TOPIC_ID=827&amp;whichpage=2.html" title="Goto the Next page in this Topic" onMouseOver="(window.status='Goto the Next page in this Topic'); return true" onMouseOut="(window.status=''); return true">Next Page</a></td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
+  <tr>
+    <td>
+      <table width="100%">
+        <tr>
+          <td align="center" valign="top" width="50%">
+          <font face="Verdana, Arial, Helvetica" size="2">
+          </font></td>
+          <td align="right" valign="top" width="50%" nowrap>
+          </td>
+        </tr>
+      </table>

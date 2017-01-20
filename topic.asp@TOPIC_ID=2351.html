@@ -1,0 +1,546 @@
+<html>
+
+<head>
+<title>Visio - Очень медленно отрабатывает функция SpatialNeighbo</title>
+<meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" /><script language="JavaScript" type="text/javascript">
+<!-- hide from JavaScript-challenged browsers
+function openWindow(url) {
+	popupWin = window.open(url,'new_page','width=400,height=400')
+}
+function openWindow2(url) {
+	popupWin = window.open(url,'new_page','width=400,height=450')
+}
+function openWindow3(url) {
+	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
+}
+function openWindow4(url) {
+	popupWin = window.open(url,'new_page','width=400,height=525')
+}
+function openWindow5(url) {
+	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
+}
+function openWindow6(url) {
+	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
+}
+function openWindowHelp(url) {
+	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
+}
+// done hiding -->
+</script>
+<style type="text/css">
+<!--
+a:link    {color:darkblue;text-decoration:underline}
+a:visited {color:blue;text-decoration:underline}
+a:hover   {color:red;text-decoration:underline}
+a:active  {color:red;text-decoration:}
+.spnMessageText a:link    {color:darkblue;text-decoration:underline}
+.spnMessageText a:visited {color:blue;text-decoration:underline}
+.spnMessageText a:hover   {color:red;text-decoration:underline}
+.spnMessageText a:active  {color:red;text-decoration:underline}
+.spnSearchHighlight {background-color:yellow}
+input.radio {background:lightsteelblue;color:#000000}
+-->
+</style>
+</head>
+
+<body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
+<a name="top"></a>
+
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="100%">
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <table border="0" cellPadding="2" cellSpacing="0">
+        <tr>
+          <td align="center"><font face="Verdana, Arial, Helvetica" size="2"><b>Visio</b></font></td>
+        </tr>
+        <tr>
+          <td align="center"><font face="Verdana, Arial, Helvetica" size="1">
+</font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
+  <tr>
+    <td>
+    <script language="JavaScript" type="text/javascript">
+    <!--
+    function unsub_confirm(link){
+    	var where_to= confirm("Do you really want to Unsubscribe?");
+       if (where_to== true) {
+       	popupWin = window.open(link,'new_page','width=400,height=400')
+       }
+    }
+    //-->
+    </script>
+    <script language="JavaScript" type="text/javascript">
+    function ChangePage(fnum){
+    	if (fnum == 1) {
+    		document.PageNum1.submit();
+    	}
+    	else {
+    		document.PageNum2.submit();
+    	}
+    }
+    </script>
+    <script language="JavaScript" type="text/javascript">
+    <!--
+    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
+    // -->
+    </script>
+      <table border="0" width="100%">
+        <tr>
+          <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
+          <img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp.html">All Forums</a><br />
+          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">Категория Visio</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Форум Вопросы и ответы</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open_topic.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;Очень медленно отрабатывает функция SpatialNeighbo</font></td>
+          <td align="center" width="50%">
+          <font face="Verdana, Arial, Helvetica" size="2">
+          </font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
+  <tr>
+    <td>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+          <td bgcolor="black">
+            <table border="0" width="100%" cellspacing="1" cellpadding="4">
+              <tr>
+                <td align="center" bgcolor="midnightblue" width="100" nowrap><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">Author</font></b></td>
+                <td align="center" bgcolor="midnightblue" width="100%"><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">
+                <a href="topic.asp@TOPIC_ID=2352.html"><img src="icon_go_left.gif" width="15" height="15" border="0" alt="Previous Topic" title="Previous Topic" align="top" hspace="6" /></a><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">&nbsp;Topic&nbsp;</font></b><a href="topic.asp@TOPIC_ID=2350.html"><img src="icon_go_right.gif" width="15" height="15" border="0" alt="Next Topic" title="Next Topic" align="top" hspace="6" /></a></font></b></td>
+                <td align="right" bgcolor="midnightblue" nowrap><font face="Verdana, Arial, Helvetica" size="2">&nbsp;</font></td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font color="midnightblue" face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3586" title="View LeoAbyss's Profile" onMouseOver="(window.status='View LeoAbyss\'s Profile'); return true" onMouseOut="(window.status=''); return true">LeoAbyss</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>20 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" width="100%" colspan="2" valign="top">
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;05/24/2010&nbsp;:&nbsp; 10:29:35</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3586"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=TopicQuote&amp;TOPIC_ID=2351&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Приветствую всех!<br />Подскажите, пожалуйста, по каким причинам может оооочень долго отрабатывать функция SpatialNeighbors? Ниже- сама функция:<br /><pre id="code"><font face="courier" size="2" id="code">
+Private Sub Binding(ByVal Shape As IVShape)
+
+Dim intTolerance As Integer
+Dim vsoReturnedSelection As Visio.Selection
+Dim intSpatialRelation As VisSpatialRelationCodes
+
+'Устанавливаем максимальное расстояние до рейки (дюймы)
+intTolerance = Shape.Cells("Height") / 2
+
+'Устанавливаем тип проверки - пересечение
+intSpatialRelation = visSpatialOverlap
+
+'ищем пересечения
+Set vsoReturnedSelection = Shape.SpatialNeighbors(intSpatialRelation, intTolerance, 0)
+'Если пересечений нет то:
+If vsoReturnedSelection.Count = 0 Then
+
+'Устанавливаем тип проверки - касание
+    intSpatialRelation = visSpatialTouching
+'ищем касания (с учетом максимального расстояния до рейки)
+    Set vsoReturnedSelection = Shape.SpatialNeighbors(intSpatialRelation, intTolerance, 0)
+'Если касаний нет то:
+    If vsoReturnedSelection.Count = 0 Then
+'Пока ничего не делаем
+
+'Если касание есть то:
+    Else
+'Ищем имена шейпов с которыми соприкоснулись
+        For Each vsoShapeOnPage In vsoReturnedSelection
+'Если это рейка то:
+            If Left(vsoShapeOnPage.Name, 21) = "Несущие шины TS 35/15" Then
+'Находим ее координаты Y
+                Set vsoPinY = vsoShapeOnPage.Cells("PinY")
+'Если координаты рейки и объекта не совпадают то:
+                If Shape.Cells("PinY").Formula &lt;&gt; vsoPinY Then
+'Перемещаем объект на позицию рейки
+                    Shape.Cells("PinY").Formula = vsoShapeOnPage.NameID & "!PinY"
+                End If
+            End If
+        Next
+    End If
+'Если пересечения есть то:
+Else
+'Ищем имена шейпов с которыми пересекаемся
+    For Each vsoShapeOnPage In vsoReturnedSelection
+'Если это рейка то:
+        If Left(vsoShapeOnPage.Name, 21) = "Несущие шины TS 35/15" Then
+'Находим ее координаты Y
+            Set vsoPinY = vsoShapeOnPage.Cells("PinY")
+'Если координаты рейки и объекта не совпадают то:
+            If Shape.Cells("PinY").Formula &lt;&gt; vsoPinY Then
+'Перемещаем объект на позицию рейки
+                Shape.Cells("PinY").Formula = vsoShapeOnPage.NameID & "!PinY"
+            End If
+        End If
+    Next
+End If
+'Перемещаем объект на передний план
+    Application.ActiveWindow.Selection.BringToFront
+End Sub
+</font id="code"></pre id="code"><br />На листе один объект (группа) "Несущие шины TS 35/15" и один объект (группа), на котором отрабатывается этот скрипт. Время выполнения скрипта - секунд 20. Машина серьезная.<br />Заранее спасибо за ответы.</span id="msg"></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3586" title="View LeoAbyss's Profile" onMouseOver="(window.status='View LeoAbyss\'s Profile'); return true" onMouseOut="(window.status=''); return true">LeoAbyss</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>20 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="4487"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;05/24/2010&nbsp;:&nbsp; 10:36:26</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3586"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4487&amp;TOPIC_ID=2351&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Забыл добавить. Зависает на этой строчке:<br /><pre id="code"><font face="courier" size="2" id="code">Set vsoReturnedSelection = Shape.SpatialNeighbors(intSpatialRelation, intTolerance, 0)</font id="code"></pre id="code"></span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2351.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1" title="View Tumanov's Profile" onMouseOver="(window.status='View Tumanov\'s Profile'); return true" onMouseOut="(window.status=''); return true">Tumanov</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>1198 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="4488"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;05/24/2010&nbsp;:&nbsp; 16:24:14</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4488&amp;TOPIC_ID=2351&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Никакие обработчики событий при перемещениях не могут сработать? Уверены, что функция запускается однократно?<br />Если предположить, что группы очень сложные, можно попробовать для эксперимента заменить шейпы на квадраты и оценить, изменится ли время.</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2351.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3586" title="View LeoAbyss's Profile" onMouseOver="(window.status='View LeoAbyss\'s Profile'); return true" onMouseOut="(window.status=''); return true">LeoAbyss</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>20 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="4489"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;05/24/2010&nbsp;:&nbsp; 18:37:54</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3586"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4489&amp;TOPIC_ID=2351&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Нет, никаких обработчиков больше нет. С квадратами все работает, хотя и не идеально, на мой взгляд. До секунды задержка бывает. Но и группы не монструозные, не больше 20 членов.</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2351.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1" title="View Tumanov's Profile" onMouseOver="(window.status='View Tumanov\'s Profile'); return true" onMouseOut="(window.status=''); return true">Tumanov</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>1198 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="4490"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;05/24/2010&nbsp;:&nbsp; 19:24:13</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4490&amp;TOPIC_ID=2351&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> А пришлите файлик на <a href="mailto:ttt@post.rzn.ru">ttt@post.rzn.ru</a><br />Вдруг что разгляжу...</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2351.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3586" title="View LeoAbyss's Profile" onMouseOver="(window.status='View LeoAbyss\'s Profile'); return true" onMouseOut="(window.status=''); return true">LeoAbyss</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>20 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="4491"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;05/26/2010&nbsp;:&nbsp; 05:30:46</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3586"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4491&amp;TOPIC_ID=2351&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Приветствую всех.<br />С помощью господина Туманова удалось выяснить, что функция SpatialNeighbors непременима к группам с более или менее сложной структурой. Получается, что данная функция выполняется не для конкретной группы, а для всех входящих в нее членов. Вывод - для групп нужна своя функция. Этим я сейчас и займусь. Готовую функцию выложу.<br />Всем спасибо.</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2351.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3586" title="View LeoAbyss's Profile" onMouseOver="(window.status='View LeoAbyss\'s Profile'); return true" onMouseOut="(window.status=''); return true">LeoAbyss</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>20 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="4492"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;05/26/2010&nbsp;:&nbsp; 08:50:31</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3586"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4492&amp;TOPIC_ID=2351&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Как и обещал, выкладываю функцию привязки:<br /><pre id="code"><font face="courier" size="2" id="code">
+Private Sub Binding(ByVal Shape As IVShape)
+
+Dim dblTolerance As Double
+Dim BottomShift As Double
+Dim TopShift As Double
+
+'Устанавливаем максимальное расстояние до рейки (равно высоте шейпа)
+dblTolerance = Shape.Cells("Height")
+BottomShift = Shape.Cells("Height") - (Shape.Cells("Height") - Shape.Cells("LocPinY"))
+TopShift = Shape.Cells("Height") - Shape.Cells("LocPinY")
+
+'В цикле проверяем все шейпы на листе
+For i = 1 To ActivePage.Shapes.Count
+'Если шейп - рейка, то:
+    If Left(ActivePage.Shapes.Item(i).Name, 21) = "Несущие шины TS 35/15" Then
+'Если рейка расположена горизонтально, то:
+        If (ActivePage.Shapes.Item(i).Cells("Angle") = 0) Or (Left(CStr(ActivePage.Shapes.Item(i).Cells("Angle")), 9) = "3,1415926") Then
+'Если координаты рейки и шейпа не совпадают, то:
+            If Shape.Cells("PinY") &lt;&gt; ActivePage.Shapes.Item(i).Cells("PinY") + ActivePage.Shapes.Item(i).Cells("Height") / 2 Then
+'Если шейп ниже рейки, то
+                If Abs((ActivePage.Shapes.Item(i).Cells("PinY") - Shape.Cells("PinY"))) = (ActivePage.Shapes.Item(i).Cells("PinY") - Shape.Cells("PinY")) Then
+'Проверяем расстояние до рейки. Если входим в допуск, то:
+                    If Abs(ActivePage.Shapes.Item(i).Cells("PinY") - (Shape.Cells("PinY") + TopShift)) &lt;= dblTolerance Then
+'Поворачиваем шейп
+                        Shape.Cells("Angle").Formula = ActivePage.Shapes.Item(i).NameID & "!Angle"
+'Вычисляем смещение шейпа относительно рейки по горизонтали
+                        XShift = Shape.Cells("PinX") - ActivePage.Shapes.Item(i).Cells("PinX")
+'Присваиваем шейпу координату рейки по вертикали
+                        Shape.Cells("PinY").Formula = ActivePage.Shapes.Item(i).NameID & "!PinY+" & ActivePage.Shapes.Item(i).Cells("Height") / 2
+'Присваиваем шейпу координату рейки по горизонтали со смещением
+                        Shape.Cells("PinX").Formula = ActivePage.Shapes.Item(i).NameID & "!PinX+" & XShift
+                    End If
+'Шейп выше рейки
+                Else
+'Проверяем расстояние до рейки. Если входим в допуск, то:
+                    If Abs(ActivePage.Shapes.Item(i).Cells("PinY") - (Shape.Cells("PinY") - BottomShift)) &lt;= dblTolerance Then
+'Поворачиваем шейп
+                        Shape.Cells("Angle").Formula = ActivePage.Shapes.Item(i).NameID & "!Angle"
+'Вычисляем смещение шейпа относительно рейки по горизонтали
+                        XShift = Shape.Cells("PinX") - ActivePage.Shapes.Item(i).Cells("PinX")
+'Присваиваем шейпу координату рейки по вертикали
+                        Shape.Cells("PinY").Formula = ActivePage.Shapes.Item(i).NameID & "!PinY+" & ActivePage.Shapes.Item(i).Cells("Height") / 2
+'Присваиваем шейпу координату рейки по горизонтали со смещением
+                        Shape.Cells("PinX").Formula = ActivePage.Shapes.Item(i).NameID & "!PinX+" & XShift
+                    End If
+                End If
+            End If
+'Рейка расположена вертикально
+        Else
+'Если координаты рейки и шейпа не совпадают, то:
+            If Shape.Cells("PinX") &lt;&gt; ActivePage.Shapes.Item(i).Cells("PinX") + ActivePage.Shapes.Item(i).Cells("Height") / 2 Then
+'Если шейп правее рейки, то
+                If Abs((ActivePage.Shapes.Item(i).Cells("PinX") - Shape.Cells("PinX"))) = (ActivePage.Shapes.Item(i).Cells("PinX") - Shape.Cells("PinX")) Then
+'Проверяем расстояние до рейки. Если входим в допуск, то:
+                    If Abs(ActivePage.Shapes.Item(i).Cells("PinX") - (Shape.Cells("PinX") + TopShift)) &lt;= dblTolerance Then
+'Поворачиваем шейп
+                        Shape.Cells("Angle").Formula = ActivePage.Shapes.Item(i).NameID & "!Angle"
+'Вычисляем смещение шейпа относительно рейки по вертикали
+                        YShift = Shape.Cells("PinY") - ActivePage.Shapes.Item(i).Cells("PinY")
+'Присваиваем шейпу координату рейки по горизонтали
+                        Shape.Cells("PinX").Formula = ActivePage.Shapes.Item(i).NameID & "!PinX+" & ActivePage.Shapes.Item(i).Cells("Height") / 2
+'Присваиваем шейпу координату рейки по вертикали со смещением
+                        Shape.Cells("PinY").Formula = ActivePage.Shapes.Item(i).NameID & "!PinY+" & YShift
+                    End If
+'Шейп левее рейки
+                Else
+'Проверяем расстояние до рейки. Если входим в допуск, то:
+                    If Abs(ActivePage.Shapes.Item(i).Cells("PinX") - (Shape.Cells("PinX") - BottomShift)) &lt;= dblTolerance Then
+'Поворачиваем шейп
+                        Shape.Cells("Angle").Formula = ActivePage.Shapes.Item(i).NameID & "!Angle"
+'Вычисляем смещение шейпа относительно рейки по вертикали
+                        YShift = Shape.Cells("PinY") - ActivePage.Shapes.Item(i).Cells("PinY")
+'Присваиваем шейпу координату рейки по горизонтали
+                        Shape.Cells("PinX").Formula = ActivePage.Shapes.Item(i).NameID & "!PinX+" & ActivePage.Shapes.Item(i).Cells("Height") / 2
+'Присваиваем шейпу координату рейки по вертикали со смещением
+                        Shape.Cells("PinY").Formula = ActivePage.Shapes.Item(i).NameID & "!PinY+" & YShift
+                    End If
+                End If
+            End If
+            
+            
+        End If
+    End If
+Next
+
+'Перемещаем объект на передний план
+Application.ActiveWindow.Selection.BringToFront
+
+End Sub
+</font id="code"></pre id="code"><br />P.S. Пока не придумал, как сделать так, чтобы уже привязаный шейп поворачивался и перемещался вместе с рейкой. Координаты рейки не меняются. Подозреваю, что нужно копать в сторону преобразования локальных координат в координаты листа, но пока не докопал. :) Может кто подскажет?</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom"><hr noshade size="1" color="whitesmoke"><font face="Verdana, Arial, Helvetica" size="1" color="midnightblue">Edited by - LeoAbyss on 05/26/2010  08:54:33</font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2351.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1" title="View Tumanov's Profile" onMouseOver="(window.status='View Tumanov\'s Profile'); return true" onMouseOut="(window.status=''); return true">Tumanov</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>1198 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="4494"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;05/27/2010&nbsp;:&nbsp; 15:57:21</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4494&amp;TOPIC_ID=2351&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">P.S. Пока не придумал, как сделать так, чтобы уже привязаный шейп поворачивался и перемещался вместе с рейкой. Координаты рейки не меняются. Подозреваю, что нужно копать в сторону преобразования локальных координат в координаты листа, но пока не докопал. :) Может кто подскажет?<hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br />Возможно, нужный эффект получится, если в тех местах, где Вы записываете в ячейки абсолютные значения (взятые из ячеек рейки), записать формулы со ссылками на сами ячейки рейки. Тогда и координаты и угол поворота начнут отслеживать перемещение и поворот рейки.</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2351.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3586" title="View LeoAbyss's Profile" onMouseOver="(window.status='View LeoAbyss\'s Profile'); return true" onMouseOut="(window.status=''); return true">LeoAbyss</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>20 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="4495"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;05/28/2010&nbsp;:&nbsp; 05:48:49</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3586"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4495&amp;TOPIC_ID=2351&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Увы и ах. У меня как раз ссылки записываются. С углами все просто получается. А вот координаты... При повороте рейки ее координаты остаются неизменными. Она вращается вокруг своей "оси"...</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2351.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1" title="View Tumanov's Profile" onMouseOver="(window.status='View Tumanov\'s Profile'); return true" onMouseOut="(window.status=''); return true">Tumanov</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>1198 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="4499"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;05/28/2010&nbsp;:&nbsp; 16:12:26</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4499&amp;TOPIC_ID=2351&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Ой, извиняюсь... :)<br />Ну там еще осталось углы учесть. Типа вот так:<br />'Присваиваем шейпу координату рейки по вертикали<br />                        Shape.Cells("PinY").Formula = ActivePage.Shapes.Item(i).NameID & "!PinY+" & ActivePage.Shapes.Item(i).Cells("Height") / 2 + XShift & "*Sin(Angle)"<br />'Присваиваем шейпу координату рейки по горизонтали со смещением<br />                        Shape.Cells("PinX").Formula = ActivePage.Shapes.Item(i).NameID & "!PinX+" & XShift & "*Cos(Angle)"</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2351.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" bgcolor="midnightblue" width="100" nowrap><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">&nbsp;</font></b></td>
+                <td align="center" bgcolor="midnightblue" width="100%"><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">
+                <a href="topic.asp@TOPIC_ID=2352.html"><img src="icon_go_left.gif" width="15" height="15" border="0" alt="Previous Topic" title="Previous Topic" align="top" hspace="6" /></a><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">&nbsp;Topic&nbsp;</font></b><a href="topic.asp@TOPIC_ID=2350.html"><img src="icon_go_right.gif" width="15" height="15" border="0" alt="Next Topic" title="Next Topic" align="top" hspace="6" /></a></font></b></td>
+                <td align="right" bgcolor="midnightblue" nowrap><font face="Verdana, Arial, Helvetica" size="2">&nbsp;</font></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
+  <tr>
+    <td>
+      <table width="100%">
+        <tr>
+          <td align="center" valign="top" width="50%">
+          <font face="Verdana, Arial, Helvetica" size="2">
+          </font></td>
+          <td align="right" valign="top" width="50%" nowrap>
+          </td>
+        </tr>
+      </table>

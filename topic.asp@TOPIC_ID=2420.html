@@ -1,0 +1,343 @@
+<html>
+
+<head>
+<title>Visio - Масштабирование через VBA</title>
+<meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" /><script language="JavaScript" type="text/javascript">
+<!-- hide from JavaScript-challenged browsers
+function openWindow(url) {
+	popupWin = window.open(url,'new_page','width=400,height=400')
+}
+function openWindow2(url) {
+	popupWin = window.open(url,'new_page','width=400,height=450')
+}
+function openWindow3(url) {
+	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
+}
+function openWindow4(url) {
+	popupWin = window.open(url,'new_page','width=400,height=525')
+}
+function openWindow5(url) {
+	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
+}
+function openWindow6(url) {
+	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
+}
+function openWindowHelp(url) {
+	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
+}
+// done hiding -->
+</script>
+<style type="text/css">
+<!--
+a:link    {color:darkblue;text-decoration:underline}
+a:visited {color:blue;text-decoration:underline}
+a:hover   {color:red;text-decoration:underline}
+a:active  {color:red;text-decoration:}
+.spnMessageText a:link    {color:darkblue;text-decoration:underline}
+.spnMessageText a:visited {color:blue;text-decoration:underline}
+.spnMessageText a:hover   {color:red;text-decoration:underline}
+.spnMessageText a:active  {color:red;text-decoration:underline}
+.spnSearchHighlight {background-color:yellow}
+input.radio {background:lightsteelblue;color:#000000}
+-->
+</style>
+</head>
+
+<body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
+<a name="top"></a>
+
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="100%">
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <table border="0" cellPadding="2" cellSpacing="0">
+        <tr>
+          <td align="center"><font face="Verdana, Arial, Helvetica" size="2"><b>Visio</b></font></td>
+        </tr>
+        <tr>
+          <td align="center"><font face="Verdana, Arial, Helvetica" size="1">
+</font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
+  <tr>
+    <td>
+    <script language="JavaScript" type="text/javascript">
+    <!--
+    function unsub_confirm(link){
+    	var where_to= confirm("Do you really want to Unsubscribe?");
+       if (where_to== true) {
+       	popupWin = window.open(link,'new_page','width=400,height=400')
+       }
+    }
+    //-->
+    </script>
+    <script language="JavaScript" type="text/javascript">
+    function ChangePage(fnum){
+    	if (fnum == 1) {
+    		document.PageNum1.submit();
+    	}
+    	else {
+    		document.PageNum2.submit();
+    	}
+    }
+    </script>
+    <script language="JavaScript" type="text/javascript">
+    <!--
+    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
+    // -->
+    </script>
+      <table border="0" width="100%">
+        <tr>
+          <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
+          <img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp.html">All Forums</a><br />
+          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">Категория Visio</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Форум Вопросы и ответы</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open_topic.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;Масштабирование через VBA</font></td>
+          <td align="center" width="50%">
+          <font face="Verdana, Arial, Helvetica" size="2">
+          </font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
+  <tr>
+    <td>
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+          <td bgcolor="black">
+            <table border="0" width="100%" cellspacing="1" cellpadding="4">
+              <tr>
+                <td align="center" bgcolor="midnightblue" width="100" nowrap><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">Author</font></b></td>
+                <td align="center" bgcolor="midnightblue" width="100%"><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">
+                <a href="topic.asp@TOPIC_ID=2421.html"><img src="icon_go_left.gif" width="15" height="15" border="0" alt="Previous Topic" title="Previous Topic" align="top" hspace="6" /></a><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">&nbsp;Topic&nbsp;</font></b><a href="topic.asp@TOPIC_ID=2418.html"><img src="icon_go_right.gif" width="15" height="15" border="0" alt="Next Topic" title="Next Topic" align="top" hspace="6" /></a></font></b></td>
+                <td align="right" bgcolor="midnightblue" nowrap><font face="Verdana, Arial, Helvetica" size="2">&nbsp;</font></td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font color="midnightblue" face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3594" title="View Surrogate's Profile" onMouseOver="(window.status='View Surrogate\'s Profile'); return true" onMouseOut="(window.status=''); return true">Surrogate</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>122 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" width="100%" colspan="2" valign="top">
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;11/09/2011&nbsp;:&nbsp; 06:40:19</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3594"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://http://odnoznachnost.narod.ru/wu3uo.html" target="_blank"><img src="icon_homepage.gif" width="15" height="15" border="0" alt="Visit Surrogate's Homepage" title="Visit Surrogate's Homepage" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=TopicQuote&amp;TOPIC_ID=2420&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> борюсь с Visio2010… <br />зачем-то там по умолчанию стоит в размерах листа галочка "Растянуть по необходимости", и нет опции "Такой же как размер листа принтера". <br />А именно такой размер листа рисунка нужен в 99% случаев.<br /><br />сваял макрос который снимает Autosize и приводит в соответствие размер листа рисунка и размер листа бумаги в принтере.<br /><pre id="code"><font face="courier" size="2" id="code">
+Sub auto()
+Dim pg As Page
+For Each pg In ActiveDocument.Pages
+pg.AutoSize = False
+'Application.ActivePage.PageSheet.CellsSRC(visSectionObject, visRowPage, visPageDrawSizeType).FormulaU = 0
+cr = pg.PageSheet.CellsSRC(visSectionObject, visRowPrintProperties, visPrintPropertiesPaperKind)
+' cr - аналог PaperKind shapesheet
+co = pg.PageSheet.CellsSRC(visSectionObject, visRowPrintProperties, visPrintPropertiesPageOrientation)
+' co - ориентация листа аналог PaperKind shapesheet
+ds = Replace(pg.PageSheet.CellsSRC(visSectionObject, visRowPage, visPageDrawingScale).FormulaU, " mm", "")
+' ds - размер рисунка, аналог DrawingScale shapesheet
+ps = Replace(pg.PageSheet.CellsSRC(visSectionObject, visRowPage, visPageScale).FormulaU, " mm", "")
+' ps - размер листа принтера, аналог PageScale shapesheet
+sc = ds / ps ' собственно масштаб
+    Select Case cr
+    Case 11
+    w = 148
+    h = 210
+    Case 9
+     w = 210
+    h = 297
+     Case 8
+    w = 297
+    h = 420
+    Case 66
+     w = 420
+    h = 594
+     Case 129
+      w = 594
+    h = 841
+    Case 127
+     w = 841
+    h = 1189
+   End Select
+   Select Case co
+   Case 1
+   pg.PageSheet.CellsSRC(visSectionObject, visRowPage, visPageWidth).FormulaU = w * sc & " mm"
+   pg.PageSheet.CellsSRC(visSectionObject, visRowPage, visPageHeight).FormulaU = h * sc & " mm"
+   Case 2
+   pg.PageSheet.CellsSRC(visSectionObject, visRowPage, visPageWidth).FormulaU = h * sc & " mm"
+   pg.PageSheet.CellsSRC(visSectionObject, visRowPage, visPageHeight).FormulaU = w * sc & " mm"
+   End Select
+Next pg
+End Sub
+</font id="code"></pre id="code"><br />проблема возникает на листах с масштабом. например при масштабе 1:50<br />DrawingScale = 1 m (или ds в макросе)<br />PageScale = 2 mm (или ps в макросе)<br />таким образом получаем ошибку при попытке поделить sc = ds/ps<br /><br />VBA вообще разбирается в единицах измерения ?<br /><br /><br />†</span id="msg"></font></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3594" title="View Surrogate's Profile" onMouseOver="(window.status='View Surrogate\'s Profile'); return true" onMouseOut="(window.status=''); return true">Surrogate</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>122 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="4779"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;11/09/2011&nbsp;:&nbsp; 07:29:36</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3594"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://http://odnoznachnost.narod.ru/wu3uo.html" target="_blank"><img src="icon_homepage.gif" width="15" height="15" border="0" alt="Visit Surrogate's Homepage" title="Visit Surrogate's Homepage" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4779&amp;TOPIC_ID=2420&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> нашел обходной путь: <br /><br />добавляю на каждую страницу раздел Scratch, в столбце A получаю отношение DrawingScale/PageScale. полученное значение и есть собственно масштаб :)<br /><br /><pre id="code"><font face="courier" size="2" id="code">Sub auto()
+Dim pg As Page
+For Each pg In ActiveDocument.Pages
+pg.PageSheet.OpenSheetWindow
+Application.ActiveWindow.Shape.AddSection visSectionScratch
+Application.ActiveWindow.Shape.AddRow visSectionScratch, visRowLast, visTagDefault
+Application.ActiveWindow.Shape.CellsSRC(visSectionScratch, 0, visScratchA).FormulaU = "DrawingScale/PageScale"
+Set sc = Application.ActiveWindow.Shape.CellsSRC(visSectionScratch, 0, visScratchA) ' собственно масштаб
+pg.AutoSize = False
+cr = pg.PageSheet.CellsSRC(visSectionObject, visRowPrintProperties, visPrintPropertiesPaperKind)
+' cr - аналог PaperKind shapesheet
+co = pg.PageSheet.CellsSRC(visSectionObject, visRowPrintProperties, visPrintPropertiesPageOrientation)
+' co - ориентация листа аналог PaperKind shapesheet
+ds = Replace(pg.PageSheet.CellsSRC(visSectionObject, visRowPage, visPageDrawingScale).FormulaU, " mm", "")
+' ds - размер рисунка, аналог DrawingScale shapesheet
+ps = Replace(pg.PageSheet.CellsSRC(visSectionObject, visRowPage, visPageScale).FormulaU, " mm", "")
+' ps - размер листа принтера, анало
+    Select Case cr
+    Case 11
+    w = 148
+    h = 210
+    Case 9
+     w = 210
+    h = 297
+     Case 8
+    w = 297
+    h = 420
+    Case 66
+     w = 420
+    h = 594
+     Case 129
+      w = 594
+    h = 841
+
+    Case 127
+     w = 841
+    h = 1189
+   End Select
+   Debug.Print w, h
+   Select Case co
+   Case 1
+   pg.PageSheet.CellsSRC(visSectionObject, visRowPage, visPageWidth).FormulaU = w * sc & " mm"
+   pg.PageSheet.CellsSRC(visSectionObject, visRowPage, visPageHeight).FormulaU = h * sc & " mm"
+   Case 2
+   pg.PageSheet.CellsSRC(visSectionObject, visRowPage, visPageWidth).FormulaU = h * sc & " mm"
+   pg.PageSheet.CellsSRC(visSectionObject, visRowPage, visPageHeight).FormulaU = w * sc & " mm"
+   End Select
+Application.ActiveWindow.Shape.DeleteSection visSectionScratch
+Application.ActiveWindow.Close
+Next pg
+End Sub</font id="code"></pre id="code"><br /><br />в конце раздел Scratch удаляю, вдруг еще раз придется макрос запускать в этом файле…<br /><br />вопрос остается: есть более простые способы конвертации единиц измерения ?<br /><br />†</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom"><hr noshade size="1" color="gainsboro"><font face="Verdana, Arial, Helvetica" size="1" color="midnightblue">Edited by - Surrogate on 11/09/2011  09:19:55</font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2420.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="whitesmoke" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1" title="View Tumanov's Profile" onMouseOver="(window.status='View Tumanov\'s Profile'); return true" onMouseOut="(window.status=''); return true">Tumanov</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>1198 Posts</small></font></p></td>
+                <td bgcolor="whitesmoke" height="100%" width="100%" colspan="2" valign="top"><a name="4780"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;11/09/2011&nbsp;:&nbsp; 18:03:57</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=1"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4780&amp;TOPIC_ID=2420&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Скорее всего использование шейп-листа всего лишь помогает Вам (неявно) привести величины к единиым единицам измерения.<br />Но вполне возможно, той же цели можно достичь, если считывать не формулы, а значения. При этом и то, и другое будет в дюймах.<br />ds = pg.PageSheet.CellsSRC(visSectionObject, visRowPage, visPageDrawingScale)<br />Вот так не пробовали?<br /></span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2420.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="gainsboro" valign="top" width="100" nowrap>
+                <p><font face="Verdana, Arial, Helvetica" size="2"><b><span class="spnMessageText"><a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3594" title="View Surrogate's Profile" onMouseOver="(window.status='View Surrogate\'s Profile'); return true" onMouseOut="(window.status=''); return true">Surrogate</a></span></b></font><br />
+                </p>
+                <p>
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>Russia</small></font><br />
+                <font color="midnightblue" face="Verdana, Arial, Helvetica" size="1"><small>122 Posts</small></font></p></td>
+                <td bgcolor="gainsboro" height="100%" width="100%" colspan="2" valign="top"><a name="4781"></a>
+                  <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top">
+                      <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;11/10/2011&nbsp;:&nbsp; 07:07:05</font>
+                      &nbsp;<a href="http://nikolay-256e33c/pop_profile.asp?mode=display&amp;id=3594"><img src="icon_profile.gif" width="15" height="15" border="0" alt="Show Profile" title="Show Profile" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://http://odnoznachnost.narod.ru/wu3uo.html" target="_blank"><img src="icon_homepage.gif" width="15" height="15" border="0" alt="Visit Surrogate's Homepage" title="Visit Surrogate's Homepage" align="absmiddle" hspace="6" /></a>
+                      &nbsp;<a href="http://nikolay-256e33c/post.asp?method=ReplyQuote&amp;REPLY_ID=4781&amp;TOPIC_ID=2420&amp;FORUM_ID=2"><img src="icon_reply_topic.gif" width="15" height="15" border="0" alt="Reply with Quote" title="Reply with Quote" align="absmiddle" hspace="6" /></a>
+                      <hr noshade size="1"></td>
+                    </tr>
+                    <tr>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Спасибо, Геннадий! именно с такого варианта я и начинал…<br /><br />но меня раздражали размеры в дюймах, поэтому я тут так намудрил :)<br />все равно размеры листов принтера в шейп-шите страницы хранятся в виде констант <b>PaperKind</b>. для масштабирования мне были нужны не размеры, а их <b>отношение</b> !!! <img src="icon_smile_blush.gif" width="15" height="15" border="0" alt="" title="" align="middle" /><br /><br /><br /><br />†</span id="msg"></font></td>
+                    </tr>
+                    <tr>
+                      <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2420.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" bgcolor="midnightblue" width="100" nowrap><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">&nbsp;</font></b></td>
+                <td align="center" bgcolor="midnightblue" width="100%"><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">
+                <a href="topic.asp@TOPIC_ID=2421.html"><img src="icon_go_left.gif" width="15" height="15" border="0" alt="Previous Topic" title="Previous Topic" align="top" hspace="6" /></a><b><font face="Verdana, Arial, Helvetica" size="2" color="mintcream">&nbsp;Topic&nbsp;</font></b><a href="topic.asp@TOPIC_ID=2418.html"><img src="icon_go_right.gif" width="15" height="15" border="0" alt="Next Topic" title="Next Topic" align="top" hspace="6" /></a></font></b></td>
+                <td align="right" bgcolor="midnightblue" nowrap><font face="Verdana, Arial, Helvetica" size="2">&nbsp;</font></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
+  <tr>
+    <td>
+      <table width="100%">
+        <tr>
+          <td align="center" valign="top" width="50%">
+          <font face="Verdana, Arial, Helvetica" size="2">
+          </font></td>
+          <td align="right" valign="top" width="50%" nowrap>
+          </td>
+        </tr>
+      </table>
