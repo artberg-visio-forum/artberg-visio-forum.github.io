@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<title>Visio - Копирование строки из Excel в CustomProperties</title>
+<title>Visio - РљРѕРїРёСЂРѕРІР°РЅРёРµ СЃС‚СЂРѕРєРё РёР· Excel РІ CustomProperties</title>
 <meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" /><script language="JavaScript" type="text/javascript">
 <!-- hide from JavaScript-challenged browsers
@@ -94,9 +94,9 @@ input.radio {background:lightsteelblue;color:#000000}
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
           <img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp.html">All Forums</a><br />
-          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">Категория Visio</a><br />
-          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Форум Вопросы и ответы</a><br />
-          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open_topic.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;Копирование строки из Excel в CustomProperties</font></td>
+          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">РљР°С‚РµРіРѕСЂРёСЏ Visio</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Р¤РѕСЂСѓРј Р’РѕРїСЂРѕСЃС‹ Рё РѕС‚РІРµС‚С‹</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open_topic.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;РљРѕРїРёСЂРѕРІР°РЅРёРµ СЃС‚СЂРѕРєРё РёР· Excel РІ CustomProperties</font></td>
           <td align="center" width="50%">
           <font face="Verdana, Arial, Helvetica" size="2">
           </font></td>
@@ -134,7 +134,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Доброе время суток.<br /><br />Столкнулся со следующей проблемой:<br /><br />Есть схема с большим количеством шейпов. У каждого шейпа - несколько свойств (Custom Properties):<br />Prop1 - String<br />Prop2 - Date<br />Prop3 - Number<br /><br />Пытаюсь заполнять эти значения данными из excel:<br /><br />Dim appExcel As Excel.Application<br />Dim xlBook As Excel.Workbook<br />Dim xlSheet As Excel.Worksheet<br />Dim str As String<br />Dim dat As Date<br />Dim nmb As Double<br />    <br />Set appExcel = CreateObject("excel.application")<br />appExcel.Visible = True<br />appExcel.Application.Workbooks.Open "c:\dev\data.xls"<br />Set xlSheet = appExcel.Worksheets("sheet1")<br />Set curShape = ActivePage.Shapes.Item("1111")<br />          <br />str = xlSheet.Cells(2, 3).Value<br />dat = xlSheet.Cells(2, 4).Value<br />nmb = xlSheet.Cells(2, 5).Value<br />curShape.Cells("Prop.Row_1.Value").Result(???) = str<br />curShape.Cells("Prop.Row_2.Value").Result(visDate) = dat<br />curShape.Cells("Prop.Row_3.Value").Result(visNumber) = nmb<br /><br />Проблема: не могу понять, как перенести строку. Вместо ??? пробовал указать visUnitsString и т.п.<br /><br />Поиском на форуме ответ не нашел =(<br />Заранее спасибо за любой комментарий!</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Р”РѕР±СЂРѕРµ РІСЂРµРјСЏ СЃСѓС‚РѕРє.<br /><br />РЎС‚РѕР»РєРЅСѓР»СЃСЏ СЃРѕ СЃР»РµРґСѓСЋС‰РµР№ РїСЂРѕР±Р»РµРјРѕР№:<br /><br />Р•СЃС‚СЊ СЃС…РµРјР° СЃ Р±РѕР»СЊС€РёРј РєРѕР»РёС‡РµСЃС‚РІРѕРј С€РµР№РїРѕРІ. РЈ РєР°Р¶РґРѕРіРѕ С€РµР№РїР° - РЅРµСЃРєРѕР»СЊРєРѕ СЃРІРѕР№СЃС‚РІ (Custom Properties):<br />Prop1 - String<br />Prop2 - Date<br />Prop3 - Number<br /><br />РџС‹С‚Р°СЋСЃСЊ Р·Р°РїРѕР»РЅСЏС‚СЊ СЌС‚Рё Р·РЅР°С‡РµРЅРёСЏ РґР°РЅРЅС‹РјРё РёР· excel:<br /><br />Dim appExcel As Excel.Application<br />Dim xlBook As Excel.Workbook<br />Dim xlSheet As Excel.Worksheet<br />Dim str As String<br />Dim dat As Date<br />Dim nmb As Double<br />    <br />Set appExcel = CreateObject("excel.application")<br />appExcel.Visible = True<br />appExcel.Application.Workbooks.Open "c:\dev\data.xls"<br />Set xlSheet = appExcel.Worksheets("sheet1")<br />Set curShape = ActivePage.Shapes.Item("1111")<br />          <br />str = xlSheet.Cells(2, 3).Value<br />dat = xlSheet.Cells(2, 4).Value<br />nmb = xlSheet.Cells(2, 5).Value<br />curShape.Cells("Prop.Row_1.Value").Result(???) = str<br />curShape.Cells("Prop.Row_2.Value").Result(visDate) = dat<br />curShape.Cells("Prop.Row_3.Value").Result(visNumber) = nmb<br /><br />РџСЂРѕР±Р»РµРјР°: РЅРµ РјРѕРіСѓ РїРѕРЅСЏС‚СЊ, РєР°Рє РїРµСЂРµРЅРµСЃС‚Рё СЃС‚СЂРѕРєСѓ. Р’РјРµСЃС‚Рѕ ??? РїСЂРѕР±РѕРІР°Р» СѓРєР°Р·Р°С‚СЊ visUnitsString Рё С‚.Рї.<br /><br />РџРѕРёСЃРєРѕРј РЅР° С„РѕСЂСѓРјРµ РѕС‚РІРµС‚ РЅРµ РЅР°С€РµР» =(<br />Р—Р°СЂР°РЅРµРµ СЃРїР°СЃРёР±Рѕ Р·Р° Р»СЋР±РѕР№ РєРѕРјРјРµРЅС‚Р°СЂРёР№!</span id="msg"></font></td>
                     </tr>
                   </table>
                 </td>
@@ -157,7 +157,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Попробуй вместо Result использовать Formula.<br />curShape.Cells("Prop.Row_1.Value").Formula = Chr(34) & str & Chr(34)<br />Chr(34) - это кавычки, при добавлении строки необходимо ее в них заключать</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> РџРѕРїСЂРѕР±СѓР№ РІРјРµСЃС‚Рѕ Result РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ Formula.<br />curShape.Cells("Prop.Row_1.Value").Formula = Chr(34) & str & Chr(34)<br />Chr(34) - СЌС‚Рѕ РєР°РІС‹С‡РєРё, РїСЂРё РґРѕР±Р°РІР»РµРЅРёРё СЃС‚СЂРѕРєРё РЅРµРѕР±С…РѕРґРёРјРѕ РµРµ РІ РЅРёС… Р·Р°РєР»СЋС‡Р°С‚СЊ</span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=689.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -181,7 +181,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Спасибо!<br />Все получилось.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> РЎРїР°СЃРёР±Рѕ!<br />Р’СЃРµ РїРѕР»СѓС‡РёР»РѕСЃСЊ.</span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=689.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -205,7 +205,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Господа,<br />вы не поверите, но появилась новая проблема: убрать кавычки :)<br /><br />Дело в том, что при копировании из Excel в CustProp с помощью добавления кавычек все работает отлично. Но назад данные пересылаются уже с кавычками. Видимо, следует либо убирать кавычки (метод, убирающий символ в строке по его положению я не нашел), либо пересмотреть способ решения задачи.<br /><br />Спасибо!</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Р“РѕСЃРїРѕРґР°,<br />РІС‹ РЅРµ РїРѕРІРµСЂРёС‚Рµ, РЅРѕ РїРѕСЏРІРёР»Р°СЃСЊ РЅРѕРІР°СЏ РїСЂРѕР±Р»РµРјР°: СѓР±СЂР°С‚СЊ РєР°РІС‹С‡РєРё :)<br /><br />Р”РµР»Рѕ РІ С‚РѕРј, С‡С‚Рѕ РїСЂРё РєРѕРїРёСЂРѕРІР°РЅРёРё РёР· Excel РІ CustProp СЃ РїРѕРјРѕС‰СЊСЋ РґРѕР±Р°РІР»РµРЅРёСЏ РєР°РІС‹С‡РµРє РІСЃРµ СЂР°Р±РѕС‚Р°РµС‚ РѕС‚Р»РёС‡РЅРѕ. РќРѕ РЅР°Р·Р°Рґ РґР°РЅРЅС‹Рµ РїРµСЂРµСЃС‹Р»Р°СЋС‚СЃСЏ СѓР¶Рµ СЃ РєР°РІС‹С‡РєР°РјРё. Р’РёРґРёРјРѕ, СЃР»РµРґСѓРµС‚ Р»РёР±Рѕ СѓР±РёСЂР°С‚СЊ РєР°РІС‹С‡РєРё (РјРµС‚РѕРґ, СѓР±РёСЂР°СЋС‰РёР№ СЃРёРјРІРѕР» РІ СЃС‚СЂРѕРєРµ РїРѕ РµРіРѕ РїРѕР»РѕР¶РµРЅРёСЋ СЏ РЅРµ РЅР°С€РµР»), Р»РёР±Рѕ РїРµСЂРµСЃРјРѕС‚СЂРµС‚СЊ СЃРїРѕСЃРѕР± СЂРµС€РµРЅРёСЏ Р·Р°РґР°С‡Рё.<br /><br />РЎРїР°СЃРёР±Рѕ!</span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=689.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -230,7 +230,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Стандартная VB функция Mid вырежет Вам из строки подстроку, начинающуюся со второго символа и заканчивающуюся за 1 символ до конца строки.<br />А в Visio SDK приведены функции прямого-обратного преобразования строк в строки Visio, которые работают даже в том случае, если внутри пересылаемой строки есть свои кавычки.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> РЎС‚Р°РЅРґР°СЂС‚РЅР°СЏ VB С„СѓРЅРєС†РёСЏ Mid РІС‹СЂРµР¶РµС‚ Р’Р°Рј РёР· СЃС‚СЂРѕРєРё РїРѕРґСЃС‚СЂРѕРєСѓ, РЅР°С‡РёРЅР°СЋС‰СѓСЋСЃСЏ СЃРѕ РІС‚РѕСЂРѕРіРѕ СЃРёРјРІРѕР»Р° Рё Р·Р°РєР°РЅС‡РёРІР°СЋС‰СѓСЋСЃСЏ Р·Р° 1 СЃРёРјРІРѕР» РґРѕ РєРѕРЅС†Р° СЃС‚СЂРѕРєРё.<br />Рђ РІ Visio SDK РїСЂРёРІРµРґРµРЅС‹ С„СѓРЅРєС†РёРё РїСЂСЏРјРѕРіРѕ-РѕР±СЂР°С‚РЅРѕРіРѕ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ СЃС‚СЂРѕРє РІ СЃС‚СЂРѕРєРё Visio, РєРѕС‚РѕСЂС‹Рµ СЂР°Р±РѕС‚Р°СЋС‚ РґР°Р¶Рµ РІ С‚РѕРј СЃР»СѓС‡Р°Рµ, РµСЃР»Рё РІРЅСѓС‚СЂРё РїРµСЂРµСЃС‹Р»Р°РµРјРѕР№ СЃС‚СЂРѕРєРё РµСЃС‚СЊ СЃРІРѕРё РєР°РІС‹С‡РєРё.</span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=689.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>

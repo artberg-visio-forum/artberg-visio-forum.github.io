@@ -94,8 +94,8 @@ input.radio {background:lightsteelblue;color:#000000}
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
           <img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp.html">All Forums</a><br />
-          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">Категория Visio</a><br />
-          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Форум Вопросы и ответы</a><br />
+          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">РљР°С‚РµРіРѕСЂРёСЏ Visio</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Р¤РѕСЂСѓРј Р’РѕРїСЂРѕСЃС‹ Рё РѕС‚РІРµС‚С‹</a><br />
           <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open_topic.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;VBAEnabled</font></td>
           <td align="center" width="50%">
           <font face="Verdana, Arial, Helvetica" size="2">
@@ -134,11 +134,11 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Добрый день!<br />Столкнулся с такой проблемой:<br />Пытаюсь из внешнего приложения запустить макрос в Visio-документе<br />Ссылка на макрос прописана в Cell.Formula в секции User-defined cells:<br />=RUNADDON("GANTT_M.NewMacros.Message")<br /><br />Тело макроса<br /><pre id="code"><font face="courier" size="2" id="code">
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Р”РѕР±СЂС‹Р№ РґРµРЅСЊ!<br />РЎС‚РѕР»РєРЅСѓР»СЃСЏ СЃ С‚Р°РєРѕР№ РїСЂРѕР±Р»РµРјРѕР№:<br />РџС‹С‚Р°СЋСЃСЊ РёР· РІРЅРµС€РЅРµРіРѕ РїСЂРёР»РѕР¶РµРЅРёСЏ Р·Р°РїСѓСЃС‚РёС‚СЊ РјР°РєСЂРѕСЃ РІ Visio-РґРѕРєСѓРјРµРЅС‚Рµ<br />РЎСЃС‹Р»РєР° РЅР° РјР°РєСЂРѕСЃ РїСЂРѕРїРёСЃР°РЅР° РІ Cell.Formula РІ СЃРµРєС†РёРё User-defined cells:<br />=RUNADDON("GANTT_M.NewMacros.Message")<br /><br />РўРµР»Рѕ РјР°РєСЂРѕСЃР°<br /><pre id="code"><font face="courier" size="2" id="code">
 Sub Message()
 MsgBox ("Test")
 End Sub
-</font id="code"></pre id="code"><br /><br />В Visio вызов отрабатывает, но когда вызываю CurrentCell.Trigger();<br />из моего приложения, макрос не запускается<br /><br />Еще заметил 2 интересные вещи<br /><br />1. Свойство application.VBAEnabled показывает false, хотя в самом <br />Visio - Tools - Options - Security - галка Enable MS VBA стоит <br /><br />2. Addons - из внешнего приложения запускаются без проблем<br /></span id="msg"></font></td>
+</font id="code"></pre id="code"><br /><br />Р’ Visio РІС‹Р·РѕРІ РѕС‚СЂР°Р±Р°С‚С‹РІР°РµС‚, РЅРѕ РєРѕРіРґР° РІС‹Р·С‹РІР°СЋ CurrentCell.Trigger();<br />РёР· РјРѕРµРіРѕ РїСЂРёР»РѕР¶РµРЅРёСЏ, РјР°РєСЂРѕСЃ РЅРµ Р·Р°РїСѓСЃРєР°РµС‚СЃСЏ<br /><br />Р•С‰Рµ Р·Р°РјРµС‚РёР» 2 РёРЅС‚РµСЂРµСЃРЅС‹Рµ РІРµС‰Рё<br /><br />1. РЎРІРѕР№СЃС‚РІРѕ application.VBAEnabled РїРѕРєР°Р·С‹РІР°РµС‚ false, С…РѕС‚СЏ РІ СЃР°РјРѕРј <br />Visio - Tools - Options - Security - РіР°Р»РєР° Enable MS VBA СЃС‚РѕРёС‚ <br /><br />2. Addons - РёР· РІРЅРµС€РЅРµРіРѕ РїСЂРёР»РѕР¶РµРЅРёСЏ Р·Р°РїСѓСЃРєР°СЋС‚СЃСЏ Р±РµР· РїСЂРѕР±Р»РµРј<br /></span id="msg"></font></td>
                     </tr>
                   </table>
                 </td>

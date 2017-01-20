@@ -94,8 +94,8 @@ input.radio {background:lightsteelblue;color:#000000}
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
           <img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp.html">All Forums</a><br />
-          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">Категория Visio</a><br />
-          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Форум Вопросы и ответы</a><br />
+          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">РљР°С‚РµРіРѕСЂРёСЏ Visio</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Р¤РѕСЂСѓРј Р’РѕРїСЂРѕСЃС‹ Рё РѕС‚РІРµС‚С‹</a><br />
           <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open_topic.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;Custom Proporites VBA</font></td>
           <td align="center" width="50%">
           <font face="Verdana, Arial, Helvetica" size="2">
@@ -135,7 +135,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Есть обьект shape как в него программно навтыкать кустомов?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Р•СЃС‚СЊ РѕР±СЊРµРєС‚ shape РєР°Рє РІ РЅРµРіРѕ РїСЂРѕРіСЂР°РјРјРЅРѕ РЅР°РІС‚С‹РєР°С‚СЊ РєСѓСЃС‚РѕРјРѕРІ?</span id="msg"></font></td>
                     </tr>
                   </table>
                 </td>
@@ -158,12 +158,12 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Вам поможет функция AddNamedRow:<br /><blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">retVal = object.AddNamedRow (Section, RowName, RowTag)<br />retVal - Integer. The row number of the new row.<br />object - Required. An expression that returns a Shape object.<br />Section - Required Integer. The section in which the row is to be added.<br />RowName - Required String. The name of the new row.<br />RowTag - Required Integer. The type of row to be added.<br /><hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote"><br /><br />для CustomProperties значение Section равно 243 (это можно посмотреть в хелпе самого Визио: Help -&gt; Developer Reference -&gt; Microsoft Office Visio Automation Reference -&gt; Enumerations - &gt; VisSectionIndices Constants)<br /><br />для RowTag подходит значение по умолчанию - 0 (Help -&gt; Developer Reference -&gt; Microsoft Office Visio Automation Reference -&gt; Enumerations - &gt; VisRowTags Constant)<br /><br />эти константы можно конечно найти и в пространстве имен Visio<br /><br />например:<br /><br /><pre id="code"><font face="courier" size="2" id="code">Visio.Shape shape;
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Р’Р°Рј РїРѕРјРѕР¶РµС‚ С„СѓРЅРєС†РёСЏ AddNamedRow:<br /><blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">retVal = object.AddNamedRow (Section, RowName, RowTag)<br />retVal - Integer. The row number of the new row.<br />object - Required. An expression that returns a Shape object.<br />Section - Required Integer. The section in which the row is to be added.<br />RowName - Required String. The name of the new row.<br />RowTag - Required Integer. The type of row to be added.<br /><hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote"><br /><br />РґР»СЏ CustomProperties Р·РЅР°С‡РµРЅРёРµ Section СЂР°РІРЅРѕ 243 (СЌС‚Рѕ РјРѕР¶РЅРѕ РїРѕСЃРјРѕС‚СЂРµС‚СЊ РІ С…РµР»РїРµ СЃР°РјРѕРіРѕ Р’РёР·РёРѕ: Help -&gt; Developer Reference -&gt; Microsoft Office Visio Automation Reference -&gt; Enumerations - &gt; VisSectionIndices Constants)<br /><br />РґР»СЏ RowTag РїРѕРґС…РѕРґРёС‚ Р·РЅР°С‡РµРЅРёРµ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ - 0 (Help -&gt; Developer Reference -&gt; Microsoft Office Visio Automation Reference -&gt; Enumerations - &gt; VisRowTags Constant)<br /><br />СЌС‚Рё РєРѕРЅСЃС‚Р°РЅС‚С‹ РјРѕР¶РЅРѕ РєРѕРЅРµС‡РЅРѕ РЅР°Р№С‚Рё Рё РІ РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІРµ РёРјРµРЅ Visio<br /><br />РЅР°РїСЂРёРјРµСЂ:<br /><br /><pre id="code"><font face="courier" size="2" id="code">Visio.Shape shape;
 int retVal;
 
-retVal = shape.AddNamedRow(243,"имя свойства", 0)
-//или
-retVal = shape.AddNamedRow(Visio.VisSectionIndices.visSectionProp,"имя свойства", Visio.VisRowTags.visTagDefault)</font id="code"></pre id="code">теперь у нас есть строка в CustomProperties шейпа с именем "имя свойства".<br />Изменять значение ее ячеек можно с помощью функции CellsSRC.</span id="msg"></font></td>
+retVal = shape.AddNamedRow(243,"РёРјСЏ СЃРІРѕР№СЃС‚РІР°", 0)
+//РёР»Рё
+retVal = shape.AddNamedRow(Visio.VisSectionIndices.visSectionProp,"РёРјСЏ СЃРІРѕР№СЃС‚РІР°", Visio.VisRowTags.visTagDefault)</font id="code"></pre id="code">С‚РµРїРµСЂСЊ Сѓ РЅР°СЃ РµСЃС‚СЊ СЃС‚СЂРѕРєР° РІ CustomProperties С€РµР№РїР° СЃ РёРјРµРЅРµРј "РёРјСЏ СЃРІРѕР№СЃС‚РІР°".<br />РР·РјРµРЅСЏС‚СЊ Р·РЅР°С‡РµРЅРёРµ РµРµ СЏС‡РµРµРє РјРѕР¶РЅРѕ СЃ РїРѕРјРѕС‰СЊСЋ С„СѓРЅРєС†РёРё CellsSRC.</span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom"><hr noshade size="1" color="gainsboro"><font face="Verdana, Arial, Helvetica" size="1" color="midnightblue">Edited by - mers on 09/23/2005  19:38:00</font></td>
@@ -191,7 +191,7 @@ retVal = shape.AddNamedRow(Visio.VisSectionIndices.visSectionProp,"имя свойства"
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> да, работает пасибо...<br /><br />А как присвоить тип новому свойству? <br />retVal = shape.AddNamedRow(243,"имя свойства", 0) - По умолчанию создает тип интегер для "имя свойства"<br /><br /></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> РґР°, СЂР°Р±РѕС‚Р°РµС‚ РїР°СЃРёР±Рѕ...<br /><br />Рђ РєР°Рє РїСЂРёСЃРІРѕРёС‚СЊ С‚РёРї РЅРѕРІРѕРјСѓ СЃРІРѕР№СЃС‚РІСѓ? <br />retVal = shape.AddNamedRow(243,"РёРјСЏ СЃРІРѕР№СЃС‚РІР°", 0) - РџРѕ СѓРјРѕР»С‡Р°РЅРёСЋ СЃРѕР·РґР°РµС‚ С‚РёРї РёРЅС‚РµРіРµСЂ РґР»СЏ "РёРјСЏ СЃРІРѕР№СЃС‚РІР°"<br /><br /></span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=637.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -216,7 +216,7 @@ retVal = shape.AddNamedRow(Visio.VisSectionIndices.visSectionProp,"имя свойства"
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Блин торможу, разобрался, тип этож блин и есть ровтаг =)</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Р‘Р»РёРЅ С‚РѕСЂРјРѕР¶Сѓ, СЂР°Р·РѕР±СЂР°Р»СЃСЏ, С‚РёРї СЌС‚РѕР¶ Р±Р»РёРЅ Рё РµСЃС‚СЊ СЂРѕРІС‚Р°Рі =)</span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=637.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>

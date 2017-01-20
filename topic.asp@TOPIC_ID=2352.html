@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<title>Visio - как сгруппировать содержимое коллекции Selection ?</title>
+<title>Visio - РєР°Рє СЃРіСЂСѓРїРїРёСЂРѕРІР°С‚СЊ СЃРѕРґРµСЂР¶РёРјРѕРµ РєРѕР»Р»РµРєС†РёРё Selection ?</title>
 <meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" /><script language="JavaScript" type="text/javascript">
 <!-- hide from JavaScript-challenged browsers
@@ -94,9 +94,9 @@ input.radio {background:lightsteelblue;color:#000000}
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
           <img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp.html">All Forums</a><br />
-          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">Категория Visio</a><br />
-          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Форум Вопросы и ответы</a><br />
-          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open_topic.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;как сгруппировать содержимое коллекции Selection ?</font></td>
+          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">РљР°С‚РµРіРѕСЂРёСЏ Visio</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Р¤РѕСЂСѓРј Р’РѕРїСЂРѕСЃС‹ Рё РѕС‚РІРµС‚С‹</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open_topic.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;РєР°Рє СЃРіСЂСѓРїРїРёСЂРѕРІР°С‚СЊ СЃРѕРґРµСЂР¶РёРјРѕРµ РєРѕР»Р»РµРєС†РёРё Selection ?</font></td>
           <td align="center" width="50%">
           <font face="Verdana, Arial, Helvetica" size="2">
           </font></td>
@@ -136,7 +136,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Для копирования содержимого страницы из существующего файла в новый, я написал макрос. макрос записан в стенсиле.<br /><br />Function GetRacks() ' получить фасады шкафов из существующего файла<br />On Error GoTo errHandle<br />Dim X As Integer<br />Debug.Print Path<br />Application.Documents.OpenEx "D:\RACKS\2.vsd", visOpenRO ' открыть документ содержащий фасады шкафов<br />Application.ActiveWindow.SelectAll ' выделить все в открытом документе<br />ActiveWindow.DeselectAll ' сбросить выделение <br />For X = Application.ActiveWindow.Page.Shapes.Count To 2 Step -1 ' перебор шейпов на активной странице<br />Debug.Print X<br />ActiveWindow.Select Application.ActiveWindow.Page.Shapes.ItemFromID(X), 1024 ' отбрасывание шейпов находящихся внутри группы<br />Next X<br />Application.ActiveWindow.Selection.Copy ' копирование содержимого коллекции Selection в буфер обмена<br />Application.ActiveWindow.Close ' закрыть документ содержащий фасады шкафов<br />Exit Function<br />errHandle:<br />MsgBox Err.Description, vbCritical, "Ошибка №" & Err.Number<br />End Function<br /><br />Sub MACRO1()<br />GetRacks ' вызов функции GetRacks<br />Application.ActiveWindow.Page.Paste ' вставить из буфера обмена<br />ActiveDocument.Pages(1).Shapes("Sheet.1").Delete ' удалить sheet.1<br />ActiveDocument.Pages(1).Shapes("Sheet.2").Delete ' удалить sheet.2<br />End Sub<br /><br />содержимое файла он копирует и вставляет! <br /><br />вопрос:<br />как сгруппировать содержимое коллекции Selection ?<br /></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Р”Р»СЏ РєРѕРїРёСЂРѕРІР°РЅРёСЏ СЃРѕРґРµСЂР¶РёРјРѕРіРѕ СЃС‚СЂР°РЅРёС†С‹ РёР· СЃСѓС‰РµСЃС‚РІСѓСЋС‰РµРіРѕ С„Р°Р№Р»Р° РІ РЅРѕРІС‹Р№, СЏ РЅР°РїРёСЃР°Р» РјР°РєСЂРѕСЃ. РјР°РєСЂРѕСЃ Р·Р°РїРёСЃР°РЅ РІ СЃС‚РµРЅСЃРёР»Рµ.<br /><br />Function GetRacks() ' РїРѕР»СѓС‡РёС‚СЊ С„Р°СЃР°РґС‹ С€РєР°С„РѕРІ РёР· СЃСѓС‰РµСЃС‚РІСѓСЋС‰РµРіРѕ С„Р°Р№Р»Р°<br />On Error GoTo errHandle<br />Dim X As Integer<br />Debug.Print Path<br />Application.Documents.OpenEx "D:\RACKS\2.vsd", visOpenRO ' РѕС‚РєСЂС‹С‚СЊ РґРѕРєСѓРјРµРЅС‚ СЃРѕРґРµСЂР¶Р°С‰РёР№ С„Р°СЃР°РґС‹ С€РєР°С„РѕРІ<br />Application.ActiveWindow.SelectAll ' РІС‹РґРµР»РёС‚СЊ РІСЃРµ РІ РѕС‚РєСЂС‹С‚РѕРј РґРѕРєСѓРјРµРЅС‚Рµ<br />ActiveWindow.DeselectAll ' СЃР±СЂРѕСЃРёС‚СЊ РІС‹РґРµР»РµРЅРёРµ <br />For X = Application.ActiveWindow.Page.Shapes.Count To 2 Step -1 ' РїРµСЂРµР±РѕСЂ С€РµР№РїРѕРІ РЅР° Р°РєС‚РёРІРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ<br />Debug.Print X<br />ActiveWindow.Select Application.ActiveWindow.Page.Shapes.ItemFromID(X), 1024 ' РѕС‚Р±СЂР°СЃС‹РІР°РЅРёРµ С€РµР№РїРѕРІ РЅР°С…РѕРґСЏС‰РёС…СЃСЏ РІРЅСѓС‚СЂРё РіСЂСѓРїРїС‹<br />Next X<br />Application.ActiveWindow.Selection.Copy ' РєРѕРїРёСЂРѕРІР°РЅРёРµ СЃРѕРґРµСЂР¶РёРјРѕРіРѕ РєРѕР»Р»РµРєС†РёРё Selection РІ Р±СѓС„РµСЂ РѕР±РјРµРЅР°<br />Application.ActiveWindow.Close ' Р·Р°РєСЂС‹С‚СЊ РґРѕРєСѓРјРµРЅС‚ СЃРѕРґРµСЂР¶Р°С‰РёР№ С„Р°СЃР°РґС‹ С€РєР°С„РѕРІ<br />Exit Function<br />errHandle:<br />MsgBox Err.Description, vbCritical, "РћС€РёР±РєР° в„–" & Err.Number<br />End Function<br /><br />Sub MACRO1()<br />GetRacks ' РІС‹Р·РѕРІ С„СѓРЅРєС†РёРё GetRacks<br />Application.ActiveWindow.Page.Paste ' РІСЃС‚Р°РІРёС‚СЊ РёР· Р±СѓС„РµСЂР° РѕР±РјРµРЅР°<br />ActiveDocument.Pages(1).Shapes("Sheet.1").Delete ' СѓРґР°Р»РёС‚СЊ sheet.1<br />ActiveDocument.Pages(1).Shapes("Sheet.2").Delete ' СѓРґР°Р»РёС‚СЊ sheet.2<br />End Sub<br /><br />СЃРѕРґРµСЂР¶РёРјРѕРµ С„Р°Р№Р»Р° РѕРЅ РєРѕРїРёСЂСѓРµС‚ Рё РІСЃС‚Р°РІР»СЏРµС‚! <br /><br />РІРѕРїСЂРѕСЃ:<br />РєР°Рє СЃРіСЂСѓРїРїРёСЂРѕРІР°С‚СЊ СЃРѕРґРµСЂР¶РёРјРѕРµ РєРѕР»Р»РµРєС†РёРё Selection ?<br /></span id="msg"></font></td>
                     </tr>
                   </table>
                 </td>
@@ -184,7 +184,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> я пробовал selection.group. Вылетает такая вот ошибка <br /><br /><img src="http://odnoznachnost.narod.ru/images/err2032465766.png" border="0"><br /><br />мне кажется, что беда в том что при группировке образуется новый шейп.<br />а я не знаю как его программно создать и засунуть группу в этот новый шейп ?<br /></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> СЏ РїСЂРѕР±РѕРІР°Р» selection.group. Р’С‹Р»РµС‚Р°РµС‚ С‚Р°РєР°СЏ РІРѕС‚ РѕС€РёР±РєР° <br /><br /><img src="http://odnoznachnost.narod.ru/images/err2032465766.png" border="0"><br /><br />РјРЅРµ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ Р±РµРґР° РІ С‚РѕРј С‡С‚Рѕ РїСЂРё РіСЂСѓРїРїРёСЂРѕРІРєРµ РѕР±СЂР°Р·СѓРµС‚СЃСЏ РЅРѕРІС‹Р№ С€РµР№Рї.<br />Р° СЏ РЅРµ Р·РЅР°СЋ РєР°Рє РµРіРѕ РїСЂРѕРіСЂР°РјРјРЅРѕ СЃРѕР·РґР°С‚СЊ Рё Р·Р°СЃСѓРЅСѓС‚СЊ РіСЂСѓРїРїСѓ РІ СЌС‚РѕС‚ РЅРѕРІС‹Р№ С€РµР№Рї ?<br /></span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom"><hr noshade size="1" color="whitesmoke"><font face="Verdana, Arial, Helvetica" size="1" color="midnightblue">Edited by - Surrogate on 05/28/2010  12:19:26</font></td>
@@ -212,7 +212,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Через Set<br />Set vsoGroupShape = vsoSelection.Group <br />vsoGroupShape - это как раз и будет новый шейп-группа.<br /><br /></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Р§РµСЂРµР· Set<br />Set vsoGroupShape = vsoSelection.Group <br />vsoGroupShape - СЌС‚Рѕ РєР°Рє СЂР°Р· Рё Р±СѓРґРµС‚ РЅРѕРІС‹Р№ С€РµР№Рї-РіСЂСѓРїРїР°.<br /><br /></span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2352.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -238,7 +238,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <font size="5">Спасибо!</font id="size5"><br /><br /><font size="3">а как можно добраться до шейпов вложенных в группу ? я то использовал visSelSkipSub, <br /> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote"><pre id="code"><font face="courier" size="2" id="code">ActiveWindow.Select Application.ActiveWindow.Page.Shapes.ItemFromID(X), 1024 ' отбрасывание шейпов находящихся внутри группы</font id="code"></pre id="code"><hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br />но оказалось что Visio само по умолчанию не влезает внутрь группы ! <br />Теперь мне вдруг понадобилось внутрь группы забраться :)</font id="size3"></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <font size="5">РЎРїР°СЃРёР±Рѕ!</font id="size5"><br /><br /><font size="3">Р° РєР°Рє РјРѕР¶РЅРѕ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ С€РµР№РїРѕРІ РІР»РѕР¶РµРЅРЅС‹С… РІ РіСЂСѓРїРїСѓ ? СЏ С‚Рѕ РёСЃРїРѕР»СЊР·РѕРІР°Р» visSelSkipSub, <br /> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote"><pre id="code"><font face="courier" size="2" id="code">ActiveWindow.Select Application.ActiveWindow.Page.Shapes.ItemFromID(X), 1024 ' РѕС‚Р±СЂР°СЃС‹РІР°РЅРёРµ С€РµР№РїРѕРІ РЅР°С…РѕРґСЏС‰РёС…СЃСЏ РІРЅСѓС‚СЂРё РіСЂСѓРїРїС‹</font id="code"></pre id="code"><hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br />РЅРѕ РѕРєР°Р·Р°Р»РѕСЃСЊ С‡С‚Рѕ Visio СЃР°РјРѕ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ РЅРµ РІР»РµР·Р°РµС‚ РІРЅСѓС‚СЂСЊ РіСЂСѓРїРїС‹ ! <br />РўРµРїРµСЂСЊ РјРЅРµ РІРґСЂСѓРі РїРѕРЅР°РґРѕР±РёР»РѕСЃСЊ РІРЅСѓС‚СЂСЊ РіСЂСѓРїРїС‹ Р·Р°Р±СЂР°С‚СЊСЃСЏ :)</font id="size3"></span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom"><hr noshade size="1" color="whitesmoke"><font face="Verdana, Arial, Helvetica" size="1" color="midnightblue">Edited by - Surrogate on 05/30/2010  17:08:44</font></td>
@@ -266,7 +266,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">а как можно добраться до шейпов вложенных в группу<hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br />Может я вопрос не понял...<br />Если буквально, то у шейпа-группы есть коллекция Shapes (так же, как и у страницы). К членам этой коллекции можно обращаться. Выглядеть будет примерно так:<br />ActivePage.Shapes(1).Shapes(j)<br />(если первый шейп на странице - группа).</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">Р° РєР°Рє РјРѕР¶РЅРѕ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ С€РµР№РїРѕРІ РІР»РѕР¶РµРЅРЅС‹С… РІ РіСЂСѓРїРїСѓ<hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br />РњРѕР¶РµС‚ СЏ РІРѕРїСЂРѕСЃ РЅРµ РїРѕРЅСЏР»...<br />Р•СЃР»Рё Р±СѓРєРІР°Р»СЊРЅРѕ, С‚Рѕ Сѓ С€РµР№РїР°-РіСЂСѓРїРїС‹ РµСЃС‚СЊ РєРѕР»Р»РµРєС†РёСЏ Shapes (С‚Р°Рє Р¶Рµ, РєР°Рє Рё Сѓ СЃС‚СЂР°РЅРёС†С‹). Рљ С‡Р»РµРЅР°Рј СЌС‚РѕР№ РєРѕР»Р»РµРєС†РёРё РјРѕР¶РЅРѕ РѕР±СЂР°С‰Р°С‚СЊСЃСЏ. Р’С‹РіР»СЏРґРµС‚СЊ Р±СѓРґРµС‚ РїСЂРёРјРµСЂРЅРѕ С‚Р°Рє:<br />ActivePage.Shapes(1).Shapes(j)<br />(РµСЃР»Рё РїРµСЂРІС‹Р№ С€РµР№Рї РЅР° СЃС‚СЂР°РЅРёС†Рµ - РіСЂСѓРїРїР°).</span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2352.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -292,16 +292,16 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Да, именно это я и имел в виду!<br /><br />и снова вопросы:<br />фрагмент кода в котором я хотел удалить все шейпы содержащие текст - "xxx"<br /><pre id="code"><font face="courier" size="2" id="code">For y = 1 To ActivePage.Shapes.Count ' перебор шейпов на листе
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Р”Р°, РёРјРµРЅРЅРѕ СЌС‚Рѕ СЏ Рё РёРјРµР» РІ РІРёРґСѓ!<br /><br />Рё СЃРЅРѕРІР° РІРѕРїСЂРѕСЃС‹:<br />С„СЂР°РіРјРµРЅС‚ РєРѕРґР° РІ РєРѕС‚РѕСЂРѕРј СЏ С…РѕС‚РµР» СѓРґР°Р»РёС‚СЊ РІСЃРµ С€РµР№РїС‹ СЃРѕРґРµСЂР¶Р°С‰РёРµ С‚РµРєСЃС‚ - "xxx"<br /><pre id="code"><font face="courier" size="2" id="code">For y = 1 To ActivePage.Shapes.Count ' РїРµСЂРµР±РѕСЂ С€РµР№РїРѕРІ РЅР° Р»РёСЃС‚Рµ
     Debug.Print y, ActivePage.Shapes(y).Name
-    For z = 1 To ActivePage.Shapes(y).shapes.count ' перебор шейпов внутри группы y
+    For z = 1 To ActivePage.Shapes(y).shapes.count ' РїРµСЂРµР±РѕСЂ С€РµР№РїРѕРІ РІРЅСѓС‚СЂРё РіСЂСѓРїРїС‹ y
         If ActivePage.Shapes(y).Shapes(z).text = "xxx" Then 
         Application.ActiveWindow.Page.Shapes(y).Delete
         Exit For
         Else
         End If
     Next z
- Next y</font id="code"></pre id="code"><br /><br />в моем примере произошла ошибка в цикле еще на первом же шейпе, в котором не было вложенных шейпов. <br /><br />можно ли как то воспользоваться коллекцией Shapes<br />например присвоить y-тому шейпу некое имя например aGrp, и просматривать его содержимое циклом вида ?<br /><pre id="code"><font face="courier" size="2" id="code">For each aShp in aGrp</font id="code"></pre id="code"><br />хотя там тоже возможно будет ошибка в цикле, если шейп(y) не будет группой <img src="icon_smile_blackeye.gif" width="15" height="15" border="0" alt="" title="" align="middle" /></span id="msg"></font></td>
+ Next y</font id="code"></pre id="code"><br /><br />РІ РјРѕРµРј РїСЂРёРјРµСЂРµ РїСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР° РІ С†РёРєР»Рµ РµС‰Рµ РЅР° РїРµСЂРІРѕРј Р¶Рµ С€РµР№РїРµ, РІ РєРѕС‚РѕСЂРѕРј РЅРµ Р±С‹Р»Рѕ РІР»РѕР¶РµРЅРЅС‹С… С€РµР№РїРѕРІ. <br /><br />РјРѕР¶РЅРѕ Р»Рё РєР°Рє С‚Рѕ РІРѕСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РєРѕР»Р»РµРєС†РёРµР№ Shapes<br />РЅР°РїСЂРёРјРµСЂ РїСЂРёСЃРІРѕРёС‚СЊ y-С‚РѕРјСѓ С€РµР№РїСѓ РЅРµРєРѕРµ РёРјСЏ РЅР°РїСЂРёРјРµСЂ aGrp, Рё РїСЂРѕСЃРјР°С‚СЂРёРІР°С‚СЊ РµРіРѕ СЃРѕРґРµСЂР¶РёРјРѕРµ С†РёРєР»РѕРј РІРёРґР° ?<br /><pre id="code"><font face="courier" size="2" id="code">For each aShp in aGrp</font id="code"></pre id="code"><br />С…РѕС‚СЏ С‚Р°Рј С‚РѕР¶Рµ РІРѕР·РјРѕР¶РЅРѕ Р±СѓРґРµС‚ РѕС€РёР±РєР° РІ С†РёРєР»Рµ, РµСЃР»Рё С€РµР№Рї(y) РЅРµ Р±СѓРґРµС‚ РіСЂСѓРїРїРѕР№ <img src="icon_smile_blackeye.gif" width="15" height="15" border="0" alt="" title="" align="middle" /></span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom"><hr noshade size="1" color="whitesmoke"><font face="Verdana, Arial, Helvetica" size="1" color="midnightblue">Edited by - Surrogate on 05/30/2010  19:57:05</font></td>
@@ -329,7 +329,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Можно.<br />Только сначала хорошо бы проверить, является ли шейп группой.<br />Это делается опросом свойства Type.<br />Для группы оно вернет значение visTypeGroup. Кажется 2.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> РњРѕР¶РЅРѕ.<br />РўРѕР»СЊРєРѕ СЃРЅР°С‡Р°Р»Р° С…РѕСЂРѕС€Рѕ Р±С‹ РїСЂРѕРІРµСЂРёС‚СЊ, СЏРІР»СЏРµС‚СЃСЏ Р»Рё С€РµР№Рї РіСЂСѓРїРїРѕР№.<br />Р­С‚Рѕ РґРµР»Р°РµС‚СЃСЏ РѕРїСЂРѕСЃРѕРј СЃРІРѕР№СЃС‚РІР° Type.<br />Р”Р»СЏ РіСЂСѓРїРїС‹ РѕРЅРѕ РІРµСЂРЅРµС‚ Р·РЅР°С‡РµРЅРёРµ visTypeGroup. РљР°Р¶РµС‚СЃСЏ 2.</span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2352.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -355,7 +355,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Еще раз спасибо !<br /><br />а можно программно исключать шейпы из коллекции Selection? <br />например, у меня в файлах из которых я копирую есть шейпы расположенные за пределами печатаемого листа. <br />Можно ли по условию не вхождения в печатаемую область листа PinX и PinY шейпа, исключить их из Selection?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Р•С‰Рµ СЂР°Р· СЃРїР°СЃРёР±Рѕ !<br /><br />Р° РјРѕР¶РЅРѕ РїСЂРѕРіСЂР°РјРјРЅРѕ РёСЃРєР»СЋС‡Р°С‚СЊ С€РµР№РїС‹ РёР· РєРѕР»Р»РµРєС†РёРё Selection? <br />РЅР°РїСЂРёРјРµСЂ, Сѓ РјРµРЅСЏ РІ С„Р°Р№Р»Р°С… РёР· РєРѕС‚РѕСЂС‹С… СЏ РєРѕРїРёСЂСѓСЋ РµСЃС‚СЊ С€РµР№РїС‹ СЂР°СЃРїРѕР»РѕР¶РµРЅРЅС‹Рµ Р·Р° РїСЂРµРґРµР»Р°РјРё РїРµС‡Р°С‚Р°РµРјРѕРіРѕ Р»РёСЃС‚Р°. <br />РњРѕР¶РЅРѕ Р»Рё РїРѕ СѓСЃР»РѕРІРёСЋ РЅРµ РІС…РѕР¶РґРµРЅРёСЏ РІ РїРµС‡Р°С‚Р°РµРјСѓСЋ РѕР±Р»Р°СЃС‚СЊ Р»РёСЃС‚Р° PinX Рё PinY С€РµР№РїР°, РёСЃРєР»СЋС‡РёС‚СЊ РёС… РёР· Selection?</span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2352.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -380,7 +380,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Исключаются тем же методом Select, только параметр SelectAction должен быть установлен в visDeselect. Примерно так:<br />ActiveWindow.Select vsoShapes(3), visDeselect <br />А выход за пределы листа придется проверять перебором по одному шейпу.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> РСЃРєР»СЋС‡Р°СЋС‚СЃСЏ С‚РµРј Р¶Рµ РјРµС‚РѕРґРѕРј Select, С‚РѕР»СЊРєРѕ РїР°СЂР°РјРµС‚СЂ SelectAction РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ СѓСЃС‚Р°РЅРѕРІР»РµРЅ РІ visDeselect. РџСЂРёРјРµСЂРЅРѕ С‚Р°Рє:<br />ActiveWindow.Select vsoShapes(3), visDeselect <br />Рђ РІС‹С…РѕРґ Р·Р° РїСЂРµРґРµР»С‹ Р»РёСЃС‚Р° РїСЂРёРґРµС‚СЃСЏ РїСЂРѕРІРµСЂСЏС‚СЊ РїРµСЂРµР±РѕСЂРѕРј РїРѕ РѕРґРЅРѕРјСѓ С€РµР№РїСѓ.</span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2352.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>

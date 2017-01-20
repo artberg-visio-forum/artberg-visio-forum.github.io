@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<title>Visio - Полилиния в Visio из Delphi</title>
+<title>Visio - РџРѕР»РёР»РёРЅРёСЏ РІ Visio РёР· Delphi</title>
 <meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" /><script language="JavaScript" type="text/javascript">
 <!-- hide from JavaScript-challenged browsers
@@ -94,9 +94,9 @@ input.radio {background:lightsteelblue;color:#000000}
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
           <img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp.html">All Forums</a><br />
-          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">Категория Visio</a><br />
-          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Форум Вопросы и ответы</a><br />
-          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open_topic.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;Полилиния в Visio из Delphi</font></td>
+          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">РљР°С‚РµРіРѕСЂРёСЏ Visio</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Р¤РѕСЂСѓРј Р’РѕРїСЂРѕСЃС‹ Рё РѕС‚РІРµС‚С‹</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open_topic.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;РџРѕР»РёР»РёРЅРёСЏ РІ Visio РёР· Delphi</font></td>
           <td align="center" width="50%">
           <font face="Verdana, Arial, Helvetica" size="2">
           </font></td>
@@ -135,7 +135,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> VisioApplication1.ActivePage.DrawPolyline(xyArray, visPolyline1D);<br />Проблема с заполнением массива xyArray!!!</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> VisioApplication1.ActivePage.DrawPolyline(xyArray, visPolyline1D);<br />РџСЂРѕР±Р»РµРјР° СЃ Р·Р°РїРѕР»РЅРµРЅРёРµРј РјР°СЃСЃРёРІР° xyArray!!!</span id="msg"></font></td>
                     </tr>
                   </table>
                 </td>
@@ -157,7 +157,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> // в начале указываем использование сборки<br />...<br />using System.Runtime.InteropServices;<br />...<br />public class DrawPolyLine<br />{<br />private void newDraw(...)<br />{<br />...<br />// создаём массив для координат X и Y<br />double[] xyArrDouble = new double[count];<br /><br />// далее заполняем его<br />...<br /><br />// создаём массив для передачи в функцию полилинии<br />Array xyArray = new Array[count];<br /><br />// вызов функции преобразования массива<br />xyArray = convertArray(xyArrDouble);<br /><br />// рисуем полилинию <br />shapeRegion = ParentVisioApplication.ActivePage.DrawPolyline(                                     ref xyArray,(short)Visio.VisDrawSplineFlags.visPolyline1D);        <br />...<br />} // конец newDraw(...)<br /><br />// функция преобразования<br />private Array convertArray( [MarshalAs(UnmanagedType.SafeArray,SafeArraySubType=VarEnum.VT_R8)] double[] ar)<br />{<br />     return ar;<br />} // конец convertArray(...)<br />} // конец DrawPolyLine</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> // РІ РЅР°С‡Р°Р»Рµ СѓРєР°Р·С‹РІР°РµРј РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ СЃР±РѕСЂРєРё<br />...<br />using System.Runtime.InteropServices;<br />...<br />public class DrawPolyLine<br />{<br />private void newDraw(...)<br />{<br />...<br />// СЃРѕР·РґР°С‘Рј РјР°СЃСЃРёРІ РґР»СЏ РєРѕРѕСЂРґРёРЅР°С‚ X Рё Y<br />double[] xyArrDouble = new double[count];<br /><br />// РґР°Р»РµРµ Р·Р°РїРѕР»РЅСЏРµРј РµРіРѕ<br />...<br /><br />// СЃРѕР·РґР°С‘Рј РјР°СЃСЃРёРІ РґР»СЏ РїРµСЂРµРґР°С‡Рё РІ С„СѓРЅРєС†РёСЋ РїРѕР»РёР»РёРЅРёРё<br />Array xyArray = new Array[count];<br /><br />// РІС‹Р·РѕРІ С„СѓРЅРєС†РёРё РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ РјР°СЃСЃРёРІР°<br />xyArray = convertArray(xyArrDouble);<br /><br />// СЂРёСЃСѓРµРј РїРѕР»РёР»РёРЅРёСЋ <br />shapeRegion = ParentVisioApplication.ActivePage.DrawPolyline(                                     ref xyArray,(short)Visio.VisDrawSplineFlags.visPolyline1D);        <br />...<br />} // РєРѕРЅРµС† newDraw(...)<br /><br />// С„СѓРЅРєС†РёСЏ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ<br />private Array convertArray( [MarshalAs(UnmanagedType.SafeArray,SafeArraySubType=VarEnum.VT_R8)] double[] ar)<br />{<br />     return ar;<br />} // РєРѕРЅРµС† convertArray(...)<br />} // РєРѕРЅРµС† DrawPolyLine</span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom"><hr noshade size="1" color="gainsboro"><font face="Verdana, Arial, Helvetica" size="1" color="midnightblue">Edited by - denizz on 12/15/2005  12:13:08</font></td>

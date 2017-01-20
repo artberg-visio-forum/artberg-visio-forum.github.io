@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<title>Visio - PasteSpecial из Excel в Visio</title>
+<title>Visio - PasteSpecial РёР· Excel РІ Visio</title>
 <meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" /><script language="JavaScript" type="text/javascript">
 <!-- hide from JavaScript-challenged browsers
@@ -94,9 +94,9 @@ input.radio {background:lightsteelblue;color:#000000}
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
           <img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp.html">All Forums</a><br />
-          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">Категория Visio</a><br />
-          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Форум Вопросы и ответы</a><br />
-          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open_topic.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;PasteSpecial из Excel в Visio</font></td>
+          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">РљР°С‚РµРіРѕСЂРёСЏ Visio</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Р¤РѕСЂСѓРј Р’РѕРїСЂРѕСЃС‹ Рё РѕС‚РІРµС‚С‹</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open_topic.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;PasteSpecial РёР· Excel РІ Visio</font></td>
           <td align="center" width="50%">
           <font face="Verdana, Arial, Helvetica" size="2">
           </font></td>
@@ -136,22 +136,22 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Есть задача - скопировать диапазон значений в Excel в буфер обмена и вставить специальной вставкой в один из шейпов Visio (например с ID = 80)<br /><br />с выделением диапазона Excel нет проблем <br /><pre id="code"><font face="courier" size="2" id="code">
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Р•СЃС‚СЊ Р·Р°РґР°С‡Р° - СЃРєРѕРїРёСЂРѕРІР°С‚СЊ РґРёР°РїР°Р·РѕРЅ Р·РЅР°С‡РµРЅРёР№ РІ Excel РІ Р±СѓС„РµСЂ РѕР±РјРµРЅР° Рё РІСЃС‚Р°РІРёС‚СЊ СЃРїРµС†РёР°Р»СЊРЅРѕР№ РІСЃС‚Р°РІРєРѕР№ РІ РѕРґРёРЅ РёР· С€РµР№РїРѕРІ Visio (РЅР°РїСЂРёРјРµСЂ СЃ ID = 80)<br /><br />СЃ РІС‹РґРµР»РµРЅРёРµРј РґРёР°РїР°Р·РѕРЅР° Excel РЅРµС‚ РїСЂРѕР±Р»РµРј <br /><pre id="code"><font face="courier" size="2" id="code">
 Sub ex()
-' выделение и копирование диапазона значений
+' РІС‹РґРµР»РµРЅРёРµ Рё РєРѕРїРёСЂРѕРІР°РЅРёРµ РґРёР°РїР°Р·РѕРЅР° Р·РЅР°С‡РµРЅРёР№
 Dim C1 As Object
 Dim W1 As Excel.Workbook
 Dim rect As Shape
 Dim txt As String
 Set C1 = CreateObject("Excel.Application")
-Set W1 = C1.Workbooks.Open("b:\VBA\Макросы\test.xls")
+Set W1 = C1.Workbooks.Open("b:\VBA\РњР°РєСЂРѕСЃС‹\test.xls")
 Range("A1:B20").Select
     Selection.Copy
 W1.Close
 Set W1 = Nothing
 Set C1 = Nothing
 End Sub
-</font id="code"></pre id="code"><br /><br />а вот со спецвставкой не получается, беда с синтаксисом<br /><pre id="code"><font face="courier" size="2" id="code">Sub shizio()
+</font id="code"></pre id="code"><br /><br />Р° РІРѕС‚ СЃРѕ СЃРїРµС†РІСЃС‚Р°РІРєРѕР№ РЅРµ РїРѕР»СѓС‡Р°РµС‚СЃСЏ, Р±РµРґР° СЃ СЃРёРЅС‚Р°РєСЃРёСЃРѕРј<br /><pre id="code"><font face="courier" size="2" id="code">Sub shizio()
 Dim pg As Page
 Dim sel As Selection
 Dim rect As Shape
@@ -161,7 +161,7 @@ Set vsoCharacters1 = Application.ActiveWindow.Page.Shapes.ItemFromID(80).Charact
 ex
 ActiveWindow.SelectedText = vsoCharacters1
 vsoCharacters1.Paste
-End Sub</font id="code"></pre id="code"><br /><br />получается только с vsoCharacters1.Paste. метод PasteSpecial не работает: vsoCharacters1.PasteSpecial, vsoCharacters1.PasteSpecial (7) и vsoCharacters1.visPasteOEMText<br /><br />Люди добрые, подскажите как правильно сделать специальную вставку ?</span id="msg"></font></td>
+End Sub</font id="code"></pre id="code"><br /><br />РїРѕР»СѓС‡Р°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ СЃ vsoCharacters1.Paste. РјРµС‚РѕРґ PasteSpecial РЅРµ СЂР°Р±РѕС‚Р°РµС‚: vsoCharacters1.PasteSpecial, vsoCharacters1.PasteSpecial (7) Рё vsoCharacters1.visPasteOEMText<br /><br />Р›СЋРґРё РґРѕР±СЂС‹Рµ, РїРѕРґСЃРєР°Р¶РёС‚Рµ РєР°Рє РїСЂР°РІРёР»СЊРЅРѕ СЃРґРµР»Р°С‚СЊ СЃРїРµС†РёР°Р»СЊРЅСѓСЋ РІСЃС‚Р°РІРєСѓ ?</span id="msg"></font></td>
                     </tr>
                   </table>
                 </td>
@@ -184,7 +184,7 @@ End Sub</font id="code"></pre id="code"><br /><br />получается только с vsoChara
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">получается только с vsoCharacters1.Paste. метод PasteSpecial не работает: vsoCharacters1.PasteSpecial, vsoCharacters1.PasteSpecial (7) и vsoCharacters1.visPasteOEMText<hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br /><br /><img src="http://odnoznachnost.narod.ru/RTE-438.png" border="0"></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">РїРѕР»СѓС‡Р°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ СЃ vsoCharacters1.Paste. РјРµС‚РѕРґ PasteSpecial РЅРµ СЂР°Р±РѕС‚Р°РµС‚: vsoCharacters1.PasteSpecial, vsoCharacters1.PasteSpecial (7) Рё vsoCharacters1.visPasteOEMText<hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br /><br /><img src="http://odnoznachnost.narod.ru/RTE-438.png" border="0"></span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2380.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -209,7 +209,7 @@ End Sub</font id="code"></pre id="code"><br /><br />получается только с vsoChara
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Сервис-макрос-НачатьЗапись - ВытворяешьВсёЧтоНадо - ОстановитьЗапись - ИсследуешьКод - ПоправляешьИлиПишешьНовый и довольный собой идёшь СПАААТЬ.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> РЎРµСЂРІРёСЃ-РјР°РєСЂРѕСЃ-РќР°С‡Р°С‚СЊР—Р°РїРёСЃСЊ - Р’С‹С‚РІРѕСЂСЏРµС€СЊР’СЃС‘Р§С‚РѕРќР°РґРѕ - РћСЃС‚Р°РЅРѕРІРёС‚СЊР—Р°РїРёСЃСЊ - РСЃСЃР»РµРґСѓРµС€СЊРљРѕРґ - РџРѕРїСЂР°РІР»СЏРµС€СЊРР»РёРџРёС€РµС€СЊРќРѕРІС‹Р№ Рё РґРѕРІРѕР»СЊРЅС‹Р№ СЃРѕР±РѕР№ РёРґС‘С€СЊ РЎРџРђРђРђРўР¬.</span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2380.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -235,9 +235,9 @@ End Sub</font id="code"></pre id="code"><br /><br />получается только с vsoChara
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> не катит фокус с макрорекордером, спецвставку макрорекордер записывает так:<br /><pre id="code"><font face="courier" size="2" id="code">
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> РЅРµ РєР°С‚РёС‚ С„РѕРєСѓСЃ СЃ РјР°РєСЂРѕСЂРµРєРѕСЂРґРµСЂРѕРј, СЃРїРµС†РІСЃС‚Р°РІРєСѓ РјР°РєСЂРѕСЂРµРєРѕСЂРґРµСЂ Р·Р°РїРёСЃС‹РІР°РµС‚ С‚Р°Рє:<br /><pre id="code"><font face="courier" size="2" id="code">
 Application.ActiveWindow.Page.Shapes.ItemFromID(80).Characters.Paste
-</font id="code"></pre id="code"><br />когда я вставляю этот код в свой макрос, он делает просто вставку <img src="icon_smile_angry.gif" width="15" height="15" border="0" alt="" title="" align="middle" /><br /><br /></span id="msg"></font></td>
+</font id="code"></pre id="code"><br />РєРѕРіРґР° СЏ РІСЃС‚Р°РІР»СЏСЋ СЌС‚РѕС‚ РєРѕРґ РІ СЃРІРѕР№ РјР°РєСЂРѕСЃ, РѕРЅ РґРµР»Р°РµС‚ РїСЂРѕСЃС‚Рѕ РІСЃС‚Р°РІРєСѓ <img src="icon_smile_angry.gif" width="15" height="15" border="0" alt="" title="" align="middle" /><br /><br /></span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2380.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -262,7 +262,7 @@ Application.ActiveWindow.Page.Shapes.ItemFromID(80).Characters.Paste
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> А в чём разница? Результат какой нужен?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Рђ РІ С‡С‘Рј СЂР°Р·РЅРёС†Р°? Р РµР·СѓР»СЊС‚Р°С‚ РєР°РєРѕР№ РЅСѓР¶РµРЅ?</span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2380.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -288,7 +288,7 @@ Application.ActiveWindow.Page.Shapes.ItemFromID(80).Characters.Paste
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> я копирую значения из нескольких столбцов Excel`я. <br />при просто вставке эти значения вставляются в шейп слитно. при специальной вставке значения в столбцах будут разделены Tab`ами<br /><img src="http://odnoznachnost.narod.ru/img/vs.jpg" border="0"></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> СЏ РєРѕРїРёСЂСѓСЋ Р·РЅР°С‡РµРЅРёСЏ РёР· РЅРµСЃРєРѕР»СЊРєРёС… СЃС‚РѕР»Р±С†РѕРІ Excel`СЏ. <br />РїСЂРё РїСЂРѕСЃС‚Рѕ РІСЃС‚Р°РІРєРµ СЌС‚Рё Р·РЅР°С‡РµРЅРёСЏ РІСЃС‚Р°РІР»СЏСЋС‚СЃСЏ РІ С€РµР№Рї СЃР»РёС‚РЅРѕ. РїСЂРё СЃРїРµС†РёР°Р»СЊРЅРѕР№ РІСЃС‚Р°РІРєРµ Р·РЅР°С‡РµРЅРёСЏ РІ СЃС‚РѕР»Р±С†Р°С… Р±СѓРґСѓС‚ СЂР°Р·РґРµР»РµРЅС‹ Tab`Р°РјРё<br /><img src="http://odnoznachnost.narod.ru/img/vs.jpg" border="0"></span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom"><hr noshade size="1" color="gainsboro"><font face="Verdana, Arial, Helvetica" size="1" color="midnightblue">Edited by - Surrogate on 01/11/2011  11:39:35</font></td>
@@ -317,7 +317,7 @@ Application.ActiveWindow.Page.Shapes.ItemFromID(80).Characters.Paste
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> похоже метод PasteSpecial работает только с объектом Page, но не с Shape !<br />задачу я свою решил криво - сделал PasteSpecial на страницу с созданием нового шейпа:<br />Application.ActiveWindow.Page.PasteSpecial (7)<br />текст из нового шейпа загнал в нужный мне шейп и далее удалил вновь созданного шейп<br /><br />было бы интересно узнать как это можно сделать поэлегантнее ? :)<br /><br />†</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> РїРѕС…РѕР¶Рµ РјРµС‚РѕРґ PasteSpecial СЂР°Р±РѕС‚Р°РµС‚ С‚РѕР»СЊРєРѕ СЃ РѕР±СЉРµРєС‚РѕРј Page, РЅРѕ РЅРµ СЃ Shape !<br />Р·Р°РґР°С‡Сѓ СЏ СЃРІРѕСЋ СЂРµС€РёР» РєСЂРёРІРѕ - СЃРґРµР»Р°Р» PasteSpecial РЅР° СЃС‚СЂР°РЅРёС†Сѓ СЃ СЃРѕР·РґР°РЅРёРµРј РЅРѕРІРѕРіРѕ С€РµР№РїР°:<br />Application.ActiveWindow.Page.PasteSpecial (7)<br />С‚РµРєСЃС‚ РёР· РЅРѕРІРѕРіРѕ С€РµР№РїР° Р·Р°РіРЅР°Р» РІ РЅСѓР¶РЅС‹Р№ РјРЅРµ С€РµР№Рї Рё РґР°Р»РµРµ СѓРґР°Р»РёР» РІРЅРѕРІСЊ СЃРѕР·РґР°РЅРЅРѕРіРѕ С€РµР№Рї<br /><br />Р±С‹Р»Рѕ Р±С‹ РёРЅС‚РµСЂРµСЃРЅРѕ СѓР·РЅР°С‚СЊ РєР°Рє СЌС‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ РїРѕСЌР»РµРіР°РЅС‚РЅРµРµ ? :)<br /><br />вЂ </span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2380.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -342,7 +342,7 @@ Application.ActiveWindow.Page.Shapes.ItemFromID(80).Characters.Paste
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Ну да, макрорекордер записывает код, который не даёт нужный результат.<br /><br />Можно попробовать динамический строковый массив - туда данные из екселя, потом циклом(+ вложенный цыкл) в одну строковую переменную и затем в шейп. Код усложнится несильно. Посмотреть и сравнить быстродействие.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> РќСѓ РґР°, РјР°РєСЂРѕСЂРµРєРѕСЂРґРµСЂ Р·Р°РїРёСЃС‹РІР°РµС‚ РєРѕРґ, РєРѕС‚РѕСЂС‹Р№ РЅРµ РґР°С‘С‚ РЅСѓР¶РЅС‹Р№ СЂРµР·СѓР»СЊС‚Р°С‚.<br /><br />РњРѕР¶РЅРѕ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ РґРёРЅР°РјРёС‡РµСЃРєРёР№ СЃС‚СЂРѕРєРѕРІС‹Р№ РјР°СЃСЃРёРІ - С‚СѓРґР° РґР°РЅРЅС‹Рµ РёР· РµРєСЃРµР»СЏ, РїРѕС‚РѕРј С†РёРєР»РѕРј(+ РІР»РѕР¶РµРЅРЅС‹Р№ С†С‹РєР») РІ РѕРґРЅСѓ СЃС‚СЂРѕРєРѕРІСѓСЋ РїРµСЂРµРјРµРЅРЅСѓСЋ Рё Р·Р°С‚РµРј РІ С€РµР№Рї. РљРѕРґ СѓСЃР»РѕР¶РЅРёС‚СЃСЏ РЅРµСЃРёР»СЊРЅРѕ. РџРѕСЃРјРѕС‚СЂРµС‚СЊ Рё СЃСЂР°РІРЅРёС‚СЊ Р±С‹СЃС‚СЂРѕРґРµР№СЃС‚РІРёРµ.</span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2380.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -367,7 +367,7 @@ Application.ActiveWindow.Page.Shapes.ItemFromID(80).Characters.Paste
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">похоже метод PasteSpecial работает только с объектом Page, но не с Shape<hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br />Ну да. В справке так и говорится. С шейпом может работать, если шейп является группой.<br />Путь, предложенный GDK, наверное наиболее оптимальный. Программно разобрать принятые данные и засунуть в шейп в виде строки.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">РїРѕС…РѕР¶Рµ РјРµС‚РѕРґ PasteSpecial СЂР°Р±РѕС‚Р°РµС‚ С‚РѕР»СЊРєРѕ СЃ РѕР±СЉРµРєС‚РѕРј Page, РЅРѕ РЅРµ СЃ Shape<hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br />РќСѓ РґР°. Р’ СЃРїСЂР°РІРєРµ С‚Р°Рє Рё РіРѕРІРѕСЂРёС‚СЃСЏ. РЎ С€РµР№РїРѕРј РјРѕР¶РµС‚ СЂР°Р±РѕС‚Р°С‚СЊ, РµСЃР»Рё С€РµР№Рї СЏРІР»СЏРµС‚СЃСЏ РіСЂСѓРїРїРѕР№.<br />РџСѓС‚СЊ, РїСЂРµРґР»РѕР¶РµРЅРЅС‹Р№ GDK, РЅР°РІРµСЂРЅРѕРµ РЅР°РёР±РѕР»РµРµ РѕРїС‚РёРјР°Р»СЊРЅС‹Р№. РџСЂРѕРіСЂР°РјРјРЅРѕ СЂР°Р·РѕР±СЂР°С‚СЊ РїСЂРёРЅСЏС‚С‹Рµ РґР°РЅРЅС‹Рµ Рё Р·Р°СЃСѓРЅСѓС‚СЊ РІ С€РµР№Рї РІ РІРёРґРµ СЃС‚СЂРѕРєРё.</span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2380.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>

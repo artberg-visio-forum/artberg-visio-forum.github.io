@@ -94,8 +94,8 @@ input.radio {background:lightsteelblue;color:#000000}
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
           <img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp.html">All Forums</a><br />
-          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">Категория Visio</a><br />
-          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Форум Вопросы и ответы</a><br />
+          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">РљР°С‚РµРіРѕСЂРёСЏ Visio</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Р¤РѕСЂСѓРј Р’РѕРїСЂРѕСЃС‹ Рё РѕС‚РІРµС‚С‹</a><br />
           <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open_topic.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;Object variable or with block variable not set</font></td>
           <td align="center" width="50%">
           <font face="Verdana, Arial, Helvetica" size="2">
@@ -135,7 +135,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> полдня уже ищу ошибку в коде. минимальный код который вызывает ошибку указанную выше следующий<br /> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">name_box = "box0_1"<br />Dim name_l, name_xls As String<br /><br />Dim vsoMaster As Visio.Master<br />Set vs = ActivePage.Shapes(name_box).SpatialNeighbors(3, 0.2, 0)<br />    N = vs.Count<br />    If N &gt; 0 Then<br />    ActiveWindow.DeselectAll<br />        For Each sh In vs<br />            Set vsoMaster = sh.Master<br />            Select Case vsoMaster<br />            End Select<br />        Next sh<br />    End If<hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br />если 'On Error Resume Next добавить в код, то работает код отлично. замечаний нет. выскакивает она когда Sheet.258 какой то обрабатывается . фигуру такую на листе найти не могу. пока просто отсеял (            If Left(sh.NameU, 5) &lt;&gt; "Sheet" Then), но это ведь не выход :))   в чем ошибка ?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> РїРѕР»РґРЅСЏ СѓР¶Рµ РёС‰Сѓ РѕС€РёР±РєСѓ РІ РєРѕРґРµ. РјРёРЅРёРјР°Р»СЊРЅС‹Р№ РєРѕРґ РєРѕС‚РѕСЂС‹Р№ РІС‹Р·С‹РІР°РµС‚ РѕС€РёР±РєСѓ СѓРєР°Р·Р°РЅРЅСѓСЋ РІС‹С€Рµ СЃР»РµРґСѓСЋС‰РёР№<br /> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">name_box = "box0_1"<br />Dim name_l, name_xls As String<br /><br />Dim vsoMaster As Visio.Master<br />Set vs = ActivePage.Shapes(name_box).SpatialNeighbors(3, 0.2, 0)<br />    N = vs.Count<br />    If N &gt; 0 Then<br />    ActiveWindow.DeselectAll<br />        For Each sh In vs<br />            Set vsoMaster = sh.Master<br />            Select Case vsoMaster<br />            End Select<br />        Next sh<br />    End If<hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br />РµСЃР»Рё 'On Error Resume Next РґРѕР±Р°РІРёС‚СЊ РІ РєРѕРґ, С‚Рѕ СЂР°Р±РѕС‚Р°РµС‚ РєРѕРґ РѕС‚Р»РёС‡РЅРѕ. Р·Р°РјРµС‡Р°РЅРёР№ РЅРµС‚. РІС‹СЃРєР°РєРёРІР°РµС‚ РѕРЅР° РєРѕРіРґР° Sheet.258 РєР°РєРѕР№ С‚Рѕ РѕР±СЂР°Р±Р°С‚С‹РІР°РµС‚СЃСЏ . С„РёРіСѓСЂСѓ С‚Р°РєСѓСЋ РЅР° Р»РёСЃС‚Рµ РЅР°Р№С‚Рё РЅРµ РјРѕРіСѓ. РїРѕРєР° РїСЂРѕСЃС‚Рѕ РѕС‚СЃРµСЏР» (            If Left(sh.NameU, 5) &lt;&gt; "Sheet" Then), РЅРѕ СЌС‚Рѕ РІРµРґСЊ РЅРµ РІС‹С…РѕРґ :))   РІ С‡РµРј РѕС€РёР±РєР° ?</span id="msg"></font></td>
                     </tr>
                   </table>
                 </td>
@@ -157,7 +157,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Вполне возможно, что это не ошибка. Например, попался шейп, не образованный от мастера, а просто нарисованный. Свойство Master у такого шейпа будет давать ошибку.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Р’РїРѕР»РЅРµ РІРѕР·РјРѕР¶РЅРѕ, С‡С‚Рѕ СЌС‚Рѕ РЅРµ РѕС€РёР±РєР°. РќР°РїСЂРёРјРµСЂ, РїРѕРїР°Р»СЃСЏ С€РµР№Рї, РЅРµ РѕР±СЂР°Р·РѕРІР°РЅРЅС‹Р№ РѕС‚ РјР°СЃС‚РµСЂР°, Р° РїСЂРѕСЃС‚Рѕ РЅР°СЂРёСЃРѕРІР°РЅРЅС‹Р№. РЎРІРѕР№СЃС‚РІРѕ Master Сѓ С‚Р°РєРѕРіРѕ С€РµР№РїР° Р±СѓРґРµС‚ РґР°РІР°С‚СЊ РѕС€РёР±РєСѓ.</span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2261.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -182,7 +182,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> хорошо. и как это грамотно обойти ?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> С…РѕСЂРѕС€Рѕ. Рё РєР°Рє СЌС‚Рѕ РіСЂР°РјРѕС‚РЅРѕ РѕР±РѕР№С‚Рё ?</span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2261.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -207,7 +207,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Вот по такой технологии<br /><pre id="code"><font face="courier" size="2" id="code">Dim sh As Visio.Shape
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Р’РѕС‚ РїРѕ С‚Р°РєРѕР№ С‚РµС…РЅРѕР»РѕРіРёРё<br /><pre id="code"><font face="courier" size="2" id="code">Dim sh As Visio.Shape
 Set sh = ActivePage.Shapes(1)
 On Error Resume Next
 Set mas = sh.Master
@@ -216,7 +216,7 @@ If Not mas Is Nothing Then
 Else
     Debug.Print sh.NameID
 End If
-On Error GoTo 0</font id="code"></pre id="code"><br />Перед нужным местом отключаете механизм вывода сообщение об ошибках On Error Resume Next (потом включаете On Error GoTo 0)<br />А в своем обработчике проверяете, вернулась ли правильная ссылка на Master.</span id="msg"></font></td>
+On Error GoTo 0</font id="code"></pre id="code"><br />РџРµСЂРµРґ РЅСѓР¶РЅС‹Рј РјРµСЃС‚РѕРј РѕС‚РєР»СЋС‡Р°РµС‚Рµ РјРµС…Р°РЅРёР·Рј РІС‹РІРѕРґР° СЃРѕРѕР±С‰РµРЅРёРµ РѕР± РѕС€РёР±РєР°С… On Error Resume Next (РїРѕС‚РѕРј РІРєР»СЋС‡Р°РµС‚Рµ On Error GoTo 0)<br />Рђ РІ СЃРІРѕРµРј РѕР±СЂР°Р±РѕС‚С‡РёРєРµ РїСЂРѕРІРµСЂСЏРµС‚Рµ, РІРµСЂРЅСѓР»Р°СЃСЊ Р»Рё РїСЂР°РІРёР»СЊРЅР°СЏ СЃСЃС‹Р»РєР° РЅР° Master.</span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2261.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>

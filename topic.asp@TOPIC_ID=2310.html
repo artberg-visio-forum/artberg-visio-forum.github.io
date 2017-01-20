@@ -94,8 +94,8 @@ input.radio {background:lightsteelblue;color:#000000}
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
           <img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp.html">All Forums</a><br />
-          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">Категория Visio</a><br />
-          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Форум Вопросы и ответы</a><br />
+          <img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="default.asp@CAT_ID=2.html">РљР°С‚РµРіРѕСЂРёСЏ Visio</a><br />
+          <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;<a href="forum.asp@FORUM_ID=2.html">Р¤РѕСЂСѓРј Р’РѕРїСЂРѕСЃС‹ Рё РѕС‚РІРµС‚С‹</a><br />
           <img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_blank.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_bar.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" /><img src="icon_folder_open_topic.gif" width="15" height="15" border="0" alt="" title="" align="absmiddle" />&nbsp;ADO, Recordset, Field</font></td>
           <td align="center" width="50%">
           <font face="Verdana, Arial, Helvetica" size="2">
@@ -134,14 +134,14 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Добрый день! Я связываю VISIO с БД с помощью ADO. В Таблице DOCUMENT Primary Key ID_DOC автоматически увеличиваются, так что при добавлении в БД надо указать только значение аргумента NUMBERDOC. Вот пример заполнения таблицы с помощью ADO - это  отрывок.<br /><pre id="code"><font face="courier" size="2" id="code">Cmd.CommandText = "Select * From DOCUMENT"
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Р”РѕР±СЂС‹Р№ РґРµРЅСЊ! РЇ СЃРІСЏР·С‹РІР°СЋ VISIO СЃ Р‘Р” СЃ РїРѕРјРѕС‰СЊСЋ ADO. Р’ РўР°Р±Р»РёС†Рµ DOCUMENT Primary Key ID_DOC Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё СѓРІРµР»РёС‡РёРІР°СЋС‚СЃСЏ, С‚Р°Рє С‡С‚Рѕ РїСЂРё РґРѕР±Р°РІР»РµРЅРёРё РІ Р‘Р” РЅР°РґРѕ СѓРєР°Р·Р°С‚СЊ С‚РѕР»СЊРєРѕ Р·РЅР°С‡РµРЅРёРµ Р°СЂРіСѓРјРµРЅС‚Р° NUMBERDOC. Р’РѕС‚ РїСЂРёРјРµСЂ Р·Р°РїРѕР»РЅРµРЅРёСЏ С‚Р°Р±Р»РёС†С‹ СЃ РїРѕРјРѕС‰СЊСЋ ADO - СЌС‚Рѕ  РѕС‚СЂС‹РІРѕРє.<br /><pre id="code"><font face="courier" size="2" id="code">Cmd.CommandText = "Select * From DOCUMENT"
      Cmd.CommandType = adCmdText
      With Rst
          .Open Source:=Cmd, CursorType:=adOpenDynamic, LockType:=adLockOptimistic
          .AddNew
          !NUMBERDOC = ActiveDocument.Name
          .Update            
-     End With</font id="code"></pre id="code"><br />Вопрос следущий! Так как таблица DOCUMENT связана с таблицей PAGE, в таблице PAGE надо явно указывать ID_DOC. Можно ли узнать сразу какой ID получает документ при его создании?<br />Если я плохо пояснил - я поподробнее напишу!!!</span id="msg"></font></td>
+     End With</font id="code"></pre id="code"><br />Р’РѕРїСЂРѕСЃ СЃР»РµРґСѓС‰РёР№! РўР°Рє РєР°Рє С‚Р°Р±Р»РёС†Р° DOCUMENT СЃРІСЏР·Р°РЅР° СЃ С‚Р°Р±Р»РёС†РµР№ PAGE, РІ С‚Р°Р±Р»РёС†Рµ PAGE РЅР°РґРѕ СЏРІРЅРѕ СѓРєР°Р·С‹РІР°С‚СЊ ID_DOC. РњРѕР¶РЅРѕ Р»Рё СѓР·РЅР°С‚СЊ СЃСЂР°Р·Сѓ РєР°РєРѕР№ ID РїРѕР»СѓС‡Р°РµС‚ РґРѕРєСѓРјРµРЅС‚ РїСЂРё РµРіРѕ СЃРѕР·РґР°РЅРёРё?<br />Р•СЃР»Рё СЏ РїР»РѕС…Рѕ РїРѕСЏСЃРЅРёР» - СЏ РїРѕРїРѕРґСЂРѕР±РЅРµРµ РЅР°РїРёС€Сѓ!!!</span id="msg"></font></td>
                     </tr>
                   </table>
                 </td>
@@ -163,7 +163,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> А прямо вот так<br /><pre id="code"><font face="courier" size="2" id="code">
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Рђ РїСЂСЏРјРѕ РІРѕС‚ С‚Р°Рє<br /><pre id="code"><font face="courier" size="2" id="code">
      With Rst
          .Open Source:=Cmd, CursorType:=adOpenDynamic, LockType:=adLockOptimistic
          .AddNew
@@ -194,7 +194,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Спасибо, разобрался! Правилдьно будет ID = Rst.Fields(0). Тема закрыта!</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> РЎРїР°СЃРёР±Рѕ, СЂР°Р·РѕР±СЂР°Р»СЃСЏ! РџСЂР°РІРёР»РґСЊРЅРѕ Р±СѓРґРµС‚ ID = Rst.Fields(0). РўРµРјР° Р·Р°РєСЂС‹С‚Р°!</span id="msg"></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom"><hr noshade size="1" color="whitesmoke"><font face="Verdana, Arial, Helvetica" size="1" color="midnightblue">Edited by - yabes on 01/18/2010  04:18:44</font></td>
