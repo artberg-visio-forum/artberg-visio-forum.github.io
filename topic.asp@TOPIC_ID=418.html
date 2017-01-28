@@ -4,31 +4,7 @@
 <head>
 <title>Visio - Enable control buttons</title>
 <meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" ><script language="JavaScript" type="text/javascript">
-<!-- hide from JavaScript-challenged browsers
-function openWindow(url) {
-	popupWin = window.open(url,'new_page','width=400,height=400')
-}
-function openWindow2(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450')
-}
-function openWindow3(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
-}
-function openWindow4(url) {
-	popupWin = window.open(url,'new_page','width=400,height=525')
-}
-function openWindow5(url) {
-	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
-}
-function openWindow6(url) {
-	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
-}
-function openWindowHelp(url) {
-	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
-}
-// done hiding -->
-</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 <style type="text/css">
 <!--
 a:link    {color:darkblue;text-decoration:underline}
@@ -48,26 +24,13 @@ input.radio {background:lightsteelblue;color:#000000}
 <body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
 <a name="top"></a>
 
-<script>(function() { var cx = '002792228947284598284:d9ou_dwkikw'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
+<script>(function() { var cx = '002792228947284598284:fmq7et_yt8s'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
 <div style='height: 61px' class='gcse-search'></div>
 <table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
   <tr>
     <td>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function unsub_confirm(link){
-    	var where_to= confirm("Do you really want to Unsubscribe?");
-       if (where_to== true) {
-       	popupWin = window.open(link,'new_page','width=400,height=400')
-       }
-    }
-    //-->
-    </script>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
-    // -->
-    </script>
+    
+    
       <table border="0" width="100%">
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
@@ -112,7 +75,7 @@ input.radio {background:lightsteelblue;color:#000000}
                     <tr>
                       <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Положил на страницу кнопки, сделал все кроме одной disabled, и хочу, чтобы при нажатии первой кнопки, все остальные сделались enabled. Как это сделать? Даже не соображу, как добраться до контрола из VB-кода.<br /><br />И еще, положил на страницу текст Text Tool-ом, это у меня нечто статуса приложения. При изменении статуса, хочу, чтобы надпись менялась. Не могу изменить, т.к. опять же не могу добраться до этой надписи. Насколько я вижу из диалога Special, это Shape, но<br /><pre id="code"><font face="courier" size="2" id="code">For Each shp in ThisDocument.Pages(1).Shapes
 If shp.Name="btValidate" MsgBox "Found!"
-Next</font id="code"></pre id="code"><br />не находит этого "шейпа" (ищу по имени, как и раньше, поэтому должно сработать, но не срабатывает).<br />Как это сделать?</span id="msg"></font></td>
+Next</font></pre><br />не находит этого "шейпа" (ищу по имени, как и раньше, поэтому должно сработать, но не срабатывает).<br />Как это сделать?</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom"><hr noshade size="1" color="whitesmoke"><font face="Verdana, Arial, Helvetica" size="1" color="midnightblue">Edited by - Евгений on 02/04/2005  18:27:24</font></td>
@@ -135,7 +98,7 @@ Next</font id="code"></pre id="code"><br />не находит этого "ше�
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Debug.Print ActivePage.Shapes(1).Name<br />Debug.Print ActivePage.Shapes(1).Object.Enabled<br />Private Sub CommandButton1_Click()<br /></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Debug.Print ActivePage.Shapes(1).Name<br />Debug.Print ActivePage.Shapes(1).Object.Enabled<br />Private Sub CommandButton1_Click()<br /></span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=418.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -157,7 +120,7 @@ Next</font id="code"></pre id="code"><br />не находит этого "ше�
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> За enabled button спасибо. Остальное - это были пятничные глюки, сейчас все работает, т.е. шейп находится :)</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> За enabled button спасибо. Остальное - это были пятничные глюки, сейчас все работает, т.е. шейп находится :)</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=418.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -183,11 +146,7 @@ Next</font id="code"></pre id="code"><br />не находит этого "ше�
     <td>
       <table width="100%">
         <tr>
-          <td align="center" valign="top" width="50%">
-          <font face="Verdana, Arial, Helvetica" size="2">
-          </font></td>
-          <td align="right" valign="top" width="50%" nowrap>
-          </td>
+          <td align="center" bgcolor="#ffffAA"><font face="Verdana, Arial, Helvetica" size="2">Данный сайт является архивом форума visio.artberg.ru, который был закрыт в связи с переходом на новую платформу <b><a href="http://visio.getbb.ru">visio.getbb.ru</a></b><br/>Все материалы доступны только для чтения! Если у вас появились вопросы, или вы хотите что-то обсудить, связанное с Visio, обращайтесь на новый форум!<br/>Архив был создан благодаря совместным усилиям Генадия Туманова @Tumanov (<a href="http://visio.artberg.ru">visio.artberg.ru</a>), Александра ака @Surrogate (<a href="http://visio.getbb.ru">visio.getbb.ru</a>), и Николая Белых @nbelyh (<a href="http://unmanagedvisio.com">unmanagedvisio.com</a>)</font></td>
         </tr>
       </table>
   </td>

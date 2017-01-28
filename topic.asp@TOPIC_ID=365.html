@@ -4,31 +4,7 @@
 <head>
 <title>Visio - Отрисовка изображения на указанном контексте</title>
 <meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" ><script language="JavaScript" type="text/javascript">
-<!-- hide from JavaScript-challenged browsers
-function openWindow(url) {
-	popupWin = window.open(url,'new_page','width=400,height=400')
-}
-function openWindow2(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450')
-}
-function openWindow3(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
-}
-function openWindow4(url) {
-	popupWin = window.open(url,'new_page','width=400,height=525')
-}
-function openWindow5(url) {
-	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
-}
-function openWindow6(url) {
-	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
-}
-function openWindowHelp(url) {
-	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
-}
-// done hiding -->
-</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 <style type="text/css">
 <!--
 a:link    {color:darkblue;text-decoration:underline}
@@ -48,26 +24,13 @@ input.radio {background:lightsteelblue;color:#000000}
 <body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
 <a name="top"></a>
 
-<script>(function() { var cx = '002792228947284598284:d9ou_dwkikw'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
+<script>(function() { var cx = '002792228947284598284:fmq7et_yt8s'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
 <div style='height: 61px' class='gcse-search'></div>
 <table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
   <tr>
     <td>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function unsub_confirm(link){
-    	var where_to= confirm("Do you really want to Unsubscribe?");
-       if (where_to== true) {
-       	popupWin = window.open(link,'new_page','width=400,height=400')
-       }
-    }
-    //-->
-    </script>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
-    // -->
-    </script>
+    
+    
       <table border="0" width="100%">
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
@@ -108,11 +71,11 @@ input.radio {background:lightsteelblue;color:#000000}
                     <tr>
                       <td valign="top">
                       <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;12/10/2004&nbsp;:&nbsp; 13:03:32</font>
-                      &nbsp;<a href="JavaScript:openWindow6('pop_messengers.asp?mode=ICQ&ID=260')"><img src="icon_icq.gif" width="15" height="15" border="0" alt="Send Black_Serdzh an ICQ Message" title="Send Black_Serdzh an ICQ Message" align="absmiddle" hspace="6" /></a>
+                      
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> И ещё одна просьба. <br />Подскажите, пожалуйста, как сделать так, чтобы изображение страницы отрисовывалось на каком-либо контексте или в файл?<br />Я пробовал написать код, но отрисовать так и не получилось. :(<br />Знаю, что для захвата изображения страницы используется свойство Picture страницы.<br />О свойстве можно почитать здесь<br /><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vissdk11/html/viproPicture.asp" target="_blank">http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vissdk11/html/viproPicture.asp</a><br />А здесь<br /><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/com/htm/ctin_p_482t.asp" target="_blank">http://msdn.microsoft.com/library/default.asp?url=/library/en-us/com/htm/ctin_p_482t.asp</a><br />можно почитать об интерфейсе IPicture, у которого есть метод Render, с помощью которого и осуществляется отрисовка изображения, полученного свойством Picture.<br />Вообще-то Picture возвращает тип stdole.IPictureDisp, но у объекта такого типа нет метода Render, поэтому я объявлял объект типа stdole.IPicture, а возвращаемый результат от свойства Picture приводил к типу IPicture. Вот такой каламбур. Может я и не правильно делал?<br />Я пытался изобразить, но отрисовка у меня так и не получилась, окошко было пустым. Кстати можно не только на каком-либо контексте отрисовывать, но и записывать в файл, что у меня тоже не получилось. Наверное, я делаю что-то не так.<br /><br />Подскажите, плиизз, как же всё таки сделать так, чтобы всё заработало. Если можно, приведите работающий код, который можно протестить.<br /><br />Большое спасибо!<br /></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> И ещё одна просьба. <br />Подскажите, пожалуйста, как сделать так, чтобы изображение страницы отрисовывалось на каком-либо контексте или в файл?<br />Я пробовал написать код, но отрисовать так и не получилось. :(<br />Знаю, что для захвата изображения страницы используется свойство Picture страницы.<br />О свойстве можно почитать здесь<br /><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vissdk11/html/viproPicture.asp" target="_blank">http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vissdk11/html/viproPicture.asp</a><br />А здесь<br /><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/com/htm/ctin_p_482t.asp" target="_blank">http://msdn.microsoft.com/library/default.asp?url=/library/en-us/com/htm/ctin_p_482t.asp</a><br />можно почитать об интерфейсе IPicture, у которого есть метод Render, с помощью которого и осуществляется отрисовка изображения, полученного свойством Picture.<br />Вообще-то Picture возвращает тип stdole.IPictureDisp, но у объекта такого типа нет метода Render, поэтому я объявлял объект типа stdole.IPicture, а возвращаемый результат от свойства Picture приводил к типу IPicture. Вот такой каламбур. Может я и не правильно делал?<br />Я пытался изобразить, но отрисовка у меня так и не получилась, окошко было пустым. Кстати можно не только на каком-либо контексте отрисовывать, но и записывать в файл, что у меня тоже не получилось. Наверное, я делаю что-то не так.<br /><br />Подскажите, плиизз, как же всё таки сделать так, чтобы всё заработало. Если можно, приведите работающий код, который можно протестить.<br /><br />Большое спасибо!<br /></span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom"><hr noshade size="1" color="whitesmoke"><font face="Verdana, Arial, Helvetica" size="1" color="midnightblue">Edited by - Black_Serdzh on 12/10/2004  13:11:15</font></td>
@@ -135,7 +98,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Вообще-то рисованием я не занимался, но сейчас попробовал вот это:<br /><br />Макрос<br />Sub ttt()<br />UserForm1.Show 1<br />End Sub<br /><br />Пустая формочка с одним обработчиком<br />Private Sub UserForm_Activate()<br />UserForm1.Picture = ActiveWindow.Selection(1).Picture<br />End Sub<br /><br />Если теперь нарисовать что-нибудь на листе Visio, сгруппировать это, селектировать и выполнить макрос ttt, то на выскочившей формочке появится это изображение. Мне понравилось :)<br />Можно изображение отдельного шейпа перенести, тогда группировать не надо.<br />Вот только 2 момента где-то проскочили:<br />1. В Visio при этом поддерживается только формат emf.<br />2. Все это работает в "in-proc solutions", то есть во внешний exe не перенесешь. Хотя, я не пробовал, может уже что и изменилось...<br /><br />Это Вам никак не поможет?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Вообще-то рисованием я не занимался, но сейчас попробовал вот это:<br /><br />Макрос<br />Sub ttt()<br />UserForm1.Show 1<br />End Sub<br /><br />Пустая формочка с одним обработчиком<br />Private Sub UserForm_Activate()<br />UserForm1.Picture = ActiveWindow.Selection(1).Picture<br />End Sub<br /><br />Если теперь нарисовать что-нибудь на листе Visio, сгруппировать это, селектировать и выполнить макрос ttt, то на выскочившей формочке появится это изображение. Мне понравилось :)<br />Можно изображение отдельного шейпа перенести, тогда группировать не надо.<br />Вот только 2 момента где-то проскочили:<br />1. В Visio при этом поддерживается только формат emf.<br />2. Все это работает в "in-proc solutions", то есть во внешний exe не перенесешь. Хотя, я не пробовал, может уже что и изменилось...<br /><br />Это Вам никак не поможет?</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=365.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -155,14 +118,14 @@ input.radio {background:lightsteelblue;color:#000000}
                     <tr>
                       <td valign="top">
                       <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;12/15/2004&nbsp;:&nbsp; 09:55:39</font>
-                      &nbsp;<a href="JavaScript:openWindow6('pop_messengers.asp?mode=ICQ&ID=260')"><img src="icon_icq.gif" width="15" height="15" border="0" alt="Send Black_Serdzh an ICQ Message" title="Send Black_Serdzh an ICQ Message" align="absmiddle" hspace="6" /></a>
+                      
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
                       <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Ещё раз большущее спасибо за ваши ответы, за вашу помощь. Мы же делаем графический редактор на базе Visio и я реализую все функции в самом exe-шнике, так что буду пробовать. А в visio да, действительно всё клево получается. Вот ссылочка ну другой форум <a href="http://www.rsdn.ru/forum/?mid=936849" target="_blank">http://www.rsdn.ru/forum/?mid=936849</a> , где я задавал мой вопрос и получил ответ. Вообщем буду экспериментировать. Если у меня всё получится, то могу и код выложить, если хотите.<br />А ещё можно сделать вот так:<br /><pre id="code"><font face="courier" size="2" id="code">Private Sub UserForm_Activate()
     UserForm1.Picture = ActiveWindow.Document.Pages(1).Picture
 End Sub
-</font id="code"></pre id="code"><img src="icon_smile.gif" width="15" height="15" border="0" alt="" title="" align="middle" /></span id="msg"></font></td>
+</font></pre><img src="icon_smile.gif" width="15" height="15" border="0" alt="" title="" align="middle" /></span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom"><hr noshade size="1" color="whitesmoke"><font face="Verdana, Arial, Helvetica" size="1" color="midnightblue">Edited by - Black_Serdzh on 12/15/2004  10:04:53</font></td>
@@ -191,11 +154,7 @@ End Sub
     <td>
       <table width="100%">
         <tr>
-          <td align="center" valign="top" width="50%">
-          <font face="Verdana, Arial, Helvetica" size="2">
-          </font></td>
-          <td align="right" valign="top" width="50%" nowrap>
-          </td>
+          <td align="center" bgcolor="#ffffAA"><font face="Verdana, Arial, Helvetica" size="2">Данный сайт является архивом форума visio.artberg.ru, который был закрыт в связи с переходом на новую платформу <b><a href="http://visio.getbb.ru">visio.getbb.ru</a></b><br/>Все материалы доступны только для чтения! Если у вас появились вопросы, или вы хотите что-то обсудить, связанное с Visio, обращайтесь на новый форум!<br/>Архив был создан благодаря совместным усилиям Генадия Туманова @Tumanov (<a href="http://visio.artberg.ru">visio.artberg.ru</a>), Александра ака @Surrogate (<a href="http://visio.getbb.ru">visio.getbb.ru</a>), и Николая Белых @nbelyh (<a href="http://unmanagedvisio.com">unmanagedvisio.com</a>)</font></td>
         </tr>
       </table>
   </td>

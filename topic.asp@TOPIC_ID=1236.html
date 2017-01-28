@@ -4,31 +4,7 @@
 <head>
 <title>Visio - Связь между страницами</title>
 <meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" ><script language="JavaScript" type="text/javascript">
-<!-- hide from JavaScript-challenged browsers
-function openWindow(url) {
-	popupWin = window.open(url,'new_page','width=400,height=400')
-}
-function openWindow2(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450')
-}
-function openWindow3(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
-}
-function openWindow4(url) {
-	popupWin = window.open(url,'new_page','width=400,height=525')
-}
-function openWindow5(url) {
-	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
-}
-function openWindow6(url) {
-	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
-}
-function openWindowHelp(url) {
-	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
-}
-// done hiding -->
-</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 <style type="text/css">
 <!--
 a:link    {color:darkblue;text-decoration:underline}
@@ -48,26 +24,13 @@ input.radio {background:lightsteelblue;color:#000000}
 <body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
 <a name="top"></a>
 
-<script>(function() { var cx = '002792228947284598284:d9ou_dwkikw'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
+<script>(function() { var cx = '002792228947284598284:fmq7et_yt8s'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
 <div style='height: 61px' class='gcse-search'></div>
 <table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
   <tr>
     <td>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function unsub_confirm(link){
-    	var where_to= confirm("Do you really want to Unsubscribe?");
-       if (where_to== true) {
-       	popupWin = window.open(link,'new_page','width=400,height=400')
-       }
-    }
-    //-->
-    </script>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
-    // -->
-    </script>
+    
+    
       <table border="0" width="100%">
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
@@ -108,11 +71,11 @@ input.radio {background:lightsteelblue;color:#000000}
                     <tr>
                       <td valign="top">
                       <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;09/06/2007&nbsp;:&nbsp; 10:49:19</font>
-                      &nbsp;<a href="JavaScript:openWindow6('pop_messengers.asp?mode=ICQ&ID=1447')"><img src="icon_icq.gif" width="15" height="15" border="0" alt="Send bigfoot_rusles an ICQ Message" title="Send bigfoot_rusles an ICQ Message" align="absmiddle" hspace="6" /></a>
+                      
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Как связать объекты на двух страницах, чтобы при нажатии на объект на первой странице открывалась другая (как в шаблоне "Учёт компьютерного оборудования)???</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Как связать объекты на двух страницах, чтобы при нажатии на объект на первой странице открывалась другая (как в шаблоне "Учёт компьютерного оборудования)???</span></font></td>
                     </tr>
                   </table>
                 </td>
@@ -132,7 +95,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> А Вам обязательно нужно при нажатии? Двойной клик не подойдет?<br />Обычно такие вещи делаются по двойному клику. Для этого в Format / Bahavior на вкладке Double-Click ставится галочка в Go to page и выбирается нужная страница.<br />А по одиночному клику Вам придется либо отлавливать событие SelectionChanged, либо работать с мышиными событиями.<br />Здесь механизм будет сложнее.<br />Можно учесть, что при нажатии на шейп он селектируется и обрабатывать событие SelectionChanged.<br />Пишем обработчик<br />Private Sub Win_SelectionChanged(ByVal Window As IVWindow)<br />If Window.Selection.Count &gt; 0 Then<br />...<br />End If<br />End Sub<br />Вместо многоточия нужно подставить код, который прочитает из какой-то ячейки (например из Custom Properties шейпа) имя страницы для перехода и выполнит собственно переход. А предварительно еще и проверит, относится ли селектированный шейп к тем, с которого следует осуществляеть переход.<br />Но этот обработчик сразу не заработает. Предварительно нужно объявить окно WithEvents. А при открыти документа или отдельным макросом связать объявленный win с активным окном, типа вот так:<br />Dim WithEvents Win As Window<br />Sub ttt()<br />Set Win = ActiveWindow<br />End Sub<br />Если сначала выполнить макрос ttt, то после этого начнет срабатывать Win_SelectionChanged и щелчок по шейпу будет вызывать переход на другую страницу.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> А Вам обязательно нужно при нажатии? Двойной клик не подойдет?<br />Обычно такие вещи делаются по двойному клику. Для этого в Format / Bahavior на вкладке Double-Click ставится галочка в Go to page и выбирается нужная страница.<br />А по одиночному клику Вам придется либо отлавливать событие SelectionChanged, либо работать с мышиными событиями.<br />Здесь механизм будет сложнее.<br />Можно учесть, что при нажатии на шейп он селектируется и обрабатывать событие SelectionChanged.<br />Пишем обработчик<br />Private Sub Win_SelectionChanged(ByVal Window As IVWindow)<br />If Window.Selection.Count &gt; 0 Then<br />...<br />End If<br />End Sub<br />Вместо многоточия нужно подставить код, который прочитает из какой-то ячейки (например из Custom Properties шейпа) имя страницы для перехода и выполнит собственно переход. А предварительно еще и проверит, относится ли селектированный шейп к тем, с которого следует осуществляеть переход.<br />Но этот обработчик сразу не заработает. Предварительно нужно объявить окно WithEvents. А при открыти документа или отдельным макросом связать объявленный win с активным окном, типа вот так:<br />Dim WithEvents Win As Window<br />Sub ttt()<br />Set Win = ActiveWindow<br />End Sub<br />Если сначала выполнить макрос ttt, то после этого начнет срабатывать Win_SelectionChanged и щелчок по шейпу будет вызывать переход на другую страницу.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=1236.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -152,11 +115,11 @@ input.radio {background:lightsteelblue;color:#000000}
                     <tr>
                       <td valign="top">
                       <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;09/07/2007&nbsp;:&nbsp; 05:49:59</font>
-                      &nbsp;<a href="JavaScript:openWindow6('pop_messengers.asp?mode=ICQ&ID=1447')"><img src="icon_icq.gif" width="15" height="15" border="0" alt="Send bigfoot_rusles an ICQ Message" title="Send bigfoot_rusles an ICQ Message" align="absmiddle" hspace="6" /></a>
+                      
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> А как это в этом грёбаном шаблоне выполнено? В контекстном меню объёкта есть строка со значком связи, по ней выполняется переход на др. страницу.<br />...<br />Попробовал поучить шейпы "примерному поведению" - почти то что надо. А будет это на др. машине работать?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> А как это в этом грёбаном шаблоне выполнено? В контекстном меню объёкта есть строка со значком связи, по ней выполняется переход на др. страницу.<br />...<br />Попробовал поучить шейпы "примерному поведению" - почти то что надо. А будет это на др. машине работать?</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom"><hr noshade size="1" color="whitesmoke"><font face="Verdana, Arial, Helvetica" size="1" color="midnightblue">Edited by - bigfoot_rusles on 09/07/2007  05:54:06</font></td>
@@ -182,7 +145,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Так бы сразу и говорили :)<br />Это ведь не клик, а контекстное меню. Оно добавляется через Insert / Hyperlink. В формочке будет возможность выбрать нужную страницу.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Так бы сразу и говорили :)<br />Это ведь не клик, а контекстное меню. Оно добавляется через Insert / Hyperlink. В формочке будет возможность выбрать нужную страницу.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=1236.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -202,11 +165,11 @@ input.radio {background:lightsteelblue;color:#000000}
                     <tr>
                       <td valign="top">
                       <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;09/07/2007&nbsp;:&nbsp; 08:30:06</font>
-                      &nbsp;<a href="JavaScript:openWindow6('pop_messengers.asp?mode=ICQ&ID=1447')"><img src="icon_icq.gif" width="15" height="15" border="0" alt="Send bigfoot_rusles an ICQ Message" title="Send bigfoot_rusles an ICQ Message" align="absmiddle" hspace="6" /></a>
+                      
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Спасибо! Где хоть что нибудь по V2007 найтить? Кроме конечно встроенного хелпа?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Спасибо! Где хоть что нибудь по V2007 найтить? Кроме конечно встроенного хелпа?</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=1236.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -232,11 +195,7 @@ input.radio {background:lightsteelblue;color:#000000}
     <td>
       <table width="100%">
         <tr>
-          <td align="center" valign="top" width="50%">
-          <font face="Verdana, Arial, Helvetica" size="2">
-          </font></td>
-          <td align="right" valign="top" width="50%" nowrap>
-          </td>
+          <td align="center" bgcolor="#ffffAA"><font face="Verdana, Arial, Helvetica" size="2">Данный сайт является архивом форума visio.artberg.ru, который был закрыт в связи с переходом на новую платформу <b><a href="http://visio.getbb.ru">visio.getbb.ru</a></b><br/>Все материалы доступны только для чтения! Если у вас появились вопросы, или вы хотите что-то обсудить, связанное с Visio, обращайтесь на новый форум!<br/>Архив был создан благодаря совместным усилиям Генадия Туманова @Tumanov (<a href="http://visio.artberg.ru">visio.artberg.ru</a>), Александра ака @Surrogate (<a href="http://visio.getbb.ru">visio.getbb.ru</a>), и Николая Белых @nbelyh (<a href="http://unmanagedvisio.com">unmanagedvisio.com</a>)</font></td>
         </tr>
       </table>
   </td>

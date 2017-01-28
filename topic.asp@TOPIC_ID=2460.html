@@ -4,31 +4,7 @@
 <head>
 <title>Visio - переход 2003-2007</title>
 <meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" ><script language="JavaScript" type="text/javascript">
-<!-- hide from JavaScript-challenged browsers
-function openWindow(url) {
-	popupWin = window.open(url,'new_page','width=400,height=400')
-}
-function openWindow2(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450')
-}
-function openWindow3(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
-}
-function openWindow4(url) {
-	popupWin = window.open(url,'new_page','width=400,height=525')
-}
-function openWindow5(url) {
-	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
-}
-function openWindow6(url) {
-	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
-}
-function openWindowHelp(url) {
-	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
-}
-// done hiding -->
-</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 <style type="text/css">
 <!--
 a:link    {color:darkblue;text-decoration:underline}
@@ -48,26 +24,13 @@ input.radio {background:lightsteelblue;color:#000000}
 <body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
 <a name="top"></a>
 
-<script>(function() { var cx = '002792228947284598284:d9ou_dwkikw'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
+<script>(function() { var cx = '002792228947284598284:fmq7et_yt8s'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
 <div style='height: 61px' class='gcse-search'></div>
 <table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
   <tr>
     <td>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function unsub_confirm(link){
-    	var where_to= confirm("Do you really want to Unsubscribe?");
-       if (where_to== true) {
-       	popupWin = window.open(link,'new_page','width=400,height=400')
-       }
-    }
-    //-->
-    </script>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
-    // -->
-    </script>
+    
+    
       <table border="0" width="100%">
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
@@ -111,7 +74,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> При переходе от Визио 2003 к Визио 2007 сталкнулся с такой проблемой.<br />Неоторые макросы перестали правильно работать, Визио ругается, что не может найти библиотеку. В частности ругается на объявление переменной<br />Dim objListItem As ListItem<br />Раньше этот ListItem жил в mscomctl.ocx, вероятно сейчас это не так.<br /><br />Может кто подскажет куда копать дальше?<br />С уважением</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> При переходе от Визио 2003 к Визио 2007 сталкнулся с такой проблемой.<br />Неоторые макросы перестали правильно работать, Визио ругается, что не может найти библиотеку. В частности ругается на объявление переменной<br />Dim objListItem As ListItem<br />Раньше этот ListItem жил в mscomctl.ocx, вероятно сейчас это не так.<br /><br />Может кто подскажет куда копать дальше?<br />С уважением</span></font></td>
                     </tr>
                   </table>
                 </td>
@@ -131,7 +94,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> в редакторе макросов зайти в Tools - References и посмотреть подключена ли библиотека Microsoft Windows Common Controls 6.0<br />если нет, то включить<br />если MISSING то сначала снять галку, потом найти в списке и подключить<br />если не получится, то написать код:<br /><pre id="code"><font face="courier" size="2" id="code">ThisDocument.VBProject.References.AddFromGuid "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}", 2, 0</font id="code"></pre id="code"><br /><br />ну либо, если ничего не помогло, то библиотека не установлена - надо ставить ее заново.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> в редакторе макросов зайти в Tools - References и посмотреть подключена ли библиотека Microsoft Windows Common Controls 6.0<br />если нет, то включить<br />если MISSING то сначала снять галку, потом найти в списке и подключить<br />если не получится, то написать код:<br /><pre id="code"><font face="courier" size="2" id="code">ThisDocument.VBProject.References.AddFromGuid "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}", 2, 0</font></pre><br /><br />ну либо, если ничего не помогло, то библиотека не установлена - надо ставить ее заново.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom"><hr noshade size="1" color="gainsboro"><font face="Verdana, Arial, Helvetica" size="1" color="midnightblue">Edited by - 9rey on 07/12/2013  12:50:06</font></td>
@@ -157,7 +120,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Я нечто подобное пробовал. При подключении этой библиотеки ругается на конфликт имен с уже существующей библиотекой.<br />Неожиданно нашлось другое решение: Галку с библиотеки снял и после этого заменил декларацию as ListItem на  as Object<br />Другой код не менял, но всё заработало. Похоже, этот тип данных переименовали.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Я нечто подобное пробовал. При подключении этой библиотеки ругается на конфликт имен с уже существующей библиотекой.<br />Неожиданно нашлось другое решение: Галку с библиотеки снял и после этого заменил декларацию as ListItem на  as Object<br />Другой код не менял, но всё заработало. Похоже, этот тип данных переименовали.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2460.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -180,7 +143,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> а если так MSComctlLib.ListItem ?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> а если так MSComctlLib.ListItem ?</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2460.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -203,7 +166,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Это Вы его обманули :) Сказав, что это не ListItem, который описан и размещен в определенном месте, а просто неизвестный Object, Вы отключили проверки при компиляции. Вот он и перестал ругаться.<br />На машине, конечно, какой-то непорядок. Версия Visio здесь явно ни при чем, это в системе.<br /></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Это Вы его обманули :) Сказав, что это не ListItem, который описан и размещен в определенном месте, а просто неизвестный Object, Вы отключили проверки при компиляции. Вот он и перестал ругаться.<br />На машине, конечно, какой-то непорядок. Версия Visio здесь явно ни при чем, это в системе.<br /></span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2460.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -226,7 +189,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> да мне кажется у него просто подключена два раза библиотека с разными версиями.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> да мне кажется у него просто подключена два раза библиотека с разными версиями.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2460.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -249,7 +212,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Может и так.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Может и так.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2460.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -272,7 +235,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Похоже, проблема разрешилась.<br />Что было сделано:<br />Проверил в Tools\References... что библиотека Microsoft Windows Common Controls 6.0 (SP6) отсутствует, затем добавил ее через Browse из папки Windows\System32, файл mscomctl.ocx<br />В этот раз на конфликт имен не ругнулось.<br />Затем вернул код к исходному состоянию, проверил - работает.<br />Да, перед этим вручную разрегистрировал данную библиотеку, вышел из системы, вошел снова и зарегистрировал ее.<br />Видно при установке системы что-то до конца не проставилось.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Похоже, проблема разрешилась.<br />Что было сделано:<br />Проверил в Tools\References... что библиотека Microsoft Windows Common Controls 6.0 (SP6) отсутствует, затем добавил ее через Browse из папки Windows\System32, файл mscomctl.ocx<br />В этот раз на конфликт имен не ругнулось.<br />Затем вернул код к исходному состоянию, проверил - работает.<br />Да, перед этим вручную разрегистрировал данную библиотеку, вышел из системы, вошел снова и зарегистрировал ее.<br />Видно при установке системы что-то до конца не проставилось.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2460.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -298,11 +261,7 @@ input.radio {background:lightsteelblue;color:#000000}
     <td>
       <table width="100%">
         <tr>
-          <td align="center" valign="top" width="50%">
-          <font face="Verdana, Arial, Helvetica" size="2">
-          </font></td>
-          <td align="right" valign="top" width="50%" nowrap>
-          </td>
+          <td align="center" bgcolor="#ffffAA"><font face="Verdana, Arial, Helvetica" size="2">Данный сайт является архивом форума visio.artberg.ru, который был закрыт в связи с переходом на новую платформу <b><a href="http://visio.getbb.ru">visio.getbb.ru</a></b><br/>Все материалы доступны только для чтения! Если у вас появились вопросы, или вы хотите что-то обсудить, связанное с Visio, обращайтесь на новый форум!<br/>Архив был создан благодаря совместным усилиям Генадия Туманова @Tumanov (<a href="http://visio.artberg.ru">visio.artberg.ru</a>), Александра ака @Surrogate (<a href="http://visio.getbb.ru">visio.getbb.ru</a>), и Николая Белых @nbelyh (<a href="http://unmanagedvisio.com">unmanagedvisio.com</a>)</font></td>
         </tr>
       </table>
   </td>

@@ -4,31 +4,7 @@
 <head>
 <title>Visio - Проблема с Open/OpenEx</title>
 <meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" ><script language="JavaScript" type="text/javascript">
-<!-- hide from JavaScript-challenged browsers
-function openWindow(url) {
-	popupWin = window.open(url,'new_page','width=400,height=400')
-}
-function openWindow2(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450')
-}
-function openWindow3(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
-}
-function openWindow4(url) {
-	popupWin = window.open(url,'new_page','width=400,height=525')
-}
-function openWindow5(url) {
-	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
-}
-function openWindow6(url) {
-	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
-}
-function openWindowHelp(url) {
-	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
-}
-// done hiding -->
-</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 <style type="text/css">
 <!--
 a:link    {color:darkblue;text-decoration:underline}
@@ -48,26 +24,13 @@ input.radio {background:lightsteelblue;color:#000000}
 <body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
 <a name="top"></a>
 
-<script>(function() { var cx = '002792228947284598284:d9ou_dwkikw'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
+<script>(function() { var cx = '002792228947284598284:fmq7et_yt8s'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
 <div style='height: 61px' class='gcse-search'></div>
 <table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
   <tr>
     <td>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function unsub_confirm(link){
-    	var where_to= confirm("Do you really want to Unsubscribe?");
-       if (where_to== true) {
-       	popupWin = window.open(link,'new_page','width=400,height=400')
-       }
-    }
-    //-->
-    </script>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
-    // -->
-    </script>
+    
+    
       <table border="0" width="100%">
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
@@ -123,7 +86,7 @@ input.radio {background:lightsteelblue;color:#000000}
         'enable all buttons
         btValidate.Object.Enabled = True
     End If
-End Sub</font id="code"></pre id="code">При ее исполнении вижио доходит до открытия документа, успешно его открывает - и все, что далее, не исполняется, в том числе Initialize() на 100% не выполняется. Почему, в чем дело, и как это исправить?</span id="msg"></font></td>
+End Sub</font></pre>При ее исполнении вижио доходит до открытия документа, успешно его открывает - и все, что далее, не исполняется, в том числе Initialize() на 100% не выполняется. Почему, в чем дело, и как это исправить?</span></font></td>
                     </tr>
                   </table>
                 </td>
@@ -142,7 +105,7 @@ End Sub</font id="code"></pre id="code">При ее исполнении виж�
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> И вообще, после загрузки документа все переменные модуля (в котом находится также вышеописаная процедура) как бы сбрасываются, и потом оказывается, что они не определены. Кто-нибудь может объяснить такое поведение?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> И вообще, после загрузки документа все переменные модуля (в котом находится также вышеописаная процедура) как бы сбрасываются, и потом оказывается, что они не определены. Кто-нибудь может объяснить такое поведение?</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=423.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -164,7 +127,7 @@ End Sub</font id="code"></pre id="code">При ее исполнении виж�
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Оказывается, это из-за флага visOpenDisableMacros. Как обойти проблему, т.е. чтобы макросы в открываемом документе были без спрашивания запрещены (или разрешены, без разницы), а в основном документе все исполнялось дальше?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Оказывается, это из-за флага visOpenDisableMacros. Как обойти проблему, т.е. чтобы макросы в открываемом документе были без спрашивания запрещены (или разрешены, без разницы), а в основном документе все исполнялось дальше?</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=423.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -187,7 +150,7 @@ End Sub</font id="code"></pre id="code">При ее исполнении виж�
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Получается, что блокируя макросы  в загружаемом документе, Вы тем самым блокируете их и в рабочем документе. Значит для продолжения работы Вашего макроса те макросы тоже должны быть разрешены. Это делается либо снижением уровня безопасности, либо путем подписывания проекта VBA в открываемом документе. Если на вопрос о разрешении макросов при открытии ответить утвердительно, то все тоже работает, но приходится лишний раз по кнопке щелкнуть.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Получается, что блокируя макросы  в загружаемом документе, Вы тем самым блокируете их и в рабочем документе. Значит для продолжения работы Вашего макроса те макросы тоже должны быть разрешены. Это делается либо снижением уровня безопасности, либо путем подписывания проекта VBA в открываемом документе. Если на вопрос о разрешении макросов при открытии ответить утвердительно, то все тоже работает, но приходится лишний раз по кнопке щелкнуть.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=423.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -209,7 +172,7 @@ End Sub</font id="code"></pre id="code">При ее исполнении виж�
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> А как сделать, чтобы оно само щелкнулось? Ведь это не я буду использовать этот прибор, а неизвестно кто, и мало ли что он там щелкнет... Хотелось бы как можно меньше глюкогенерирующих возможностей.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> А как сделать, чтобы оно само щелкнулось? Ведь это не я буду использовать этот прибор, а неизвестно кто, и мало ли что он там щелкнет... Хотелось бы как можно меньше глюкогенерирующих возможностей.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=423.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -230,11 +193,11 @@ End Sub</font id="code"></pre id="code">При ее исполнении виж�
                       <td valign="top">
                       <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;02/10/2005&nbsp;:&nbsp; 08:16:16</font>
                       &nbsp;<a href="http://www.immortal.vstu.edu.ru" target="_blank"><img src="icon_homepage.gif" width="15" height="15" border="0" alt="Visit immortal's Homepage" title="Visit immortal's Homepage" align="absmiddle" hspace="6" /></a>
-                      &nbsp;<a href="JavaScript:openWindow6('pop_messengers.asp?mode=ICQ&ID=127')"><img src="icon_icq.gif" width="15" height="15" border="0" alt="Send immortal an ICQ Message" title="Send immortal an ICQ Message" align="absmiddle" hspace="6" /></a>
+                      
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> используйте add-in, он не является макросом и пользователь может его отключить лишь через соответствующее меню, которое в прочем наверно можно отключить из add-inа, тамже установить запрет на макросы,<br />add-on не подходит по нескольким причинам, во первых он не загружается вместе с визио, во вторых визио считает адд-оны макросами и установки тоже распостроняются на них<br /><br />визио 2003 форэвер<br /><br />...а вобще-то я белый и пушистый.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> используйте add-in, он не является макросом и пользователь может его отключить лишь через соответствующее меню, которое в прочем наверно можно отключить из add-inа, тамже установить запрет на макросы,<br />add-on не подходит по нескольким причинам, во первых он не загружается вместе с визио, во вторых визио считает адд-оны макросами и установки тоже распостроняются на них<br /><br />визио 2003 форэвер<br /><br />...а вобще-то я белый и пушистый.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=423.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -260,11 +223,7 @@ End Sub</font id="code"></pre id="code">При ее исполнении виж�
     <td>
       <table width="100%">
         <tr>
-          <td align="center" valign="top" width="50%">
-          <font face="Verdana, Arial, Helvetica" size="2">
-          </font></td>
-          <td align="right" valign="top" width="50%" nowrap>
-          </td>
+          <td align="center" bgcolor="#ffffAA"><font face="Verdana, Arial, Helvetica" size="2">Данный сайт является архивом форума visio.artberg.ru, который был закрыт в связи с переходом на новую платформу <b><a href="http://visio.getbb.ru">visio.getbb.ru</a></b><br/>Все материалы доступны только для чтения! Если у вас появились вопросы, или вы хотите что-то обсудить, связанное с Visio, обращайтесь на новый форум!<br/>Архив был создан благодаря совместным усилиям Генадия Туманова @Tumanov (<a href="http://visio.artberg.ru">visio.artberg.ru</a>), Александра ака @Surrogate (<a href="http://visio.getbb.ru">visio.getbb.ru</a>), и Николая Белых @nbelyh (<a href="http://unmanagedvisio.com">unmanagedvisio.com</a>)</font></td>
         </tr>
       </table>
   </td>

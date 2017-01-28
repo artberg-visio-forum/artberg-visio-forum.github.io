@@ -4,31 +4,7 @@
 <head>
 <title>Visio - Как в шейп встроить объект</title>
 <meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" ><script language="JavaScript" type="text/javascript">
-<!-- hide from JavaScript-challenged browsers
-function openWindow(url) {
-	popupWin = window.open(url,'new_page','width=400,height=400')
-}
-function openWindow2(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450')
-}
-function openWindow3(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
-}
-function openWindow4(url) {
-	popupWin = window.open(url,'new_page','width=400,height=525')
-}
-function openWindow5(url) {
-	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
-}
-function openWindow6(url) {
-	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
-}
-function openWindowHelp(url) {
-	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
-}
-// done hiding -->
-</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 <style type="text/css">
 <!--
 a:link    {color:darkblue;text-decoration:underline}
@@ -48,26 +24,13 @@ input.radio {background:lightsteelblue;color:#000000}
 <body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
 <a name="top"></a>
 
-<script>(function() { var cx = '002792228947284598284:d9ou_dwkikw'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
+<script>(function() { var cx = '002792228947284598284:fmq7et_yt8s'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
 <div style='height: 61px' class='gcse-search'></div>
 <table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
   <tr>
     <td>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function unsub_confirm(link){
-    	var where_to= confirm("Do you really want to Unsubscribe?");
-       if (where_to== true) {
-       	popupWin = window.open(link,'new_page','width=400,height=400')
-       }
-    }
-    //-->
-    </script>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
-    // -->
-    </script>
+    
+    
       <table border="0" width="100%">
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
@@ -111,7 +74,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Как в шейп встроить объект что бы шейп как бы являлся контейнером для контролов. Групировка не подходит. И как это сделать програмно.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Как в шейп встроить объект что бы шейп как бы являлся контейнером для контролов. Групировка не подходит. И как это сделать програмно.</span></font></td>
                     </tr>
                   </table>
                 </td>
@@ -131,7 +94,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Объект не нужно встраивать в шейп. Когда Вы его разместите на странице, Visio обернет его в шейп (натянет оболочку).<br />Сначала разберемся с ручным методом.<br />Открываем рисунок. Открываем полезный тулбар Developer.<br />Нажимаем кнопочку Insert Control, из списка выбираем Microsoft Forms 2.0 CheckBox, жмем OK.<br />На рисунке появляется контрол, который ведет себя примерно как обычный шейп. Это Design Mode, который включается при размещении контрола.<br />Теперь нажимаем кнопочку Design Mode на тулбаре Developer. Контрол оживает. При нажатии на него появляется и исчезает галочка в CheckBox'е и т.д. Теперь он ведет себя как правильный контрол.<br />Если нам что-то надо изменить в нем, то независимо от режима, по правой кнопке выбираем Properties и в появившемся окошке со свойствами выставляем нужные значения.<br /><br />Программно проделанная операция выполняется примерно так:<br />Sub ttt()<br />    Application.ActiveWindow.Page.InsertObject "{8BD21D40-EC42-11CE-9E0D-00AA006002F3}", visInsertAsControl + visInsertNoDesignModeTransition<br />End Sub<br />Доступ к свойствам контрола получаем следующим образом:<br />Sub ttt1()<br />Debug.Print ActivePage.OLEObjects.Count<br />Debug.Print ActivePage.OLEObjects.ObjectType<br />Debug.Print ActivePage.OLEObjects(1).Object.Name<br />Debug.Print ActivePage.OLEObjects(1).Object.Value<br />End Sub<br />Этот код выводит следующие данные:<br />1 <br />38 <br />CheckBox1<br />True<br />1 - это количество контролов на активной странице.<br />38 - тип контрола.<br />CheckBox1 - его имя. Это же имя, видно в окне Drawing Explorer.<br />True - состояние чекбокса.<br /><br />Примерно такими же манипуляциями можно вставить и объект Microsoft TreeView Control 6.0, добираться до его свойств и выполнять его методы. Идентификатор класса, естественно, другой будет...<br />Одно плохо. Подобные контролы привязываются к разрешению окна, а страница Visio может масштабироваться. В результате при изменении масштаба изображения контрол ведет себя не так, как хочется. Наверное это одна из причин, по которой они не очень широко используются. Вот если написать свой контрол, то ему можно придать нужное поведение :)<br /></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Объект не нужно встраивать в шейп. Когда Вы его разместите на странице, Visio обернет его в шейп (натянет оболочку).<br />Сначала разберемся с ручным методом.<br />Открываем рисунок. Открываем полезный тулбар Developer.<br />Нажимаем кнопочку Insert Control, из списка выбираем Microsoft Forms 2.0 CheckBox, жмем OK.<br />На рисунке появляется контрол, который ведет себя примерно как обычный шейп. Это Design Mode, который включается при размещении контрола.<br />Теперь нажимаем кнопочку Design Mode на тулбаре Developer. Контрол оживает. При нажатии на него появляется и исчезает галочка в CheckBox'е и т.д. Теперь он ведет себя как правильный контрол.<br />Если нам что-то надо изменить в нем, то независимо от режима, по правой кнопке выбираем Properties и в появившемся окошке со свойствами выставляем нужные значения.<br /><br />Программно проделанная операция выполняется примерно так:<br />Sub ttt()<br />    Application.ActiveWindow.Page.InsertObject "{8BD21D40-EC42-11CE-9E0D-00AA006002F3}", visInsertAsControl + visInsertNoDesignModeTransition<br />End Sub<br />Доступ к свойствам контрола получаем следующим образом:<br />Sub ttt1()<br />Debug.Print ActivePage.OLEObjects.Count<br />Debug.Print ActivePage.OLEObjects.ObjectType<br />Debug.Print ActivePage.OLEObjects(1).Object.Name<br />Debug.Print ActivePage.OLEObjects(1).Object.Value<br />End Sub<br />Этот код выводит следующие данные:<br />1 <br />38 <br />CheckBox1<br />True<br />1 - это количество контролов на активной странице.<br />38 - тип контрола.<br />CheckBox1 - его имя. Это же имя, видно в окне Drawing Explorer.<br />True - состояние чекбокса.<br /><br />Примерно такими же манипуляциями можно вставить и объект Microsoft TreeView Control 6.0, добираться до его свойств и выполнять его методы. Идентификатор класса, естественно, другой будет...<br />Одно плохо. Подобные контролы привязываются к разрешению окна, а страница Visio может масштабироваться. В результате при изменении масштаба изображения контрол ведет себя не так, как хочется. Наверное это одна из причин, по которой они не очень широко используются. Вот если написать свой контрол, то ему можно придать нужное поведение :)<br /></span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=735.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -154,7 +117,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> &gt;&gt; Tumanov <br />Спасибо, только на счёт маштабируемости немного другая картина,все компоненты MS Form 2.0 без проблем маштабируются. Проблемы начинаются тогда когда вы втавляете свой ActiveX причём написанный только в Basic 6.0, все попытки вставить контрол из VS2005 провалились. Так вот свой ActiveX и подвержен проблемам маштабируемости. Просто вы видели рисунок который мне надо получить получается нужен шейп который может в себе помещать объекты, как контрол Panel.<br />И ещё на что способна и нужна ShapeStudio какие у неё возможности?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> &gt;&gt; Tumanov <br />Спасибо, только на счёт маштабируемости немного другая картина,все компоненты MS Form 2.0 без проблем маштабируются. Проблемы начинаются тогда когда вы втавляете свой ActiveX причём написанный только в Basic 6.0, все попытки вставить контрол из VS2005 провалились. Так вот свой ActiveX и подвержен проблемам маштабируемости. Просто вы видели рисунок который мне надо получить получается нужен шейп который может в себе помещать объекты, как контрол Panel.<br />И ещё на что способна и нужна ShapeStudio какие у неё возможности?</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=735.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -177,7 +140,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">получается нужен шейп который может в себе помещать объекты, как контрол Panel<hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote"><br />Таким шейпом может быть только группа. Она сама по себе является шейпом. Этот шейп содержит коллекцию своих внутренних шейпов. Другие контейнеры не соответствуют объектной модели Visio.<br /> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">на что способна и нужна ShapeStudio<hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote"><br />Это технология, рассчитанная на производство серий шейпов (обладающих сходными признаками), учет версий при разработке и повторное использование наработок.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <font size="1" face="Verdana, Arial, Helvetica" id="quote"><blockquote id="quote">quote:<hr height="1" noshade id="quote">получается нужен шейп который может в себе помещать объекты, как контрол Panel<hr height="1" noshade id="quote"></blockquote></font><br />Таким шейпом может быть только группа. Она сама по себе является шейпом. Этот шейп содержит коллекцию своих внутренних шейпов. Другие контейнеры не соответствуют объектной модели Visio.<br /> <font size="1" face="Verdana, Arial, Helvetica" id="quote"><blockquote id="quote">quote:<hr height="1" noshade id="quote">на что способна и нужна ShapeStudio<hr height="1" noshade id="quote"></blockquote></font><br />Это технология, рассчитанная на производство серий шейпов (обладающих сходными признаками), учет версий при разработке и повторное использование наработок.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=735.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -200,7 +163,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> &gt;&gt; Tumanov<br />Большое спасибо.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> &gt;&gt; Tumanov<br />Большое спасибо.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=735.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -226,11 +189,7 @@ input.radio {background:lightsteelblue;color:#000000}
     <td>
       <table width="100%">
         <tr>
-          <td align="center" valign="top" width="50%">
-          <font face="Verdana, Arial, Helvetica" size="2">
-          </font></td>
-          <td align="right" valign="top" width="50%" nowrap>
-          </td>
+          <td align="center" bgcolor="#ffffAA"><font face="Verdana, Arial, Helvetica" size="2">Данный сайт является архивом форума visio.artberg.ru, который был закрыт в связи с переходом на новую платформу <b><a href="http://visio.getbb.ru">visio.getbb.ru</a></b><br/>Все материалы доступны только для чтения! Если у вас появились вопросы, или вы хотите что-то обсудить, связанное с Visio, обращайтесь на новый форум!<br/>Архив был создан благодаря совместным усилиям Генадия Туманова @Tumanov (<a href="http://visio.artberg.ru">visio.artberg.ru</a>), Александра ака @Surrogate (<a href="http://visio.getbb.ru">visio.getbb.ru</a>), и Николая Белых @nbelyh (<a href="http://unmanagedvisio.com">unmanagedvisio.com</a>)</font></td>
         </tr>
       </table>
   </td>

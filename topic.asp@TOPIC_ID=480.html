@@ -4,31 +4,7 @@
 <head>
 <title>Visio - Макрос не работает.  Help !</title>
 <meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" ><script language="JavaScript" type="text/javascript">
-<!-- hide from JavaScript-challenged browsers
-function openWindow(url) {
-	popupWin = window.open(url,'new_page','width=400,height=400')
-}
-function openWindow2(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450')
-}
-function openWindow3(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
-}
-function openWindow4(url) {
-	popupWin = window.open(url,'new_page','width=400,height=525')
-}
-function openWindow5(url) {
-	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
-}
-function openWindow6(url) {
-	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
-}
-function openWindowHelp(url) {
-	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
-}
-// done hiding -->
-</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 <style type="text/css">
 <!--
 a:link    {color:darkblue;text-decoration:underline}
@@ -48,26 +24,13 @@ input.radio {background:lightsteelblue;color:#000000}
 <body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
 <a name="top"></a>
 
-<script>(function() { var cx = '002792228947284598284:d9ou_dwkikw'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
+<script>(function() { var cx = '002792228947284598284:fmq7et_yt8s'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
 <div style='height: 61px' class='gcse-search'></div>
 <table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
   <tr>
     <td>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function unsub_confirm(link){
-    	var where_to= confirm("Do you really want to Unsubscribe?");
-       if (where_to== true) {
-       	popupWin = window.open(link,'new_page','width=400,height=400')
-       }
-    }
-    //-->
-    </script>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
-    // -->
-    </script>
+    
+    
       <table border="0" width="100%">
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
@@ -111,7 +74,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Кто нить укажите где ошибка в коде ???<br />Макрос нужный но не выполняется.<br />Заранее признателен.<br /><br />Public Sub LocationTable()<br />'This routine will create a text file of the location and size of all 2-d shapes<br />' on the current page<br />Dim shpObj As Visio.Shape, celObj As Visio.Cell<br />Dim ShpNo As Integer, Tabchr As String, localCent As Double<br />Dim LocationX As String, LocationY As String, ShapeWidth As String, ShapeHeight As String<br /><br />Open "C:\LocationTable.txt" For Output Shared As #1<br /><br />Tabchr = Chr(9)<br /><br />For ShpNo = 1 To Visio.ActivePage.Shapes.Count<br /><br />Set shpObj = Visio.ActivePage.Shapes(ShpNo)<br />If Not shpObj.OneD Then ' Only list the 2-D shapes<br />Set celObj = shpObj.Cells("pinx")<br />localCent = celObj.Result("inches")<br />LocationX = Format(localCent, "000.0000")<br />Set celObj = shpObj.Cells("piny")<br />localCent = celObj.Result("inches")<br />LocationY = Format(localCent, "000.0000")<br /><br />Set celObj = shpObj.Cells("width")<br />localCent = celObj.Result("inches")<br />ShapeWidth = Format(localCent, "000.0000")<br />Set celObj = shpObj.Cells("height")<br />localCent = celObj.Result("inches")<br />ShapeHeight = Format(localCent, "000.0000")<br /><br />Debug.Print shpObj.Name, CleanText(shpObj.Text), LocationX, LocationY, ShapeWidth, ShapeHeight<br />Print #1, shpObj.Name; Tabchr; CleanText(shpObj.Text); Tabchr; LocationX; Tabchr; LocationY; Tabchr; ShapeWidth; Tabchr; ShapeHeight<br />End If<br /><br />Next ShpNo<br />Close #1<br /><br />End Sub<br /></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Кто нить укажите где ошибка в коде ???<br />Макрос нужный но не выполняется.<br />Заранее признателен.<br /><br />Public Sub LocationTable()<br />'This routine will create a text file of the location and size of all 2-d shapes<br />' on the current page<br />Dim shpObj As Visio.Shape, celObj As Visio.Cell<br />Dim ShpNo As Integer, Tabchr As String, localCent As Double<br />Dim LocationX As String, LocationY As String, ShapeWidth As String, ShapeHeight As String<br /><br />Open "C:\LocationTable.txt" For Output Shared As #1<br /><br />Tabchr = Chr(9)<br /><br />For ShpNo = 1 To Visio.ActivePage.Shapes.Count<br /><br />Set shpObj = Visio.ActivePage.Shapes(ShpNo)<br />If Not shpObj.OneD Then ' Only list the 2-D shapes<br />Set celObj = shpObj.Cells("pinx")<br />localCent = celObj.Result("inches")<br />LocationX = Format(localCent, "000.0000")<br />Set celObj = shpObj.Cells("piny")<br />localCent = celObj.Result("inches")<br />LocationY = Format(localCent, "000.0000")<br /><br />Set celObj = shpObj.Cells("width")<br />localCent = celObj.Result("inches")<br />ShapeWidth = Format(localCent, "000.0000")<br />Set celObj = shpObj.Cells("height")<br />localCent = celObj.Result("inches")<br />ShapeHeight = Format(localCent, "000.0000")<br /><br />Debug.Print shpObj.Name, CleanText(shpObj.Text), LocationX, LocationY, ShapeWidth, ShapeHeight<br />Print #1, shpObj.Name; Tabchr; CleanText(shpObj.Text); Tabchr; LocationX; Tabchr; LocationY; Tabchr; ShapeWidth; Tabchr; ShapeHeight<br />End If<br /><br />Next ShpNo<br />Close #1<br /><br />End Sub<br /></span></font></td>
                     </tr>
                   </table>
                 </td>
@@ -129,11 +92,11 @@ input.radio {background:lightsteelblue;color:#000000}
                       <td valign="top">
                       <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;04/05/2005&nbsp;:&nbsp; 17:22:56</font>
                       &nbsp;<a href="http://www.immortal.vstu.edu.ru" target="_blank"><img src="icon_homepage.gif" width="15" height="15" border="0" alt="Visit immortal's Homepage" title="Visit immortal's Homepage" align="absmiddle" hspace="6" /></a>
-                      &nbsp;<a href="JavaScript:openWindow6('pop_messengers.asp?mode=ICQ&ID=127')"><img src="icon_icq.gif" width="15" height="15" border="0" alt="Send immortal an ICQ Message" title="Send immortal an ICQ Message" align="absmiddle" hspace="6" /></a>
+                      
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> а при запуске визио на какую строку показывает?<br /><br />визио 2003 форэвер<br /><br />...а вобще-то я белый и пушистый.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> а при запуске визио на какую строку показывает?<br /><br />визио 2003 форэвер<br /><br />...а вобще-то я белый и пушистый.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=480.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -154,11 +117,11 @@ input.radio {background:lightsteelblue;color:#000000}
                       <td valign="top">
                       <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;04/05/2005&nbsp;:&nbsp; 17:26:28</font>
                       &nbsp;<a href="http://www.immortal.vstu.edu.ru" target="_blank"><img src="icon_homepage.gif" width="15" height="15" border="0" alt="Visit immortal's Homepage" title="Visit immortal's Homepage" align="absmiddle" hspace="6" /></a>
-                      &nbsp;<a href="JavaScript:openWindow6('pop_messengers.asp?mode=ICQ&ID=127')"><img src="icon_icq.gif" width="15" height="15" border="0" alt="Send immortal an ICQ Message" title="Send immortal an ICQ Message" align="absmiddle" hspace="6" /></a>
+                      
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> если он не выдаёт ошибки а просто не применяет значения ячейкам в шейплисте то хначит у значения нет кавычек или наоборот они есть, надо сделать проверку на наличие или отсутствие символа "<br /><br />визио 2003 форэвер<br /><br />...а вобще-то я белый и пушистый.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> если он не выдаёт ошибки а просто не применяет значения ячейкам в шейплисте то хначит у значения нет кавычек или наоборот они есть, надо сделать проверку на наличие или отсутствие символа "<br /><br />визио 2003 форэвер<br /><br />...а вобще-то я белый и пушистый.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=480.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -181,7 +144,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> ну чего мы в испорченный телефон играть будем ???<br />запустите и все сообщения увидите.<br />автор кода программист на VBA.<br />но неудобно американцу писать легче спросить у своих -:)<br /></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> ну чего мы в испорченный телефон играть будем ???<br />запустите и все сообщения увидите.<br />автор кода программист на VBA.<br />но неудобно американцу писать легче спросить у своих -:)<br /></span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=480.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -204,7 +167,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Все там работает.<br />Только не хватает функции CleanText. Это Вы не все списали, надо где-нибудь рядом посмотреть. Функция должна какую-то несложную операцию с текстом шейпа выполнять.<br />Чтобы заработало без нее, оставьте вместо функции только аргумент shpObj.Text и будет достаточно. Нужно подправить две строчки:<br /><br />Debug.Print shpObj.Name, shpObj.Text, LocationX, LocationY, ShapeWidth, ShapeHeight<br />Print #1, shpObj.Name; shpObj.Text; Tabchr; Tabchr; LocationX; Tabchr; LocationY; Tabchr; ShapeWidth; Tabchr; ShapeHeight<br /></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Все там работает.<br />Только не хватает функции CleanText. Это Вы не все списали, надо где-нибудь рядом посмотреть. Функция должна какую-то несложную операцию с текстом шейпа выполнять.<br />Чтобы заработало без нее, оставьте вместо функции только аргумент shpObj.Text и будет достаточно. Нужно подправить две строчки:<br /><br />Debug.Print shpObj.Name, shpObj.Text, LocationX, LocationY, ShapeWidth, ShapeHeight<br />Print #1, shpObj.Name; shpObj.Text; Tabchr; Tabchr; LocationX; Tabchr; LocationY; Tabchr; ShapeWidth; Tabchr; ShapeHeight<br /></span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=480.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -227,7 +190,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> УРА !!! РАБОТАЕТ !!! СПАСИБО !!!<br />но названия фигур в отчете (ТХТ файле) не те что видны на экране а как в Stencil(е) <br />а мне нужны как на экране те надо два поля в отчет добавить<br /><font color="red">Shape Number</font id="red">  и  <font color="red">ShapeNumber Text</font id="red"> <br />и еще надо бы не в дюймах а в мм отчет получать.<br />это можно сделать ???<br /><br /><br /><br /><br /><br /></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> УРА !!! РАБОТАЕТ !!! СПАСИБО !!!<br />но названия фигур в отчете (ТХТ файле) не те что видны на экране а как в Stencil(е) <br />а мне нужны как на экране те надо два поля в отчет добавить<br /><font color="red">Shape Number</font>  и  <font color="red">ShapeNumber Text</font> <br />и еще надо бы не в дюймах а в мм отчет получать.<br />это можно сделать ???<br /><br /><br /><br /><br /><br /></span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=480.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -250,7 +213,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">Функция должна какую-то несложную операцию с текстом шейпа выполнять.<br /><hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote"><br />Поскольку макрос написан для экспорта данных в тхт файл<br />нетрудно догадаться что функция должна выводить текст шейпа в файл. Замена функции аргументом привела к появлению знака "?" во второй колонке тхт файла для всех строк.<br />Это можно как нить исправить ???</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <font size="1" face="Verdana, Arial, Helvetica" id="quote"><blockquote id="quote">quote:<hr height="1" noshade id="quote">Функция должна какую-то несложную операцию с текстом шейпа выполнять.<br /><hr height="1" noshade id="quote"></blockquote></font><br />Поскольку макрос написан для экспорта данных в тхт файл<br />нетрудно догадаться что функция должна выводить текст шейпа в файл. Замена функции аргументом привела к появлению знака "?" во второй колонке тхт файла для всех строк.<br />Это можно как нить исправить ???</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=480.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -273,7 +236,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> 1. Что за названия у Вас на экране я не знаю, поэтому подставить не могу. Но сделать это легко. Нужно только в Debug.Print и Print #1 добавить либо свойство по аналогии с shpObj.Name, либо значение ячейки шейп-листа по аналогии с Set celObj = shpObj.Cells("pinx") - только вместо PinX подставить имя нужной Вам ячейки.<br /><br />2. Чтобы отчет получать в мм, нужно во всех .Result вместо дюймов подставить миллиметры Result("millimeters")<br /><br />3. На самом деле нетрудно догадаться, что функция должна вычищать из текста какие-то спецсимволы. Выводится-то текст оператором Print #1. Какие спецсимволы находятся в Вашем тексте я не знаю. У меня текст печатается без всяких знаков вопросов.<br />Если нужно что-то вычищать, то нужно писать примерно такую функцию<br /><br />Public Function CleanText(ByVal str As String) As String<br /> CleanText = Replace(str, Chr(10), "")<br />End Function<br /><br />Эта функция, например, будет выбрасывать встречающиеся переводы строки. Естественно, что в основном макросе нужно вернуть обращение CleanText(shpObj.Text).<br />А вообще-то, Вам нужно определяться со своей ролью. Если Вы программист, то надо потихонечку знакомиться с шейп-листом и объектами Visio. Макрос-то несложный. Если пользователь, которому нужно решить определенную задачу, то в данном случае дешевле и быстрее нанять программиста и сформулировать ему требования. А он ее за недельку спокойно сделает.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> 1. Что за названия у Вас на экране я не знаю, поэтому подставить не могу. Но сделать это легко. Нужно только в Debug.Print и Print #1 добавить либо свойство по аналогии с shpObj.Name, либо значение ячейки шейп-листа по аналогии с Set celObj = shpObj.Cells("pinx") - только вместо PinX подставить имя нужной Вам ячейки.<br /><br />2. Чтобы отчет получать в мм, нужно во всех .Result вместо дюймов подставить миллиметры Result("millimeters")<br /><br />3. На самом деле нетрудно догадаться, что функция должна вычищать из текста какие-то спецсимволы. Выводится-то текст оператором Print #1. Какие спецсимволы находятся в Вашем тексте я не знаю. У меня текст печатается без всяких знаков вопросов.<br />Если нужно что-то вычищать, то нужно писать примерно такую функцию<br /><br />Public Function CleanText(ByVal str As String) As String<br /> CleanText = Replace(str, Chr(10), "")<br />End Function<br /><br />Эта функция, например, будет выбрасывать встречающиеся переводы строки. Естественно, что в основном макросе нужно вернуть обращение CleanText(shpObj.Text).<br />А вообще-то, Вам нужно определяться со своей ролью. Если Вы программист, то надо потихонечку знакомиться с шейп-листом и объектами Visio. Макрос-то несложный. Если пользователь, которому нужно решить определенную задачу, то в данном случае дешевле и быстрее нанять программиста и сформулировать ему требования. А он ее за недельку спокойно сделает.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=480.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -296,7 +259,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> 1. я не программист а инженер связи.<br />и пытаюсь слегка автоматизировать свою работу.<br />у нас есть программисты но они заняты глобальными задачами.<br />и загружены выше крыши. Нанимать программистов за свои кровные <br />это наверное шутка.<br />2. здесь вроде как форум   <font color="red">"Вопросы и Ответы."</font id="red"><br />так что извините что побеспокоил.<br /><br /></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> 1. я не программист а инженер связи.<br />и пытаюсь слегка автоматизировать свою работу.<br />у нас есть программисты но они заняты глобальными задачами.<br />и загружены выше крыши. Нанимать программистов за свои кровные <br />это наверное шутка.<br />2. здесь вроде как форум   <font color="red">"Вопросы и Ответы."</font><br />так что извините что побеспокоил.<br /><br /></span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=480.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -317,11 +280,11 @@ input.radio {background:lightsteelblue;color:#000000}
                       <td valign="top">
                       <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;04/07/2005&nbsp;:&nbsp; 10:26:33</font>
                       &nbsp;<a href="http://www.immortal.vstu.edu.ru" target="_blank"><img src="icon_homepage.gif" width="15" height="15" border="0" alt="Visit immortal's Homepage" title="Visit immortal's Homepage" align="absmiddle" hspace="6" /></a>
-                      &nbsp;<a href="JavaScript:openWindow6('pop_messengers.asp?mode=ICQ&ID=127')"><img src="icon_icq.gif" width="15" height="15" border="0" alt="Send immortal an ICQ Message" title="Send immortal an ICQ Message" align="absmiddle" hspace="6" /></a>
+                      
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote"><i>Originally posted by brace</i><br /><br />1. я не программист а инженер связи.<br />и пытаюсь слегка автоматизировать свою работу.<br />у нас есть программисты но они заняты глобальными задачами.<br />и загружены выше крыши. Нанимать программистов за свои кровные <br />это наверное шутка.<br />2. здесь вроде как форум   <font color="red">"Вопросы и Ответы."</font id="red"><br />так что извините что побеспокоил.<br /><hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote"><br />есть такой раздел на форуме, для заказчиков....<br /><br />визио 2003 форэвер<br /><br />...а вобще-то я белый и пушистый.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <font size="1" face="Verdana, Arial, Helvetica" id="quote"><blockquote id="quote">quote:<hr height="1" noshade id="quote"><i>Originally posted by brace</i><br /><br />1. я не программист а инженер связи.<br />и пытаюсь слегка автоматизировать свою работу.<br />у нас есть программисты но они заняты глобальными задачами.<br />и загружены выше крыши. Нанимать программистов за свои кровные <br />это наверное шутка.<br />2. здесь вроде как форум   <font color="red">"Вопросы и Ответы."</font><br />так что извините что побеспокоил.<br /><hr height="1" noshade id="quote"></blockquote></font><br />есть такой раздел на форуме, для заказчиков....<br /><br />визио 2003 форэвер<br /><br />...а вобще-то я белый и пушистый.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=480.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -344,7 +307,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Это Вы к тому, что помимо вопросов и ответов я еще и советы даю? <br />Ну, извините, хотел как лучше. Ведь если считать деньги, то таким образом Вы слишком много времени (а значит и денег) угробите там, где можно было бы дешевле сделать.<br />А на вопросы Вам отвечают. Если где-то не смогли, значит не хватило информации - пояснять надо.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Это Вы к тому, что помимо вопросов и ответов я еще и советы даю? <br />Ну, извините, хотел как лучше. Ведь если считать деньги, то таким образом Вы слишком много времени (а значит и денег) угробите там, где можно было бы дешевле сделать.<br />А на вопросы Вам отвечают. Если где-то не смогли, значит не хватило информации - пояснять надо.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=480.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -370,11 +333,7 @@ input.radio {background:lightsteelblue;color:#000000}
     <td>
       <table width="100%">
         <tr>
-          <td align="center" valign="top" width="50%">
-          <font face="Verdana, Arial, Helvetica" size="2">
-          </font></td>
-          <td align="right" valign="top" width="50%" nowrap>
-          </td>
+          <td align="center" bgcolor="#ffffAA"><font face="Verdana, Arial, Helvetica" size="2">Данный сайт является архивом форума visio.artberg.ru, который был закрыт в связи с переходом на новую платформу <b><a href="http://visio.getbb.ru">visio.getbb.ru</a></b><br/>Все материалы доступны только для чтения! Если у вас появились вопросы, или вы хотите что-то обсудить, связанное с Visio, обращайтесь на новый форум!<br/>Архив был создан благодаря совместным усилиям Генадия Туманова @Tumanov (<a href="http://visio.artberg.ru">visio.artberg.ru</a>), Александра ака @Surrogate (<a href="http://visio.getbb.ru">visio.getbb.ru</a>), и Николая Белых @nbelyh (<a href="http://unmanagedvisio.com">unmanagedvisio.com</a>)</font></td>
         </tr>
       </table>
   </td>

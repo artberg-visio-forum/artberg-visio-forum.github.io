@@ -4,31 +4,7 @@
 <head>
 <title>Visio - Как найти шейп внутри другого шейпа?</title>
 <meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" ><script language="JavaScript" type="text/javascript">
-<!-- hide from JavaScript-challenged browsers
-function openWindow(url) {
-	popupWin = window.open(url,'new_page','width=400,height=400')
-}
-function openWindow2(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450')
-}
-function openWindow3(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
-}
-function openWindow4(url) {
-	popupWin = window.open(url,'new_page','width=400,height=525')
-}
-function openWindow5(url) {
-	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
-}
-function openWindow6(url) {
-	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
-}
-function openWindowHelp(url) {
-	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
-}
-// done hiding -->
-</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 <style type="text/css">
 <!--
 a:link    {color:darkblue;text-decoration:underline}
@@ -48,26 +24,13 @@ input.radio {background:lightsteelblue;color:#000000}
 <body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
 <a name="top"></a>
 
-<script>(function() { var cx = '002792228947284598284:d9ou_dwkikw'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
+<script>(function() { var cx = '002792228947284598284:fmq7et_yt8s'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
 <div style='height: 61px' class='gcse-search'></div>
 <table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
   <tr>
     <td>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function unsub_confirm(link){
-    	var where_to= confirm("Do you really want to Unsubscribe?");
-       if (where_to== true) {
-       	popupWin = window.open(link,'new_page','width=400,height=400')
-       }
-    }
-    //-->
-    </script>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
-    // -->
-    </script>
+    
+    
       <table border="0" width="100%">
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
@@ -110,7 +73,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Здраствуйте.<br />Имеется следующая ситуация:<br />Шейп находится внутри другого шейпа. В свою очередь он содержит ещё один шейп. (Эдакая 2-х мерная матрешка).<br /><br /> <br />Если я использую свойство SpatialRelation с флагами visSpatialContained или visSpatialContainedIn,<br />то получаю все Шейпы которые включают данный Шейп или которые содержатся в этом шейпе.<br /><br />Мне же надо найти непосредственного "родителя" и непосредственного "ребенка" для каждого шейпа.<br /><br />Как это можно сделать?<br /></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Здраствуйте.<br />Имеется следующая ситуация:<br />Шейп находится внутри другого шейпа. В свою очередь он содержит ещё один шейп. (Эдакая 2-х мерная матрешка).<br /><br /> <br />Если я использую свойство SpatialRelation с флагами visSpatialContained или visSpatialContainedIn,<br />то получаю все Шейпы которые включают данный Шейп или которые содержатся в этом шейпе.<br /><br />Мне же надо найти непосредственного "родителя" и непосредственного "ребенка" для каждого шейпа.<br /><br />Как это можно сделать?<br /></span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom"><hr noshade size="1" color="whitesmoke"><font face="Verdana, Arial, Helvetica" size="1" color="midnightblue">Edited by - krys on 05/09/2007  13:53:17</font></td>
@@ -133,7 +96,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Если на листе только чистая матрешка и ничего лишнего, то вот таким образом можно пересортировать все шейпы.<br />В массиве sort первым будет идти индекс самого большого шейпа, потом поменьше и т.д. Соответственно, если мы захотим  определить родителя и ребенка шейпа ActivePage.Shapes(sort(i)), то родителем будет ActivePage.Shapes(sort(i-1)), а ребенком  ActivePage.Shapes(sort(i+1))<br />Sub ttt()<br />Dim sort()<br />Count = ActivePage.Shapes.Count<br />ReDim sort(Count)<br />For i = 1 To Count<br />    sort(i) = i<br />Next<br />f = 1<br />While f &lt;&gt; 0<br />    f = 0<br />    For i = 1 To Count - 1<br />        If (ActivePage.Shapes(sort(i)).SpatialRelation(ActivePage.Shapes(sort(i + 1)), 0.1, 0) And visSpatialContain) = 0 Then<br />            a = sort(i)<br />            sort(i) = sort(i + 1)<br />            sort(i + 1) = a<br />            f = 1<br />        End If<br />    Next<br />Wend<br />For i = 1 To Count<br />    Debug.Print ActivePage.Shapes(sort(i)).NameID<br />Next<br />End Sub</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Если на листе только чистая матрешка и ничего лишнего, то вот таким образом можно пересортировать все шейпы.<br />В массиве sort первым будет идти индекс самого большого шейпа, потом поменьше и т.д. Соответственно, если мы захотим  определить родителя и ребенка шейпа ActivePage.Shapes(sort(i)), то родителем будет ActivePage.Shapes(sort(i-1)), а ребенком  ActivePage.Shapes(sort(i+1))<br />Sub ttt()<br />Dim sort()<br />Count = ActivePage.Shapes.Count<br />ReDim sort(Count)<br />For i = 1 To Count<br />    sort(i) = i<br />Next<br />f = 1<br />While f &lt;&gt; 0<br />    f = 0<br />    For i = 1 To Count - 1<br />        If (ActivePage.Shapes(sort(i)).SpatialRelation(ActivePage.Shapes(sort(i + 1)), 0.1, 0) And visSpatialContain) = 0 Then<br />            a = sort(i)<br />            sort(i) = sort(i + 1)<br />            sort(i + 1) = a<br />            f = 1<br />        End If<br />    Next<br />Wend<br />For i = 1 To Count<br />    Debug.Print ActivePage.Shapes(sort(i)).NameID<br />Next<br />End Sub</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=1084.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -155,7 +118,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> K сожалению не все так просто.<br />На чертеже может быть множество "матрешкоподобных" формаций. И кроме того один шейп может содержать несколько шейпов, которые в свою очередь могут содержать шейпы и т.д.<br />Однако самый большой Шеип в такой формации имеет ячейку user.Class ='FRAME', что наверное может позволить сортировку отталкиваясь от этого шейпа.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> K сожалению не все так просто.<br />На чертеже может быть множество "матрешкоподобных" формаций. И кроме того один шейп может содержать несколько шейпов, которые в свою очередь могут содержать шейпы и т.д.<br />Однако самый большой Шеип в такой формации имеет ячейку user.Class ='FRAME', что наверное может позволить сортировку отталкиваясь от этого шейпа.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=1084.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -181,11 +144,7 @@ input.radio {background:lightsteelblue;color:#000000}
     <td>
       <table width="100%">
         <tr>
-          <td align="center" valign="top" width="50%">
-          <font face="Verdana, Arial, Helvetica" size="2">
-          </font></td>
-          <td align="right" valign="top" width="50%" nowrap>
-          </td>
+          <td align="center" bgcolor="#ffffAA"><font face="Verdana, Arial, Helvetica" size="2">Данный сайт является архивом форума visio.artberg.ru, который был закрыт в связи с переходом на новую платформу <b><a href="http://visio.getbb.ru">visio.getbb.ru</a></b><br/>Все материалы доступны только для чтения! Если у вас появились вопросы, или вы хотите что-то обсудить, связанное с Visio, обращайтесь на новый форум!<br/>Архив был создан благодаря совместным усилиям Генадия Туманова @Tumanov (<a href="http://visio.artberg.ru">visio.artberg.ru</a>), Александра ака @Surrogate (<a href="http://visio.getbb.ru">visio.getbb.ru</a>), и Николая Белых @nbelyh (<a href="http://unmanagedvisio.com">unmanagedvisio.com</a>)</font></td>
         </tr>
       </table>
   </td>

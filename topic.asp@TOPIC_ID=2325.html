@@ -1,34 +1,10 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
 <head>
 <title>Visio - Определенный угол коннекта</title>
 <meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" ><script language="JavaScript" type="text/javascript">
-<!-- hide from JavaScript-challenged browsers
-function openWindow(url) {
-	popupWin = window.open(url,'new_page','width=400,height=400')
-}
-function openWindow2(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450')
-}
-function openWindow3(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
-}
-function openWindow4(url) {
-	popupWin = window.open(url,'new_page','width=400,height=525')
-}
-function openWindow5(url) {
-	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
-}
-function openWindow6(url) {
-	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
-}
-function openWindowHelp(url) {
-	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
-}
-// done hiding -->
-</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 <style type="text/css">
 <!--
 a:link    {color:darkblue;text-decoration:underline}
@@ -48,26 +24,13 @@ input.radio {background:lightsteelblue;color:#000000}
 <body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
 <a name="top"></a>
 
-<script>(function() { var cx = '002792228947284598284:d9ou_dwkikw'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
+<script>(function() { var cx = '002792228947284598284:fmq7et_yt8s'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
 <div style='height: 61px' class='gcse-search'></div>
 <table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
   <tr>
     <td>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function unsub_confirm(link){
-    	var where_to= confirm("Do you really want to Unsubscribe?");
-       if (where_to== true) {
-       	popupWin = window.open(link,'new_page','width=400,height=400')
-       }
-    }
-    //-->
-    </script>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
-    // -->
-    </script>
+    
+    
       <table border="0" width="100%">
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
@@ -110,7 +73,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Как заставить коннектор коннектиться к точке соединения под определенным углом? И чтобы при изменении маршрута коннектора этот угол всегда выдерживался, а перелом (коннектора) начинался на определенном расстоянии от точки соединения.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Как заставить коннектор коннектиться к точке соединения под определенным углом? И чтобы при изменении маршрута коннектора этот угол всегда выдерживался, а перелом (коннектора) начинался на определенном расстоянии от точки соединения.</span></font></td>
                     </tr>
                   </table>
                 </td>
@@ -130,7 +93,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Сдается мне, что это невозможно.<br />Коннекторы полностью управляются Visio и изменить их поведение можно только в очень ограниченных рамках.<br />Можно только попробовать имитировать нужное поведение. Например, если использовать не коннектор, а линию плюс коннектор.<br />Берем квадрат. Добавляем ему Connection Point. Открываем ShapeSheet и задаем некоторые значения в DirX, DirY. Это задаст направление присоединения.<br />Берем линию. Добавляем на ее концы Connection Points. Одну из них делаем Outward, другую Inward.<br />К точке Inward присоединяем коннектор.<br />Точкой Outward прилепляем к квадрату.<br />При этом линия поворачивается в заданном направлении (точнее перпендикулярном заданному). Ну, а коннектор тянется за ней.<br />Длина до перелома всегда будет равна длине дополнительной линии. Угол можно менять с помощью значений DirX, DirY. Так что получившееся поведение слегка напоминает заданное.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Сдается мне, что это невозможно.<br />Коннекторы полностью управляются Visio и изменить их поведение можно только в очень ограниченных рамках.<br />Можно только попробовать имитировать нужное поведение. Например, если использовать не коннектор, а линию плюс коннектор.<br />Берем квадрат. Добавляем ему Connection Point. Открываем ShapeSheet и задаем некоторые значения в DirX, DirY. Это задаст направление присоединения.<br />Берем линию. Добавляем на ее концы Connection Points. Одну из них делаем Outward, другую Inward.<br />К точке Inward присоединяем коннектор.<br />Точкой Outward прилепляем к квадрату.<br />При этом линия поворачивается в заданном направлении (точнее перпендикулярном заданному). Ну, а коннектор тянется за ней.<br />Длина до перелома всегда будет равна длине дополнительной линии. Угол можно менять с помощью значений DirX, DirY. Так что получившееся поведение слегка напоминает заданное.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2325.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -153,7 +116,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">Коннекторы полностью управляются Visio и изменить их поведение можно только в очень ограниченных рамках.<hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br />но ведь геометрия у них есть ? а значит ее можно менять через макрос в любых пределах. вопрос как отследить "изменении маршрута коннектора" чтобы этот самый макрос запустить ?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">Коннекторы полностью управляются Visio и изменить их поведение можно только в очень ограниченных рамках.<hr height="1" noshade id="quote"></font></blockquote><br />но ведь геометрия у них есть ? а значит ее можно менять через макрос в любых пределах. вопрос как отследить "изменении маршрута коннектора" чтобы этот самый макрос запустить ?</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2325.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -176,7 +139,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Отследить-то - без проблем... Например, через обработчик CellChanged.<br />Важно другое. Тут либо Вы переспорите Visio - и тогда коннектор перестанет быть коннектором. Либо он переспорит Вас и поверх Ваших изменений внесет свои.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Отследить-то - без проблем... Например, через обработчик CellChanged.<br />Важно другое. Тут либо Вы переспорите Visio - и тогда коннектор перестанет быть коннектором. Либо он переспорит Вас и поверх Ваших изменений внесет свои.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2325.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -199,7 +162,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">и тогда коннектор перестанет быть коннектором<hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br />хорошо. а если попробовать описать чем нам так нравится именно коннектор ? чем он лучше обычной линии для нас например ?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">и тогда коннектор перестанет быть коннектором<hr height="1" noshade id="quote"></font></blockquote><br />хорошо. а если попробовать описать чем нам так нравится именно коннектор ? чем он лучше обычной линии для нас например ?</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2325.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -221,7 +184,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote"><i>Originally posted by bdfy</i><br />хорошо. а если попробовать описать чем нам так нравится именно коннектор ? чем он лучше обычной линии для нас например ?<br /><hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br /><br />Коннектор делает арки через другие коннекторы, коннектор "объезжает" объекты (правда не всегда успешно).</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote"><i>Originally posted by bdfy</i><br />хорошо. а если попробовать описать чем нам так нравится именно коннектор ? чем он лучше обычной линии для нас например ?<br /><hr height="1" noshade id="quote"></font></blockquote><br /><br />Коннектор делает арки через другие коннекторы, коннектор "объезжает" объекты (правда не всегда успешно).</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2325.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -244,7 +207,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">коннектор "объезжает" объекты (правда не всегда успешно).<hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br />вот такой фичи вообще не видел ) сколько не тяну прямо через шейп коннектор - не пробует он его обьезжать. а проблема для меня актуальная. даже думаю "роутер" какой написать.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">коннектор "объезжает" объекты (правда не всегда успешно).<hr height="1" noshade id="quote"></font></blockquote><br />вот такой фичи вообще не видел ) сколько не тяну прямо через шейп коннектор - не пробует он его обьезжать. а проблема для меня актуальная. даже думаю "роутер" какой написать.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2325.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -266,7 +229,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote"><i>Originally posted by bdfy</i><br />вот такой фичи вообще не видел ) сколько не тяну прямо через шейп коннектор - не пробует он его обьезжать. а проблема для меня актуальная. даже думаю "роутер" какой написать.<br /><hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br /><br />Ну по крайней мере у меня пытается объехать тот к которому приконнекчен. Однако удачно только в 60%.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote"><i>Originally posted by bdfy</i><br />вот такой фичи вообще не видел ) сколько не тяну прямо через шейп коннектор - не пробует он его обьезжать. а проблема для меня актуальная. даже думаю "роутер" какой написать.<br /><hr height="1" noshade id="quote"></font></blockquote><br /><br />Ну по крайней мере у меня пытается объехать тот к которому приконнекчен. Однако удачно только в 60%.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2325.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -292,11 +255,7 @@ input.radio {background:lightsteelblue;color:#000000}
     <td>
       <table width="100%">
         <tr>
-          <td align="center" valign="top" width="50%">
-          <font face="Verdana, Arial, Helvetica" size="2">
-          </font></td>
-          <td align="right" valign="top" width="50%" nowrap>
-          </td>
+          <td align="center" bgcolor="#ffffAA"><font face="Verdana, Arial, Helvetica" size="2">Данный сайт является архивом форума visio.artberg.ru, который был закрыт в связи с переходом на новую платформу <b><a href="http://visio.getbb.ru">visio.getbb.ru</a></b><br/>Все материалы доступны только для чтения! Если у вас появились вопросы, или вы хотите что-то обсудить, связанное с Visio, обращайтесь на новый форум!<br/>Архив был создан благодаря совместным усилиям Генадия Туманова @Tumanov (<a href="http://visio.artberg.ru">visio.artberg.ru</a>), Александра ака @Surrogate (<a href="http://visio.getbb.ru">visio.getbb.ru</a>), и Николая Белых @nbelyh (<a href="http://unmanagedvisio.com">unmanagedvisio.com</a>)</font></td>
         </tr>
       </table>
   </td>

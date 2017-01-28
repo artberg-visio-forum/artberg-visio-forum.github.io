@@ -1,34 +1,10 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
 <head>
 <title>Visio - Работа с Visio из внешнего макроса (в Excel)</title>
 <meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" ><script language="JavaScript" type="text/javascript">
-<!-- hide from JavaScript-challenged browsers
-function openWindow(url) {
-	popupWin = window.open(url,'new_page','width=400,height=400')
-}
-function openWindow2(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450')
-}
-function openWindow3(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
-}
-function openWindow4(url) {
-	popupWin = window.open(url,'new_page','width=400,height=525')
-}
-function openWindow5(url) {
-	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
-}
-function openWindow6(url) {
-	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
-}
-function openWindowHelp(url) {
-	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
-}
-// done hiding -->
-</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 <style type="text/css">
 <!--
 a:link    {color:darkblue;text-decoration:underline}
@@ -48,26 +24,13 @@ input.radio {background:lightsteelblue;color:#000000}
 <body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
 <a name="top"></a>
 
-<script>(function() { var cx = '002792228947284598284:d9ou_dwkikw'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
+<script>(function() { var cx = '002792228947284598284:fmq7et_yt8s'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
 <div style='height: 61px' class='gcse-search'></div>
 <table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
   <tr>
     <td>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function unsub_confirm(link){
-    	var where_to= confirm("Do you really want to Unsubscribe?");
-       if (where_to== true) {
-       	popupWin = window.open(link,'new_page','width=400,height=400')
-       }
-    }
-    //-->
-    </script>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
-    // -->
-    </script>
+    
+    
       <table border="0" width="100%">
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
@@ -85,7 +48,7 @@ input.radio {background:lightsteelblue;color:#000000}
 </table>
 <table align="center" border="0" cellPadding="0" cellSpacing="1" width="95%">
   <tr>
-    <td align="right" valign="top"><font face="Verdana, Arial, Helvetica" size="1"><a href="topic.asp@TOPIC_ID=2242&amp;whichpage=2.html" title="Goto the Next page in this Topic" onMouseOver="(window.status='Goto the Next page in this Topic'); return true" onMouseOut="(window.status=''); return true">Next Page</a></td>
+    <td align="right" valign="top"><font face="Verdana, Arial, Helvetica" size="1"><a href="topic.asp@TOPIC_ID=2242&amp;whichpage=2.html" title="Goto the Next page in this Topic" onMouseOver="(window.status='Goto the Next page in this Topic'); return true" onMouseOut="(window.status=''); return true">Next Page</a></font></td>
   </tr>
 </table>
 <table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
@@ -115,7 +78,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> есть некоторый код в екселе. по его завершении я хочу обновить данные на схеме в визио и результат сбросить в картинку. вот только как сослаться на файл визио грамотно под VBA ?<br />Application.ActiveDocument.DataRecordsets.ItemFromID(1).Refresh<br />"Application.ActiveDocument" надо видимо обьявить както. <br />пробовал вот так. не работает (( <br />Set Visio = GetObject("G:\file.vsd")<br /><br />For i = 0 To 2<br />    Visio.DataRecordsets.ItemFromID(i).Refresh<br />    Next<br /></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> есть некоторый код в екселе. по его завершении я хочу обновить данные на схеме в визио и результат сбросить в картинку. вот только как сослаться на файл визио грамотно под VBA ?<br />Application.ActiveDocument.DataRecordsets.ItemFromID(1).Refresh<br />"Application.ActiveDocument" надо видимо обьявить както. <br />пробовал вот так. не работает (( <br />Set Visio = GetObject("G:\file.vsd")<br /><br />For i = 0 To 2<br />    Visio.DataRecordsets.ItemFromID(i).Refresh<br />    Next<br /></span></font></td>
                     </tr>
                   </table>
                 </td>
@@ -135,7 +98,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Решал обратную задачу (из Визио в Эксель) примерно таким образом:<br /><br />Dim ExcelApp as Object<br />...<br />    Set ExcelApp = CreateObject("Excel.Application")<br />    ExcelApp.Workbooks.Open FileName<br />    ExcelApp.Visible = True<br />...<br />полагаю вам нужно нечто подобное написать в Экселе. Попробуйте заменить "Excel.Application" на "Visio.Application", ну и вторая строчка должна выглядеть по-другомк</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Решал обратную задачу (из Визио в Эксель) примерно таким образом:<br /><br />Dim ExcelApp as Object<br />...<br />    Set ExcelApp = CreateObject("Excel.Application")<br />    ExcelApp.Workbooks.Open FileName<br />    ExcelApp.Visible = True<br />...<br />полагаю вам нужно нечто подобное написать в Экселе. Попробуйте заменить "Excel.Application" на "Visio.Application", ну и вторая строчка должна выглядеть по-другомк</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2242.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -158,7 +121,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> обратную задачу я тоже не раз успешно решал :) только createObject сильно не советую - ибо создает новую копию программы при каждом запуске. а вот с визио... ((</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> обратную задачу я тоже не раз успешно решал :) только createObject сильно не советую - ибо создает новую копию программы при каждом запуске. а вот с визио... ((</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2242.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -181,7 +144,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Не нравится CreateObject, используйте GetObject<br />Set appVisio = GetObject(, "Visio.Application")</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Не нравится CreateObject, используйте GetObject<br />Set appVisio = GetObject(, "Visio.Application")</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2242.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -204,7 +167,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> бр. не решает это задачу. есть открытый ексель файл. есть открытый файл в визио. работать из визио с екселем просто<br />Set Excel = GetObject("G:\!file.xls")<br />Set ExWs = Excel.Worksheets("list")<br />A = ExWs.Cells(1, 1)<br /><br />а наоборот ? <br />Set Visio = GetObject("G:\file.vsd") работает. возращает имя файла. а дальше ? <br />Visio.DataRecordsets.ItemFromID(0).Refresh - по идее верная запись. но не работает. в чем ошибка ?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> бр. не решает это задачу. есть открытый ексель файл. есть открытый файл в визио. работать из визио с екселем просто<br />Set Excel = GetObject("G:\!file.xls")<br />Set ExWs = Excel.Worksheets("list")<br />A = ExWs.Cells(1, 1)<br /><br />а наоборот ? <br />Set Visio = GetObject("G:\file.vsd") работает. возращает имя файла. а дальше ? <br />Visio.DataRecordsets.ItemFromID(0).Refresh - по идее верная запись. но не работает. в чем ошибка ?</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2242.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -227,7 +190,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Сравните, что я написал<br />GetObject(, "Visio.Application")<br />И что написали Вы<br />GetObject("G:\file.vsd")<br />В Visio первый аргумент никогда не использовался.<br /><font size="1">Set appVisio = GetObject(, "Visio.Application")<br />Notice the comma, which indicates that the first argument to GetObject—a path to a disk file—has been omitted. The comma is required, because under some circum-stances, GetObject takes a file name as its first argument. To retrieve a Visio instance; <br />however, you must omit the file name argument, or an error will occur. For details, see GetObject in your Microsoft Visual Basic documentation.</font id="size1"></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Сравните, что я написал<br />GetObject(, "Visio.Application")<br />И что написали Вы<br />GetObject("G:\file.vsd")<br />В Visio первый аргумент никогда не использовался.<br /><font size="1">Set appVisio = GetObject(, "Visio.Application")<br />Notice the comma, which indicates that the first argument to GetObject—a path to a disk file—has been omitted. The comma is required, because under some circum-stances, GetObject takes a file name as its first argument. To retrieve a Visio instance; <br />however, you must omit the file name argument, or an error will occur. For details, see GetObject in your Microsoft Visual Basic documentation.</font></span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2242.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -250,7 +213,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> получилось наконец таки ! :))<br />   Set appVisio = GetObject(, "Visio.Application")<br />   appVisio.ActiveDocument.DataRecordsets.ItemFromID(1).Refresh<br /></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> получилось наконец таки ! :))<br />   Set appVisio = GetObject(, "Visio.Application")<br />   appVisio.ActiveDocument.DataRecordsets.ItemFromID(1).Refresh<br /></span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2242.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -273,7 +236,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> вопрос правда остался... как обновить сразу все связи. <br />Пробовал записать. получил.<br />   appVisio.ActiveDocument.DataRecordsets.ItemFromID(1).Refresh<br />   appVisio.ActiveDocument.DataRecordsets.ItemFromID(3).Refresh<br />   appVisio.ActiveDocument.DataRecordsets.ItemFromID(6).Refresh<br />т.е таблиц три. и номера не по порядку... обращение к несуществующему номеру вызывает ошибку. как эти номера перебрать поизящней ?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> вопрос правда остался... как обновить сразу все связи. <br />Пробовал записать. получил.<br />   appVisio.ActiveDocument.DataRecordsets.ItemFromID(1).Refresh<br />   appVisio.ActiveDocument.DataRecordsets.ItemFromID(3).Refresh<br />   appVisio.ActiveDocument.DataRecordsets.ItemFromID(6).Refresh<br />т.е таблиц три. и номера не по порядку... обращение к несуществующему номеру вызывает ошибку. как эти номера перебрать поизящней ?</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2242.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -296,7 +259,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> попытался еще один скрипт переписать чтобы работал из внешнего макроса (так удобней)<br /> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">Sub Write_sxemas()<br /><br /><br />sxema = 2<br /><br />    name_box = "sx_" & sxema<br />    Set vs = ActivePage.Shapes(name_box).SpatialNeighbors(visSpatialContain, 0.2, 0)<br />    N = vs.Count<br />    If N &gt; 0 Then<br />        ActiveWindow.DeselectAll<br />            For Each sh In vs<br />            ActiveWindow.Select sh, visSelect<br />          Next<br />          ActiveWindow.Selection.Export "G:\pic" & ".gif"<br /><br />    End If<br /><br /><br />End Sub<hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br />В визио работает отлично. как это запустить в екселе большой вопрос... может есть способ запускать макрос из другого макроса ?<br />appVisio.ActiveDocument.Call Write_sxemas()<br />appVisio.Call Write_sxemas()<br />не работает. просит функцию обозначить.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> попытался еще один скрипт переписать чтобы работал из внешнего макроса (так удобней)<br /> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">Sub Write_sxemas()<br /><br /><br />sxema = 2<br /><br />    name_box = "sx_" & sxema<br />    Set vs = ActivePage.Shapes(name_box).SpatialNeighbors(visSpatialContain, 0.2, 0)<br />    N = vs.Count<br />    If N &gt; 0 Then<br />        ActiveWindow.DeselectAll<br />            For Each sh In vs<br />            ActiveWindow.Select sh, visSelect<br />          Next<br />          ActiveWindow.Selection.Export "G:\pic" & ".gif"<br /><br />    End If<br /><br /><br />End Sub<hr height="1" noshade id="quote"></font></blockquote><br />В визио работает отлично. как это запустить в екселе большой вопрос... может есть способ запускать макрос из другого макроса ?<br />appVisio.ActiveDocument.Call Write_sxemas()<br />appVisio.Call Write_sxemas()<br />не работает. просит функцию обозначить.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2242.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -319,7 +282,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">т.е таблиц три. и номера не по порядку... обращение к несуществующему номеру вызывает ошибку. как эти номера перебрать поизящней ?<hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br />Visio 2007 сейчас под рукой нет, поэтому проверить не могу... Но скорее всего, как и у всякой коллекции, у DataRecordsets есть свойство Count. Вот по этому счетчику и перебирать. И добираться не через ItemFromID, а непосредственно по индексу DataRecordsets(i).<br />--------<br /> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">попытался еще один скрипт переписать чтобы работал из внешнего макроса (так удобней)<hr height="1" noshade id="quote"></font id="quote"></blockquote id="quote"><br />В VBA ссылках на объекты часто опускается корневой объект Application. Это немного запутывает. <br />На самом деле ссылка ActiveWindow выглядит как Application.ActiveWindow.<br />Ваша задача вместо этого Application подставить appVisio, которое Вы получали выше в этом топике. Вот и почти все переделки.<br />Второе место - это ActivePage примерно так же надо дотянуть до корневого объекта. Будет appVisio.ActivePage.Shapes... и т.д.<br />Естественно, если нужный документ и страница в Visio уже открыты. Если закрыты, то придется сначала открыть.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">т.е таблиц три. и номера не по порядку... обращение к несуществующему номеру вызывает ошибку. как эти номера перебрать поизящней ?<hr height="1" noshade id="quote"></font></blockquote><br />Visio 2007 сейчас под рукой нет, поэтому проверить не могу... Но скорее всего, как и у всякой коллекции, у DataRecordsets есть свойство Count. Вот по этому счетчику и перебирать. И добираться не через ItemFromID, а непосредственно по индексу DataRecordsets(i).<br />--------<br /> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">попытался еще один скрипт переписать чтобы работал из внешнего макроса (так удобней)<hr height="1" noshade id="quote"></font></blockquote><br />В VBA ссылках на объекты часто опускается корневой объект Application. Это немного запутывает. <br />На самом деле ссылка ActiveWindow выглядит как Application.ActiveWindow.<br />Ваша задача вместо этого Application подставить appVisio, которое Вы получали выше в этом топике. Вот и почти все переделки.<br />Второе место - это ActivePage примерно так же надо дотянуть до корневого объекта. Будет appVisio.ActivePage.Shapes... и т.д.<br />Естественно, если нужный документ и страница в Visio уже открыты. Если закрыты, то придется сначала открыть.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2242.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -342,7 +305,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <pre id="code"><font face="courier" size="2" id="code">Set vs = appVisio.ActivePage.Shapes(name_box).SpatialNeighbors(visSpatialContain, 0.2, 0)</font id="code"></pre id="code"><br />Automation error получаю... хотя аналогичный код (без appVisio) уже отлажен в визио. имхо просто запустить этот скрипт было бы куда проще... <br /></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <pre id="code"><font face="courier" size="2" id="code">Set vs = appVisio.ActivePage.Shapes(name_box).SpatialNeighbors(visSpatialContain, 0.2, 0)</font></pre><br />Automation error получаю... хотя аналогичный код (без appVisio) уже отлажен в визио. имхо просто запустить этот скрипт было бы куда проще... <br /></span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2242.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -365,7 +328,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> А если еще и visSpatialContain заменить на 2?<br /></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> А если еще и visSpatialContain заменить на 2?<br /></span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2242.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -388,7 +351,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> аналогично. так можно долго отлаживать - это не выход ((</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> аналогично. так можно долго отлаживать - это не выход ((</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2242.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -411,7 +374,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Ну, это путь, предлагаемый Microsoft...<br />И в общем-то, если действовать внимательно, то код переписывается довольно быстро. Отладки, как таковой, не требуется.<br />Всего-то две вещи - корневые объекты и константы. Если, конечно, с событиями не связываться.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Ну, это путь, предлагаемый Microsoft...<br />И в общем-то, если действовать внимательно, то код переписывается довольно быстро. Отладки, как таковой, не требуется.<br />Всего-то две вещи - корневые объекты и константы. Если, конечно, с событиями не связываться.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2242.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -434,7 +397,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> факт что не работает (( неужели нет способа просто запустить макрос из другого макроса ?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> факт что не работает (( неужели нет способа просто запустить макрос из другого макроса ?</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2242.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -457,7 +420,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> по идее должно через Run работать. <br />appVisio.Run "Write_sxemas"<br />object doesn't support this method (( несколько возможных вариантов синтаксиса я тоже перепробовал.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> по идее должно через Run работать. <br />appVisio.Run "Write_sxemas"<br />object doesn't support this method (( несколько возможных вариантов синтаксиса я тоже перепробовал.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2242.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -479,7 +442,7 @@ input.radio {background:lightsteelblue;color:#000000}
 </table>
 <table align="center" border="0" cellPadding="0" cellSpacing="1" width="95%">
   <tr>
-    <td align="left" valign="top"><font face="Verdana, Arial, Helvetica" size="1"><a href="topic.asp@TOPIC_ID=2242&amp;whichpage=2.html" title="Goto the Next page in this Topic" onMouseOver="(window.status='Goto the Next page in this Topic'); return true" onMouseOut="(window.status=''); return true">Next Page</a></td>
+    <td align="left" valign="top"><font face="Verdana, Arial, Helvetica" size="1"><a href="topic.asp@TOPIC_ID=2242&amp;whichpage=2.html" title="Goto the Next page in this Topic" onMouseOver="(window.status='Goto the Next page in this Topic'); return true" onMouseOut="(window.status=''); return true">Next Page</a></font></td>
   </tr>
 </table>
 <table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
@@ -487,11 +450,7 @@ input.radio {background:lightsteelblue;color:#000000}
     <td>
       <table width="100%">
         <tr>
-          <td align="center" valign="top" width="50%">
-          <font face="Verdana, Arial, Helvetica" size="2">
-          </font></td>
-          <td align="right" valign="top" width="50%" nowrap>
-          </td>
+          <td align="center" bgcolor="#ffffAA"><font face="Verdana, Arial, Helvetica" size="2">Данный сайт является архивом форума visio.artberg.ru, который был закрыт в связи с переходом на новую платформу <b><a href="http://visio.getbb.ru">visio.getbb.ru</a></b><br/>Все материалы доступны только для чтения! Если у вас появились вопросы, или вы хотите что-то обсудить, связанное с Visio, обращайтесь на новый форум!<br/>Архив был создан благодаря совместным усилиям Генадия Туманова @Tumanov (<a href="http://visio.artberg.ru">visio.artberg.ru</a>), Александра ака @Surrogate (<a href="http://visio.getbb.ru">visio.getbb.ru</a>), и Николая Белых @nbelyh (<a href="http://unmanagedvisio.com">unmanagedvisio.com</a>)</font></td>
         </tr>
       </table>
   </td>

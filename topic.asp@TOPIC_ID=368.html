@@ -4,31 +4,7 @@
 <head>
 <title>Visio - Запуск аддона с параметрами: что и как?</title>
 <meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" ><script language="JavaScript" type="text/javascript">
-<!-- hide from JavaScript-challenged browsers
-function openWindow(url) {
-	popupWin = window.open(url,'new_page','width=400,height=400')
-}
-function openWindow2(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450')
-}
-function openWindow3(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
-}
-function openWindow4(url) {
-	popupWin = window.open(url,'new_page','width=400,height=525')
-}
-function openWindow5(url) {
-	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
-}
-function openWindow6(url) {
-	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
-}
-function openWindowHelp(url) {
-	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
-}
-// done hiding -->
-</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 <style type="text/css">
 <!--
 a:link    {color:darkblue;text-decoration:underline}
@@ -48,26 +24,13 @@ input.radio {background:lightsteelblue;color:#000000}
 <body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
 <a name="top"></a>
 
-<script>(function() { var cx = '002792228947284598284:d9ou_dwkikw'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
+<script>(function() { var cx = '002792228947284598284:fmq7et_yt8s'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
 <div style='height: 61px' class='gcse-search'></div>
 <table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
   <tr>
     <td>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function unsub_confirm(link){
-    	var where_to= confirm("Do you really want to Unsubscribe?");
-       if (where_to== true) {
-       	popupWin = window.open(link,'new_page','width=400,height=400')
-       }
-    }
-    //-->
-    </script>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
-    // -->
-    </script>
+    
+    
       <table border="0" width="100%">
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
@@ -110,7 +73,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Писал проект взаимодействия с базой данных и уперся в одну неприятную вещь.<br />Итак, имеем shape. Руками при помощи <b>Tools\Add-ons\Visio Extras\Link to Database...</b> связываем запрос из базы данных с shape, отвечая на вопросы диалогов аддона. Далее правой кнопкой мыши на shape выбираем <b>Select Database Records</b> и начинаем работать с данными из базы в рамках фигуры.<br />Вопрос, как связать базу с фигурой и выбрать запись в базе автоматически на VBA?<br />Смотрел функции RunAddon() и RunAddonWArgs(), но ни списка аддонов, ни их параметров не нашел.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Писал проект взаимодействия с базой данных и уперся в одну неприятную вещь.<br />Итак, имеем shape. Руками при помощи <b>Tools\Add-ons\Visio Extras\Link to Database...</b> связываем запрос из базы данных с shape, отвечая на вопросы диалогов аддона. Далее правой кнопкой мыши на shape выбираем <b>Select Database Records</b> и начинаем работать с данными из базы в рамках фигуры.<br />Вопрос, как связать базу с фигурой и выбрать запись в базе автоматически на VBA?<br />Смотрел функции RunAddon() и RunAddonWArgs(), но ни списка аддонов, ни их параметров не нашел.</span></font></td>
                     </tr>
                   </table>
                 </td>
@@ -130,7 +93,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> При работе с Add-on Link to Database... формируется куча параметров и записывается в шейп на случай будущей связи с базой (вообще-то не очень большая кучка - умещается в User-defined Cells ODBCConnection и ODBCChecksum.<br />Попутно создается меню шейпа, в которой записывается в том числе и функция вызова аддона =RUNADDON("Database Select Record").<br />То есть видно, что этот аддон вызывается без параметров (не считая стандартных индексов приложения, документа, страницы и шейпа).<br />Стандартные параметры командной строки описаны, например, в SDK Visio:<br />"If a shape formula uses a runaddon function to run a program when it is evaluated, the Visio engine sends a command string to the program, such as the following:<br />/visio=instanceHandle /doc=docIndex /page=pagIndex /shape=NameID"<br /><br />При работе аддон Database Select Record явно должен использовать данные, записанные в ODBCConnection, чтобы приконнектиться к нужной таблице. Больше ему скорее всего ничего и не надо.<br /><br />Однако, разбираться с этими аддонами, пытаясь программой VBA имитировать их работу, - скорее всего неблагодарное занятие. Они предназначены именно для ручного взаимодействия с базой, используют свой специальный механизм передачи данных между собой через шейп. Наверное проще будет не подражать им, а взять любую книжку, где описана работа на VB с базами данных и почитать ее...</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> При работе с Add-on Link to Database... формируется куча параметров и записывается в шейп на случай будущей связи с базой (вообще-то не очень большая кучка - умещается в User-defined Cells ODBCConnection и ODBCChecksum.<br />Попутно создается меню шейпа, в которой записывается в том числе и функция вызова аддона =RUNADDON("Database Select Record").<br />То есть видно, что этот аддон вызывается без параметров (не считая стандартных индексов приложения, документа, страницы и шейпа).<br />Стандартные параметры командной строки описаны, например, в SDK Visio:<br />"If a shape formula uses a runaddon function to run a program when it is evaluated, the Visio engine sends a command string to the program, such as the following:<br />/visio=instanceHandle /doc=docIndex /page=pagIndex /shape=NameID"<br /><br />При работе аддон Database Select Record явно должен использовать данные, записанные в ODBCConnection, чтобы приконнектиться к нужной таблице. Больше ему скорее всего ничего и не надо.<br /><br />Однако, разбираться с этими аддонами, пытаясь программой VBA имитировать их работу, - скорее всего неблагодарное занятие. Они предназначены именно для ручного взаимодействия с базой, используют свой специальный механизм передачи данных между собой через шейп. Наверное проще будет не подражать им, а взять любую книжку, где описана работа на VB с базами данных и почитать ее...</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=368.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -152,7 +115,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Спасибо за ответ. В голове куча мыслей, ща попробую разложить и написать. Итак...<br /><br /><blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">При работе с Add-on Link to Database... формируется куча параметров и записывается в шейп на случай будущей связи с базой (вообще-то не очень большая кучка - умещается в User-defined Cells ODBCConnection и ODBCChecksum.<hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote"><br />Это я увидел, причем увидел только сейчас, что в <b>User.ODBCConnection</b> лежит огромная строка, с утра я думал, что там только на базу ссылка, а остальное как-то иначе отдается. Затупил.<br /><br /><blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">Попутно создается меню шейпа, в которой записывается в том числе и функция вызова аддона =RUNADDON("Database Select Record").<br />То есть видно, что этот аддон вызывается без параметров (не считая стандартных индексов приложения, документа, страницы и шейпа).<hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote"><br />Здесь немного иначе у меня, отсюда непонятки. Действие <b>Select Database Record</b> у меня в ShapeSheet'е выглядит как <b>RUNADDON("DBS")</b>. Что такое DBS? Я понимаю, что это DataBaseSelect, но почему именно так? Какое внутреннее имя?<br /><br /><blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">Стандартные параметры командной строки описаны, например, в SDK Visio:<br />"If a shape formula uses a runaddon function to run a program when it is evaluated, the Visio engine sends a command string to the program, such as the following:<br />/visio=instanceHandle /doc=docIndex /page=pagIndex /shape=NameID"<hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote"><br />Где взять Visio 2003 SDK? Как всегда, microsoft.com?<br /><br /><blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">Однако, разбираться с этими аддонами, пытаясь программой VBA имитировать их работу, - скорее всего неблагодарное занятие. Они предназначены именно для ручного взаимодействия с базой, используют свой специальный механизм передачи данных между собой через шейп. Наверное проще будет не подражать им, а взять любую книжку, где описана работа на VB с базами данных и почитать ее...<hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote"><br />Возможно ты и прав, но:<br />1) когда я попробовал написать так же, как пишу в MsAccess, то не нашел объектов соответствующих, возможно плохо искал<br />2) они уже сделали за меня кучу работы, мне же осталось только сформировать параметры и запустить аддон, не вижу причин, почему это не сделать<br />3) мне очень удобно это сделать именно так, ибо тогда я смогу работать и автоматически и мануально, гибкость какая-то получается<br /><br />В любом случае спасибо за ответ, он меня просветлил немного. Я уже вижу куда мне копать дальше.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Спасибо за ответ. В голове куча мыслей, ща попробую разложить и написать. Итак...<br /><br /><font size="1" face="Verdana, Arial, Helvetica" id="quote"><blockquote id="quote">quote:<hr height="1" noshade id="quote">При работе с Add-on Link to Database... формируется куча параметров и записывается в шейп на случай будущей связи с базой (вообще-то не очень большая кучка - умещается в User-defined Cells ODBCConnection и ODBCChecksum.<hr height="1" noshade id="quote"></blockquote></font><br />Это я увидел, причем увидел только сейчас, что в <b>User.ODBCConnection</b> лежит огромная строка, с утра я думал, что там только на базу ссылка, а остальное как-то иначе отдается. Затупил.<br /><br /><font size="1" face="Verdana, Arial, Helvetica" id="quote"><blockquote id="quote">quote:<hr height="1" noshade id="quote">Попутно создается меню шейпа, в которой записывается в том числе и функция вызова аддона =RUNADDON("Database Select Record").<br />То есть видно, что этот аддон вызывается без параметров (не считая стандартных индексов приложения, документа, страницы и шейпа).<hr height="1" noshade id="quote"></blockquote></font><br />Здесь немного иначе у меня, отсюда непонятки. Действие <b>Select Database Record</b> у меня в ShapeSheet'е выглядит как <b>RUNADDON("DBS")</b>. Что такое DBS? Я понимаю, что это DataBaseSelect, но почему именно так? Какое внутреннее имя?<br /><br /><font size="1" face="Verdana, Arial, Helvetica" id="quote"><blockquote id="quote">quote:<hr height="1" noshade id="quote">Стандартные параметры командной строки описаны, например, в SDK Visio:<br />"If a shape formula uses a runaddon function to run a program when it is evaluated, the Visio engine sends a command string to the program, such as the following:<br />/visio=instanceHandle /doc=docIndex /page=pagIndex /shape=NameID"<hr height="1" noshade id="quote"></blockquote></font><br />Где взять Visio 2003 SDK? Как всегда, microsoft.com?<br /><br /><font size="1" face="Verdana, Arial, Helvetica" id="quote"><blockquote id="quote">quote:<hr height="1" noshade id="quote">Однако, разбираться с этими аддонами, пытаясь программой VBA имитировать их работу, - скорее всего неблагодарное занятие. Они предназначены именно для ручного взаимодействия с базой, используют свой специальный механизм передачи данных между собой через шейп. Наверное проще будет не подражать им, а взять любую книжку, где описана работа на VB с базами данных и почитать ее...<hr height="1" noshade id="quote"></blockquote></font><br />Возможно ты и прав, но:<br />1) когда я попробовал написать так же, как пишу в MsAccess, то не нашел объектов соответствующих, возможно плохо искал<br />2) они уже сделали за меня кучу работы, мне же осталось только сформировать параметры и запустить аддон, не вижу причин, почему это не сделать<br />3) мне очень удобно это сделать именно так, ибо тогда я смогу работать и автоматически и мануально, гибкость какая-то получается<br /><br />В любом случае спасибо за ответ, он меня просветлил немного. Я уже вижу куда мне копать дальше.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=368.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -174,7 +137,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Немного разобрался с чем хотел. Автоматическое подключение базы меня не интересует, а вот автоматическое обновление данных из базы, подключенной к фигуре меня интересует. В запросе с данными есть поля, одно из них ключевое, кто с базами работает, то поймет. Так вот если изменить ключевое поле, а потом руками сделать <b>Refresh Shape Properties</b> (ShapeSheet это выглядит как <b>RunAddon("DBR")</b>), то данные нормально обновляются. Как раз то, что нужно.<br /><br />Теперь вопрос, т.к. <b>RunAddon("DBR")</b> запускается без аргументов, то меня интересует, как передать те самые дефольтные параметры, которые от меня скрыты?<br /><br />Я так понимаю об этом в SDK написано? Где взять?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Немного разобрался с чем хотел. Автоматическое подключение базы меня не интересует, а вот автоматическое обновление данных из базы, подключенной к фигуре меня интересует. В запросе с данными есть поля, одно из них ключевое, кто с базами работает, то поймет. Так вот если изменить ключевое поле, а потом руками сделать <b>Refresh Shape Properties</b> (ShapeSheet это выглядит как <b>RunAddon("DBR")</b>), то данные нормально обновляются. Как раз то, что нужно.<br /><br />Теперь вопрос, т.к. <b>RunAddon("DBR")</b> запускается без аргументов, то меня интересует, как передать те самые дефольтные параметры, которые от меня скрыты?<br /><br />Я так понимаю об этом в SDK написано? Где взять?</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=368.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -197,7 +160,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> С нормальным Аддоном (.exe) я это делал вот так:<br />  'Imitate call rn20.exe from shape menu<br />    Dim s As String<br />    s = " /doc=" & gvsoApp.ActivePage.Document.Index & _<br />      " /page=" & gvsoApp.ActivePage.Index & _<br />      " /shape=" & Shape.NameID & _<br />      " /mode=2"<br />    gvsoApp.Addons("rn20.exe").Run s<br />Этот спрятан в какой-то библиотеке, тем не менее проходит вот такой вызов<br />(в Вашем случае будет "DBS"):<br />Sub ttt()<br />    Dim s As String<br />    s = " /doc=" & ActivePage.Document.Index & _<br />      " /page=" & ActivePage.Index & _<br />      " /shape=" & ActivePage.Shapes(1).NameID & _<br />      " /mode=2"<br />    Application.Addons("Database Select Record").Run s<br />End Sub<br /><br />SDK не помню, где. Сам искал через поисковик "Visio SDK 2003". То ли в первой, то ли во второй строке уже будет то, что надо.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> С нормальным Аддоном (.exe) я это делал вот так:<br />  'Imitate call rn20.exe from shape menu<br />    Dim s As String<br />    s = " /doc=" & gvsoApp.ActivePage.Document.Index & _<br />      " /page=" & gvsoApp.ActivePage.Index & _<br />      " /shape=" & Shape.NameID & _<br />      " /mode=2"<br />    gvsoApp.Addons("rn20.exe").Run s<br />Этот спрятан в какой-то библиотеке, тем не менее проходит вот такой вызов<br />(в Вашем случае будет "DBS"):<br />Sub ttt()<br />    Dim s As String<br />    s = " /doc=" & ActivePage.Document.Index & _<br />      " /page=" & ActivePage.Index & _<br />      " /shape=" & ActivePage.Shapes(1).NameID & _<br />      " /mode=2"<br />    Application.Addons("Database Select Record").Run s<br />End Sub<br /><br />SDK не помню, где. Сам искал через поисковик "Visio SDK 2003". То ли в первой, то ли во второй строке уже будет то, что надо.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=368.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -219,7 +182,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Появились две книги по визио.<br />"Wordware - Learn Microsoft Visio 2002 for the Advanced User.pdf"<br />"Wordware - Learn to Diagram with Microsoft Visio 2002.pdf"<br /><br />Лежат на<br /><a href="http://ezshare.de/files-en/182876/visio1.rar.html" target="_blank">http://ezshare.de/files-en/182876/visio1.rar.html</a><br /><a href="http://ezshare.de/files-en/182989/visio2.rar.html" target="_blank">http://ezshare.de/files-en/182989/visio2.rar.html</a><br />соответственно 5 и 8 метров.<br /><br />Может есть смысл их вытянуть и на сайте положить?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Появились две книги по визио.<br />"Wordware - Learn Microsoft Visio 2002 for the Advanced User.pdf"<br />"Wordware - Learn to Diagram with Microsoft Visio 2002.pdf"<br /><br />Лежат на<br /><a href="http://ezshare.de/files-en/182876/visio1.rar.html" target="_blank">http://ezshare.de/files-en/182876/visio1.rar.html</a><br /><a href="http://ezshare.de/files-en/182989/visio2.rar.html" target="_blank">http://ezshare.de/files-en/182989/visio2.rar.html</a><br />соответственно 5 и 8 метров.<br /><br />Может есть смысл их вытянуть и на сайте положить?</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=368.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -242,7 +205,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Перекачивать такие объемы, да еще и два раза - это не для меня <img src="icon_smile_sad.gif" width="15" height="15" border="0" alt="" title="" align="middle" /><br />Ссылочку можно будет повесить...</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Перекачивать такие объемы, да еще и два раза - это не для меня <img src="icon_smile_sad.gif" width="15" height="15" border="0" alt="" title="" align="middle" /><br />Ссылочку можно будет повесить...</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=368.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -264,7 +227,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Это обменник, лежать оно там долго не будет.<br />Книжки скачал, читаю, ибо кроме них информации нету.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Это обменник, лежать оно там долго не будет.<br />Книжки скачал, читаю, ибо кроме них информации нету.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=368.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -290,11 +253,7 @@ input.radio {background:lightsteelblue;color:#000000}
     <td>
       <table width="100%">
         <tr>
-          <td align="center" valign="top" width="50%">
-          <font face="Verdana, Arial, Helvetica" size="2">
-          </font></td>
-          <td align="right" valign="top" width="50%" nowrap>
-          </td>
+          <td align="center" bgcolor="#ffffAA"><font face="Verdana, Arial, Helvetica" size="2">Данный сайт является архивом форума visio.artberg.ru, который был закрыт в связи с переходом на новую платформу <b><a href="http://visio.getbb.ru">visio.getbb.ru</a></b><br/>Все материалы доступны только для чтения! Если у вас появились вопросы, или вы хотите что-то обсудить, связанное с Visio, обращайтесь на новый форум!<br/>Архив был создан благодаря совместным усилиям Генадия Туманова @Tumanov (<a href="http://visio.artberg.ru">visio.artberg.ru</a>), Александра ака @Surrogate (<a href="http://visio.getbb.ru">visio.getbb.ru</a>), и Николая Белых @nbelyh (<a href="http://unmanagedvisio.com">unmanagedvisio.com</a>)</font></td>
         </tr>
       </table>
   </td>

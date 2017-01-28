@@ -4,31 +4,7 @@
 <head>
 <title>Visio - Undo неправильного действия</title>
 <meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" ><script language="JavaScript" type="text/javascript">
-<!-- hide from JavaScript-challenged browsers
-function openWindow(url) {
-	popupWin = window.open(url,'new_page','width=400,height=400')
-}
-function openWindow2(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450')
-}
-function openWindow3(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
-}
-function openWindow4(url) {
-	popupWin = window.open(url,'new_page','width=400,height=525')
-}
-function openWindow5(url) {
-	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
-}
-function openWindow6(url) {
-	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
-}
-function openWindowHelp(url) {
-	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
-}
-// done hiding -->
-</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 <style type="text/css">
 <!--
 a:link    {color:darkblue;text-decoration:underline}
@@ -48,26 +24,13 @@ input.radio {background:lightsteelblue;color:#000000}
 <body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
 <a name="top"></a>
 
-<script>(function() { var cx = '002792228947284598284:d9ou_dwkikw'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
+<script>(function() { var cx = '002792228947284598284:fmq7et_yt8s'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
 <div style='height: 61px' class='gcse-search'></div>
 <table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
   <tr>
     <td>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function unsub_confirm(link){
-    	var where_to= confirm("Do you really want to Unsubscribe?");
-       if (where_to== true) {
-       	popupWin = window.open(link,'new_page','width=400,height=400')
-       }
-    }
-    //-->
-    </script>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
-    // -->
-    </script>
+    
+    
       <table border="0" width="100%">
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
@@ -110,7 +73,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Как это сделать? Скажем, юзер перенес шейп туда, куда не положено. Высвечиваю в этот момент messageBox, что так нельзя, и хочу вернуть все в прежнее положение. Просто Application.Undo бросает непонятный exception. Подскажите.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Как это сделать? Скажем, юзер перенес шейп туда, куда не положено. Высвечиваю в этот момент messageBox, что так нельзя, и хочу вернуть все в прежнее положение. Просто Application.Undo бросает непонятный exception. Подскажите.</span></font></td>
                     </tr>
                   </table>
                 </td>
@@ -129,7 +92,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> В reference написано следующее:<br /> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">The number of times that code can call the Undo method depends on whether or not the code is executing in the scope of an open undo unit. Code runs in the scope of an open undo unit if it is:<br /><br />a macro or add-on invoked by the Visio user interface.<br />In an event handler responding to a Visio event other than the VisioIsIdle event. <br />In a user-created undo scope.<br />If code is not executing in the scope of an open undo unit, it can call the Undo method for each undo unit presently on the Visio undo stack. The maximum number of units on the undo stack is set in the Options dialog box on the General tab (20 is the default). If the number of calls to the Undo method exceeds the number of undo units on the stack, no action is taken and the Undo method raises no exception.<br /><hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote">То есть, мне желательно или создать заранее user-created scope, или сделать так, чтобы мой код запускался извне open unit code. Как это возможно?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> В reference написано следующее:<br /> <font size="1" face="Verdana, Arial, Helvetica" id="quote"><blockquote id="quote">quote:<hr height="1" noshade id="quote">The number of times that code can call the Undo method depends on whether or not the code is executing in the scope of an open undo unit. Code runs in the scope of an open undo unit if it is:<br /><br />a macro or add-on invoked by the Visio user interface.<br />In an event handler responding to a Visio event other than the VisioIsIdle event. <br />In a user-created undo scope.<br />If code is not executing in the scope of an open undo unit, it can call the Undo method for each undo unit presently on the Visio undo stack. The maximum number of units on the undo stack is set in the Options dialog box on the General tab (20 is the default). If the number of calls to the Undo method exceeds the number of undo units on the stack, no action is taken and the Undo method raises no exception.<br /><hr height="1" noshade id="quote"></blockquote></font>То есть, мне желательно или создать заранее user-created scope, или сделать так, чтобы мой код запускался извне open unit code. Как это возможно?</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=397.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -151,7 +114,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Блеснула надежда выполнить Application.DoCmd (1017), но ответ, что данная команда currently disabled...</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Блеснула надежда выполнить Application.DoCmd (1017), но ответ, что данная команда currently disabled...</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=397.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -174,7 +137,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Нехорошую операцию Вы пытаетесь сделать...<br />Когда изменяется формула, то CellChanged срабатывает на открытом Undo Unit по изменению этой самой формулы. В этом случае Вы можете отменять не Undo, находящиеся в стеке, а только операции, выполняемые в данном макросе. А их тут нет - вот и идет exception.<br />Более того, даже если бы и удалось отменить изменение формулы, то это действие тоже является изменением (хоть и обратным) и в свою очередь вызвало бы то же событие. То есть было бы зацикливание.<br />Там в хелпе на тему BeginUndoScope method есть хороший примерчик, поясняющий подобную вложенность.<br />Вот если бы дождаться завершения этого Scope, то Undo прошло бы нормально (при условии, что не вклинится какое-то незапланированное изменение).<br />Короче, в данном случае я посоветовал бы Вам не связываться с Undo, а просто по какому-то другому событию, например, по SelectionChanged (это когда пользователь ткнет мышкой в шейп) запомнить координаты шейпа, а в CellChanged отработать их обратно. Шейп естественно вернется на прежнее место.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Нехорошую операцию Вы пытаетесь сделать...<br />Когда изменяется формула, то CellChanged срабатывает на открытом Undo Unit по изменению этой самой формулы. В этом случае Вы можете отменять не Undo, находящиеся в стеке, а только операции, выполняемые в данном макросе. А их тут нет - вот и идет exception.<br />Более того, даже если бы и удалось отменить изменение формулы, то это действие тоже является изменением (хоть и обратным) и в свою очередь вызвало бы то же событие. То есть было бы зацикливание.<br />Там в хелпе на тему BeginUndoScope method есть хороший примерчик, поясняющий подобную вложенность.<br />Вот если бы дождаться завершения этого Scope, то Undo прошло бы нормально (при условии, что не вклинится какое-то незапланированное изменение).<br />Короче, в данном случае я посоветовал бы Вам не связываться с Undo, а просто по какому-то другому событию, например, по SelectionChanged (это когда пользователь ткнет мышкой в шейп) запомнить координаты шейпа, а в CellChanged отработать их обратно. Шейп естественно вернется на прежнее место.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=397.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -196,7 +159,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote">Короче, в данном случае я посоветовал бы Вам не связываться с Undo, а просто по какому-то другому событию, например, по SelectionChanged (это когда пользователь ткнет мышкой в шейп) запомнить координаты шейпа, а в CellChanged отработать их обратно. Шейп естественно вернется на прежнее место.<hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote"><br />Все гениальное - просто! :)</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <font size="1" face="Verdana, Arial, Helvetica" id="quote"><blockquote id="quote">quote:<hr height="1" noshade id="quote">Короче, в данном случае я посоветовал бы Вам не связываться с Undo, а просто по какому-то другому событию, например, по SelectionChanged (это когда пользователь ткнет мышкой в шейп) запомнить координаты шейпа, а в CellChanged отработать их обратно. Шейп естественно вернется на прежнее место.<hr height="1" noshade id="quote"></blockquote></font><br />Все гениальное - просто! :)</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=397.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -218,7 +181,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Все не так просто, как хотелось бы. Юзер может обозначить более чем один шейп одновременно - и сдвинуть их всех. Как теперь запомнить позиции всех обозначенных шейпов?... В качестве глобальной переменной теперь придется взять не пару x, y, а целую коллекцию пар. Как это сделать? Поискал в инете, нашел Queue, SortedList, но это видимо в VB, а как то же получить в VBA - без понятия...</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Все не так просто, как хотелось бы. Юзер может обозначить более чем один шейп одновременно - и сдвинуть их всех. Как теперь запомнить позиции всех обозначенных шейпов?... В качестве глобальной переменной теперь придется взять не пару x, y, а целую коллекцию пар. Как это сделать? Поискал в инете, нашел Queue, SortedList, но это видимо в VB, а как то же получить в VBA - без понятия...</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=397.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -240,7 +203,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Проблема тут еще такая, что если юзер введет неправильное значение проперти, я должен это отловить. То есть, при любом изменении проперти проверяю правильность значении, и если оно некорректно, я должен... что сделать? Вернуть прежнее! Неужели единственным выходом тут является записывание в переменные всех значений пропертей шейпа, которых много?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Проблема тут еще такая, что если юзер введет неправильное значение проперти, я должен это отловить. То есть, при любом изменении проперти проверяю правильность значении, и если оно некорректно, я должен... что сделать? Вернуть прежнее! Неужели единственным выходом тут является записывание в переменные всех значений пропертей шейпа, которых много?</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=397.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -263,7 +226,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Тогда Вам не повезло. Придется разбираться с техникой Undo по всем правилам...<br />Кстати, если бы Вы изменяли Custom Properties не подручными средствами Visio, а на своей форме, то там проверять на допустимость введенного значения было бы проще. Значение вводится в другом месте (на форме), а в Properties Вы его пишете только в том случае, если оно допустимо.<br />В Вашем же случае можно попытаться, еще находясь в открытом Undo Unit, выставить какой-нибудь флаг, который можно проверить за пределами этого юнита, и уже там провести Application.Undo.<br />Важно найти событие, по которому можно проверять этот флаг. Напрашивается VisioIsIdle, но как-то уж очень мне не нравится это событие... А другие происходят несколько попозже, и пользователю может показаться, будто изменение произошло, а когда он куда-то переключится, то изменение откатится, но пользователь этого уже не будет видеть...<br />Короче, экспериментировать надо.<br />А чисто теоретически VisioIsIdle работает. Вот если в упомянутом примере BeginUndoScope в Private Sub Visio_Application_CellChanged вставить <br />    If Visio_Application.IsInScope(m_lngScopeID) Then<br />        Flag = 1<br />        Debug.Print Cell.Name & " changed in scope "; m_lngScopeID<br />    End If<br />и добавить обработчик<br />	Private Sub Visio_Application_VisioIsIdle(ByVal app As IVApplication)<br />	If Flag = 1 Then<br />	    Flag = 0<br />	    Application.Undo<br />	End If<br />	End Sub<br />то при выполнении макроса Sub ScopeActions() мы успеваем заметить, как изображение появляется на рисунке, а затем исчезает - это срабатывает Undo.<br /></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Тогда Вам не повезло. Придется разбираться с техникой Undo по всем правилам...<br />Кстати, если бы Вы изменяли Custom Properties не подручными средствами Visio, а на своей форме, то там проверять на допустимость введенного значения было бы проще. Значение вводится в другом месте (на форме), а в Properties Вы его пишете только в том случае, если оно допустимо.<br />В Вашем же случае можно попытаться, еще находясь в открытом Undo Unit, выставить какой-нибудь флаг, который можно проверить за пределами этого юнита, и уже там провести Application.Undo.<br />Важно найти событие, по которому можно проверять этот флаг. Напрашивается VisioIsIdle, но как-то уж очень мне не нравится это событие... А другие происходят несколько попозже, и пользователю может показаться, будто изменение произошло, а когда он куда-то переключится, то изменение откатится, но пользователь этого уже не будет видеть...<br />Короче, экспериментировать надо.<br />А чисто теоретически VisioIsIdle работает. Вот если в упомянутом примере BeginUndoScope в Private Sub Visio_Application_CellChanged вставить <br />    If Visio_Application.IsInScope(m_lngScopeID) Then<br />        Flag = 1<br />        Debug.Print Cell.Name & " changed in scope "; m_lngScopeID<br />    End If<br />и добавить обработчик<br />	Private Sub Visio_Application_VisioIsIdle(ByVal app As IVApplication)<br />	If Flag = 1 Then<br />	    Flag = 0<br />	    Application.Undo<br />	End If<br />	End Sub<br />то при выполнении макроса Sub ScopeActions() мы успеваем заметить, как изображение появляется на рисунке, а затем исчезает - это срабатывает Undo.<br /></span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=397.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -285,7 +248,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Не понимаю, чем Вам не нравится этот способ? Только что сделал пару тестов - все работает на ура, именно это и было нужно. Хотя когда появляется процедура XXX_VisioIsIdle, окно редактора VB начинает неприятно мигать (видимо, из-за постоянной обработки этой процедуры). Но юзер этого не увидит, так что все замечательно! В который раз огромное спасибо!</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Не понимаю, чем Вам не нравится этот способ? Только что сделал пару тестов - все работает на ура, именно это и было нужно. Хотя когда появляется процедура XXX_VisioIsIdle, окно редактора VB начинает неприятно мигать (видимо, из-за постоянной обработки этой процедуры). Но юзер этого не увидит, так что все замечательно! В который раз огромное спасибо!</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=397.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -311,11 +274,7 @@ input.radio {background:lightsteelblue;color:#000000}
     <td>
       <table width="100%">
         <tr>
-          <td align="center" valign="top" width="50%">
-          <font face="Verdana, Arial, Helvetica" size="2">
-          </font></td>
-          <td align="right" valign="top" width="50%" nowrap>
-          </td>
+          <td align="center" bgcolor="#ffffAA"><font face="Verdana, Arial, Helvetica" size="2">Данный сайт является архивом форума visio.artberg.ru, который был закрыт в связи с переходом на новую платформу <b><a href="http://visio.getbb.ru">visio.getbb.ru</a></b><br/>Все материалы доступны только для чтения! Если у вас появились вопросы, или вы хотите что-то обсудить, связанное с Visio, обращайтесь на новый форум!<br/>Архив был создан благодаря совместным усилиям Генадия Туманова @Tumanov (<a href="http://visio.artberg.ru">visio.artberg.ru</a>), Александра ака @Surrogate (<a href="http://visio.getbb.ru">visio.getbb.ru</a>), и Николая Белых @nbelyh (<a href="http://unmanagedvisio.com">unmanagedvisio.com</a>)</font></td>
         </tr>
       </table>
   </td>

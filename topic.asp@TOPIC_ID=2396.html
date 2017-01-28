@@ -4,31 +4,7 @@
 <head>
 <title>Visio - выделить цифры из строки</title>
 <meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" ><script language="JavaScript" type="text/javascript">
-<!-- hide from JavaScript-challenged browsers
-function openWindow(url) {
-	popupWin = window.open(url,'new_page','width=400,height=400')
-}
-function openWindow2(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450')
-}
-function openWindow3(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
-}
-function openWindow4(url) {
-	popupWin = window.open(url,'new_page','width=400,height=525')
-}
-function openWindow5(url) {
-	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
-}
-function openWindow6(url) {
-	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
-}
-function openWindowHelp(url) {
-	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
-}
-// done hiding -->
-</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 <style type="text/css">
 <!--
 a:link    {color:darkblue;text-decoration:underline}
@@ -48,26 +24,13 @@ input.radio {background:lightsteelblue;color:#000000}
 <body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
 <a name="top"></a>
 
-<script>(function() { var cx = '002792228947284598284:d9ou_dwkikw'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
+<script>(function() { var cx = '002792228947284598284:fmq7et_yt8s'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
 <div style='height: 61px' class='gcse-search'></div>
 <table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
   <tr>
     <td>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function unsub_confirm(link){
-    	var where_to= confirm("Do you really want to Unsubscribe?");
-       if (where_to== true) {
-       	popupWin = window.open(link,'new_page','width=400,height=400')
-       }
-    }
-    //-->
-    </script>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
-    // -->
-    </script>
+    
+    
       <table border="0" width="100%">
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
@@ -110,7 +73,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Добрый день.<br />Можно ли с помощью функций Visio выделить из строки цифры?<br />Например есть надпись V314, мне нужно повторить номер 314 еще в нескольких местах, сейчас использую выражение:<br />=LEFT(SHAPETEXT(Sheet.52!TheText),((LEN(SHAPETEXT(Sheet.52!TheText))-1)))<br /><br />Все хорошо, но если вместо V314 попадается НС314 приходится менять выражение, хотелось бы получить универсальный метод (выделить цифры).</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Добрый день.<br />Можно ли с помощью функций Visio выделить из строки цифры?<br />Например есть надпись V314, мне нужно повторить номер 314 еще в нескольких местах, сейчас использую выражение:<br />=LEFT(SHAPETEXT(Sheet.52!TheText),((LEN(SHAPETEXT(Sheet.52!TheText))-1)))<br /><br />Все хорошо, но если вместо V314 попадается НС314 приходится менять выражение, хотелось бы получить универсальный метод (выделить цифры).</span></font></td>
                     </tr>
                   </table>
                 </td>
@@ -131,7 +94,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> посмотрел в справочнике функций визио, работающих с текстом ничего не нашел. решил данную задачу примитивным образом<br /><br />создал ячейки user-defined cell -  user.0 ... user.9, эти ячейки вставил формулы: <br /><br /><pre id="code"><font face="courier" size="2" id="code">user.x = IF(ISERROR(FIND(x,SHAPETEXT(Sheet.52!TheText))),"",FIND(x,SHAPETEXT(Sheet.52!TheText)))</font id="code"></pre id="code"> ' находим позицию текста, где первый раз встречается это число<br />где x от 0 до 9<br /><br />ну и универсальное выражение:<br /><br /><pre id="code"><font face="courier" size="2" id="code">=MID(SHAPETEXT(Sheet.52!TheText),MIN(User.0,User.1,User.2,User.3,User.4,User.5,User.6,User.7,User.8,User.9),MAX(User.0,User.1,User.2,User.3,User.4,User.5,User.6,User.7,User.8,User.9)-MIN(User.0,User.1,User.2,User.3,User.4,User.5,User.6,User.7,User.8,User.9)+1)</font id="code"></pre id="code"><br /><br />конечно метод муторный .. не будет работать если имеем дело с текстовыми строками вида Б29202Х1<br /><br />†</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> посмотрел в справочнике функций визио, работающих с текстом ничего не нашел. решил данную задачу примитивным образом<br /><br />создал ячейки user-defined cell -  user.0 ... user.9, эти ячейки вставил формулы: <br /><br /><pre id="code"><font face="courier" size="2" id="code">user.x = IF(ISERROR(FIND(x,SHAPETEXT(Sheet.52!TheText))),"",FIND(x,SHAPETEXT(Sheet.52!TheText)))</font></pre> ' находим позицию текста, где первый раз встречается это число<br />где x от 0 до 9<br /><br />ну и универсальное выражение:<br /><br /><pre id="code"><font face="courier" size="2" id="code">=MID(SHAPETEXT(Sheet.52!TheText),MIN(User.0,User.1,User.2,User.3,User.4,User.5,User.6,User.7,User.8,User.9),MAX(User.0,User.1,User.2,User.3,User.4,User.5,User.6,User.7,User.8,User.9)-MIN(User.0,User.1,User.2,User.3,User.4,User.5,User.6,User.7,User.8,User.9)+1)</font></pre><br /><br />конечно метод муторный .. не будет работать если имеем дело с текстовыми строками вида Б29202Х1<br /><br />†</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom"><hr noshade size="1" color="gainsboro"><font face="Verdana, Arial, Helvetica" size="1" color="midnightblue">Edited by - Surrogate on 05/26/2011  08:02:25</font></td>
@@ -156,7 +119,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Спасибо.<br />Действительно муторно, но вариант.<br /><br />В вашем ответе есть такие строки: "посмотрел в справочнике функций визио, работающих с текстом".<br />  Подскажите пожалуйста, есть ли какой-то справочник, где видно какие функции за что отвечают. Сейчас, когда нужно что-либо найти, тупо иду по справочнику сверху вниз, читая описание каждой функции (работаю с Visio 2007 SDK)<br /></span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Спасибо.<br />Действительно муторно, но вариант.<br /><br />В вашем ответе есть такие строки: "посмотрел в справочнике функций визио, работающих с текстом".<br />  Подскажите пожалуйста, есть ли какой-то справочник, где видно какие функции за что отвечают. Сейчас, когда нужно что-либо найти, тупо иду по справочнику сверху вниз, читая описание каждой функции (работаю с Visio 2007 SDK)<br /></span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2396.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -180,7 +143,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> скан из книги Graham Wideman "Visio 2003 Developer's Survival Pack"<br /><br /><img src="http://odnoznachnost.narod.ru/img/strings.jpg" border="0"><br /><br />†</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> скан из книги Graham Wideman "Visio 2003 Developer's Survival Pack"<br /><br /><img src="http://odnoznachnost.narod.ru/img/strings.jpg" border="0"><br /><br />†</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom"><hr noshade size="1" color="gainsboro"><font face="Verdana, Arial, Helvetica" size="1" color="midnightblue">Edited by - Surrogate on 05/26/2011  13:53:25</font></td>
@@ -207,7 +170,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> пришлось сделать для себя макрос, для отделения цифр <br /><br />Sub digitals_only()<br />Dim ShText As String                                        ' текст шейпа с ID=52<br />Dim ShDig As String                                         ' только цыфры в тексте шейпа с ID=52<br />ShDig = ""<br />ShText = ActivePage.Shapes.Item(2).Text                     ' присвоение значения переменной ShText<br />l = Len(ShText)                                             ' определение количества символов в ShText<br />For x = 1 To l                                              ' начало цикла<br />y = Mid(ShText, x, 1)                                       ' посимвольный перебор перебор<br />KeyAscii = Asc(y)                                           ' получение кода ASCII текущего символа<br />If KeyAscii &gt; 47 And KeyAscii &lt; 58 Then ShDig = ShDig & y   ' если условие выполняется, добавление текущего символа в переменную ShDig<br />Next x                                                      ' конец цикла<br />Debug.Print ShDig<br />End Sub<br /><br />Может кому пригодится :)<br /><br />†</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> пришлось сделать для себя макрос, для отделения цифр <br /><br />Sub digitals_only()<br />Dim ShText As String                                        ' текст шейпа с ID=52<br />Dim ShDig As String                                         ' только цыфры в тексте шейпа с ID=52<br />ShDig = ""<br />ShText = ActivePage.Shapes.Item(2).Text                     ' присвоение значения переменной ShText<br />l = Len(ShText)                                             ' определение количества символов в ShText<br />For x = 1 To l                                              ' начало цикла<br />y = Mid(ShText, x, 1)                                       ' посимвольный перебор перебор<br />KeyAscii = Asc(y)                                           ' получение кода ASCII текущего символа<br />If KeyAscii &gt; 47 And KeyAscii &lt; 58 Then ShDig = ShDig & y   ' если условие выполняется, добавление текущего символа в переменную ShDig<br />Next x                                                      ' конец цикла<br />Debug.Print ShDig<br />End Sub<br /><br />Может кому пригодится :)<br /><br />†</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2396.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -226,11 +189,11 @@ input.radio {background:lightsteelblue;color:#000000}
                     <tr>
                       <td valign="top">
                       <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;07/19/2011&nbsp;:&nbsp; 19:21:32</font>
-                      &nbsp;<a href="JavaScript:openWindow6('pop_messengers.asp?mode=ICQ&ID=3603')"><img src="icon_icq.gif" width="15" height="15" border="0" alt="Send Robinkzn an ICQ Message" title="Send Robinkzn an ICQ Message" align="absmiddle" hspace="6" /></a>
+                      
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Ничего не понимаю. Если макрос на VBA, там же есть функция isnumeric.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Ничего не понимаю. Если макрос на VBA, там же есть функция isnumeric.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2396.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -254,7 +217,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> спасибо, а я не знал про эту функцию <img src="icon_smile_blush.gif" width="15" height="15" border="0" alt="" title="" align="middle" /><br /><br />†</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> спасибо, а я не знал про эту функцию <img src="icon_smile_blush.gif" width="15" height="15" border="0" alt="" title="" align="middle" /><br /><br />†</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=2396.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -280,11 +243,7 @@ input.radio {background:lightsteelblue;color:#000000}
     <td>
       <table width="100%">
         <tr>
-          <td align="center" valign="top" width="50%">
-          <font face="Verdana, Arial, Helvetica" size="2">
-          </font></td>
-          <td align="right" valign="top" width="50%" nowrap>
-          </td>
+          <td align="center" bgcolor="#ffffAA"><font face="Verdana, Arial, Helvetica" size="2">Данный сайт является архивом форума visio.artberg.ru, который был закрыт в связи с переходом на новую платформу <b><a href="http://visio.getbb.ru">visio.getbb.ru</a></b><br/>Все материалы доступны только для чтения! Если у вас появились вопросы, или вы хотите что-то обсудить, связанное с Visio, обращайтесь на новый форум!<br/>Архив был создан благодаря совместным усилиям Генадия Туманова @Tumanov (<a href="http://visio.artberg.ru">visio.artberg.ru</a>), Александра ака @Surrogate (<a href="http://visio.getbb.ru">visio.getbb.ru</a>), и Николая Белых @nbelyh (<a href="http://unmanagedvisio.com">unmanagedvisio.com</a>)</font></td>
         </tr>
       </table>
   </td>

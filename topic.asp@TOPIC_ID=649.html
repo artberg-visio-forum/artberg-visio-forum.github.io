@@ -4,31 +4,7 @@
 <head>
 <title>Visio - Программно размер страницы не зашитый в Const</title>
 <meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" ><script language="JavaScript" type="text/javascript">
-<!-- hide from JavaScript-challenged browsers
-function openWindow(url) {
-	popupWin = window.open(url,'new_page','width=400,height=400')
-}
-function openWindow2(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450')
-}
-function openWindow3(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
-}
-function openWindow4(url) {
-	popupWin = window.open(url,'new_page','width=400,height=525')
-}
-function openWindow5(url) {
-	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
-}
-function openWindow6(url) {
-	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
-}
-function openWindowHelp(url) {
-	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
-}
-// done hiding -->
-</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 <style type="text/css">
 <!--
 a:link    {color:darkblue;text-decoration:underline}
@@ -48,26 +24,13 @@ input.radio {background:lightsteelblue;color:#000000}
 <body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
 <a name="top"></a>
 
-<script>(function() { var cx = '002792228947284598284:d9ou_dwkikw'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
+<script>(function() { var cx = '002792228947284598284:fmq7et_yt8s'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
 <div style='height: 61px' class='gcse-search'></div>
 <table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
   <tr>
     <td>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function unsub_confirm(link){
-    	var where_to= confirm("Do you really want to Unsubscribe?");
-       if (where_to== true) {
-       	popupWin = window.open(link,'new_page','width=400,height=400')
-       }
-    }
-    //-->
-    </script>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
-    // -->
-    </script>
+    
+    
       <table border="0" width="100%">
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
@@ -110,7 +73,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Доброго времени суток всем! Проблемка скорее всего уже выносилась на обсуждение, но я ответа пока не нашел... Все казалось бы просто. Нужно выставить размер страницы в формат А3,A1 или А0 программно. Вот как это сделать? Со стандартными константами проблемм нет, делаю так:<br />(Работаю в Delphi c ActiveX DrawingControl)<br />    DrawingControl.Document.PaperSize:=visPaperSizeA3; <br />И все, проблем нет, А3 выставляется, но там нет защитых констант в А1, А0 да и вообще, вдруг я хочу специфичный формат, скажем, под факс :)... Вот как программно выставить размер странички?<br />Спасибо всем :)<br /><br />___ Кто ищет тот найдет __</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Доброго времени суток всем! Проблемка скорее всего уже выносилась на обсуждение, но я ответа пока не нашел... Все казалось бы просто. Нужно выставить размер страницы в формат А3,A1 или А0 программно. Вот как это сделать? Со стандартными константами проблемм нет, делаю так:<br />(Работаю в Delphi c ActiveX DrawingControl)<br />    DrawingControl.Document.PaperSize:=visPaperSizeA3; <br />И все, проблем нет, А3 выставляется, но там нет защитых констант в А1, А0 да и вообще, вдруг я хочу специфичный формат, скажем, под факс :)... Вот как программно выставить размер странички?<br />Спасибо всем :)<br /><br />___ Кто ищет тот найдет __</span></font></td>
                     </tr>
                   </table>
                 </td>
@@ -129,7 +92,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Я конечно извиняюсь, но дополню:<br />  MyPage.PageSheet.Cells['PageHeight'].Result'MM']:=Нужный размер;<br />  MyPage.PageSheet.Cells['PageWidth'].Result['MM']:=Нужный размер;<br />результата не дает :((( Нужно видно как то поменять значения в:<br />  MyDocument.PaperHeight['MM'];<br />  MyDocument.PaperWidth['MM'];<br />но через свойсво DocumentSheet.Cells['PaperHeight'].Result['MM'] присвоит значение не получается так как его там нет :(( (поля), как и конечно же PaperWidth...<br />Жду ваших соображений... ведь можно же как то менять этот размер пейжа :)<br /><br /><br /><br /><br />___ Кто ищет тот найдет __</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Я конечно извиняюсь, но дополню:<br />  MyPage.PageSheet.Cells['PageHeight'].Result'MM']:=Нужный размер;<br />  MyPage.PageSheet.Cells['PageWidth'].Result['MM']:=Нужный размер;<br />результата не дает :((( Нужно видно как то поменять значения в:<br />  MyDocument.PaperHeight['MM'];<br />  MyDocument.PaperWidth['MM'];<br />но через свойсво DocumentSheet.Cells['PaperHeight'].Result['MM'] присвоит значение не получается так как его там нет :(( (поля), как и конечно же PaperWidth...<br />Жду ваших соображений... ведь можно же как то менять этот размер пейжа :)<br /><br /><br /><br /><br />___ Кто ищет тот найдет __</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=649.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -149,7 +112,7 @@ input.radio {background:lightsteelblue;color:#000000}
                     <tr>
                       <td valign="top">
                       <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;10/06/2005&nbsp;:&nbsp; 13:23:06</font>
-                      &nbsp;<a href="JavaScript:openWindow6('pop_messengers.asp?mode=ICQ&ID=286')"><img src="icon_icq.gif" width="15" height="15" border="0" alt="Send mers an ICQ Message" title="Send mers an ICQ Message" align="absmiddle" hspace="6" /></a>
+                      
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
@@ -174,7 +137,7 @@ Visio.Page page = axDrawingControl.Window.PageAsObj;
 
 page.PageSheet.get_Cells("PageWidth").ResultIU = WIDTH_PAGE_A0;
 page.PageSheet.get_Cells("PageHeight").ResultIU = HEIGHT_PAGE_A0;
-</font id="code"></pre id="code">кстати не знал как задавать размеры в миллиметрах.. спасибо :)</span id="msg"></font></td>
+</font></pre>кстати не знал как задавать размеры в миллиметрах.. спасибо :)</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=649.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -196,7 +159,7 @@ page.PageSheet.get_Cells("PageHeight").ResultIU = HEIGHT_PAGE_A0;
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Итак, пробую, но видно что то ни так, единственным отличием в определении ссылки на страницу. Посмотрите, должно оно так отрабоать, вернее оно так не отрабатывает :(<br />    MyDocument:=MainForm.DrawingControl.Document;<br />    MyPages:=MyDocument.Pages;<br />    MyPage.PageSheet.Get_Cells('PageWidth').ResultIU := 23;<br />    MyPage.PageSheet.Get_Cells('PageHeight').ResultIU := 33;<br />//кстати, тут в мм указать размер нельзя :(, только в дюймах :(<br />и все, размер стоит прежний и не меняется... что может быть?<br />Не ужели в обьявлении переменной?<br />Visio.Page page = axDrawingControl.Window.PageAsObj;<br />... млин...<br /><br /><br />___ Кто ищет тот найдет __</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Итак, пробую, но видно что то ни так, единственным отличием в определении ссылки на страницу. Посмотрите, должно оно так отрабоать, вернее оно так не отрабатывает :(<br />    MyDocument:=MainForm.DrawingControl.Document;<br />    MyPages:=MyDocument.Pages;<br />    MyPage.PageSheet.Get_Cells('PageWidth').ResultIU := 23;<br />    MyPage.PageSheet.Get_Cells('PageHeight').ResultIU := 33;<br />//кстати, тут в мм указать размер нельзя :(, только в дюймах :(<br />и все, размер стоит прежний и не меняется... что может быть?<br />Не ужели в обьявлении переменной?<br />Visio.Page page = axDrawingControl.Window.PageAsObj;<br />... млин...<br /><br /><br />___ Кто ищет тот найдет __</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=649.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -216,7 +179,7 @@ page.PageSheet.get_Cells("PageHeight").ResultIU = HEIGHT_PAGE_A0;
                     <tr>
                       <td valign="top">
                       <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;10/06/2005&nbsp;:&nbsp; 16:37:22</font>
-                      &nbsp;<a href="JavaScript:openWindow6('pop_messengers.asp?mode=ICQ&ID=286')"><img src="icon_icq.gif" width="15" height="15" border="0" alt="Send mers an ICQ Message" title="Send mers an ICQ Message" align="absmiddle" hspace="6" /></a>
+                      
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
@@ -228,7 +191,7 @@ for(int i=1; i&lt;=MyPages.Count; i++)
    MyPages[i].PageSheet.Get_Cells('PageWidth').ResultIU := 23;
    MyPages[i].PageSheet.Get_Cells('PageHeight').ResultIU := 33;
 }
-</font id="code"></pre id="code">как-то так вообщем...</span id="msg"></font></td>
+</font></pre>как-то так вообщем...</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=649.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -250,7 +213,7 @@ for(int i=1; i&lt;=MyPages.Count; i++)
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Извиняюсь, там описался с типом. А здорово вы соединили код дельфи с сишным :)...<br />вобщем, проблемка пока не решается. Впринципе мне не нужно все странички менять, так как она у меня одна. Делаю напрямую так:<br />---<br />var   MyVisioApp:IVApplication;<br />      MyDocument:IVDocument;<br />begin<br />    MyDocument:=MainForm.DrawingControl.Document;<br />    MyVisioApp:=MyDocument.Application;<br />    MyVisioApp.ActivePage.PageSheet.Get_Cells('PageWidth').ResultIU := 23;<br />    MyVisioApp.ActivePage.PageSheet.Get_Cells('PageHeight').ResultIU := 33;<br />end;<br />----<br />Результата ни какого :((... Скролбары вреде как дергаются, но размер странички ни физически ни визуально не меняется...<br />такое ощущение, что этот :<br />    MyDocument.PaperHeight['MM'];<br />    MyDocument.PaperWidth['MM'];<br />не изменяет своих значений и не дает странице изменить свои :(... млин...<br /><br />___ Кто ищет тот найдет __</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Извиняюсь, там описался с типом. А здорово вы соединили код дельфи с сишным :)...<br />вобщем, проблемка пока не решается. Впринципе мне не нужно все странички менять, так как она у меня одна. Делаю напрямую так:<br />---<br />var   MyVisioApp:IVApplication;<br />      MyDocument:IVDocument;<br />begin<br />    MyDocument:=MainForm.DrawingControl.Document;<br />    MyVisioApp:=MyDocument.Application;<br />    MyVisioApp.ActivePage.PageSheet.Get_Cells('PageWidth').ResultIU := 23;<br />    MyVisioApp.ActivePage.PageSheet.Get_Cells('PageHeight').ResultIU := 33;<br />end;<br />----<br />Результата ни какого :((... Скролбары вреде как дергаются, но размер странички ни физически ни визуально не меняется...<br />такое ощущение, что этот :<br />    MyDocument.PaperHeight['MM'];<br />    MyDocument.PaperWidth['MM'];<br />не изменяет своих значений и не дает странице изменить свои :(... млин...<br /><br />___ Кто ищет тот найдет __</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=649.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -272,7 +235,7 @@ for(int i=1; i&lt;=MyPages.Count; i++)
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Млин, точно! у меня на событие ОnViewChanged дравинга стоит вот такой код:<br />----<br />   if Assigned(MyPage) then begin<br />     MyPage.PageSheet.Cells['PageHeight'].Result['MM']:=MyDocument.PaperHeight['MM'];<br />     MyPage.PageSheet.Cells['PageWidth'].Result['MM']:=MyDocument.PaperWidth['MM'];<br />   end;<br />---<br />он нужен для того, чтобы страница меняла свои визаульные размеры при смене формата листа вот таким способом:<br />  DrawingControl.Document.PaperSize:=visPaperSizeA3;<br /><br />я его закоментировал<br />----<br />   if Assigned(MyPage) then begin<br />//     MyPage.PageSheet.Cells['PageHeight'].Result['MM']:=MyDocument.PaperHeight['MM'];<br />//     MyPage.PageSheet.Cells['PageWidth'].Result['MM']:=MyDocument.PaperWidth['MM'];<br />   end;<br />---<br />Все, теперь размер страницы менятеся свободно вот так:<br />---<br />    //A1   <br />    MyVisioApp.ActivePage.PageSheet.Get_Cells('PageWidth').Result['MM'] := 841;<br />    MyVisioApp.ActivePage.PageSheet.Get_Cells('PageHeight').Result['MM'] := 594;<br />---<br />Но когда я начинаю чертеж, у меня класс автоматического распределения элементов на листе, он определяет размер листа, и берет их видо с <br />     MyDocument.PaperHeight['MM'];<br />     MyDocument.PaperWidth['MM'];<br />и чертит сарый размер, установленный так:<br />  DrawingControl.Document.PaperSize:=visPaperSizeA3;<br />получается, что я изменил только визуально размер страници а не реально :((... Конечно, я могу взять размер страници и передать своему классу, чтобы он начертил на весь лист, но при распечатке будет ли он на А1, а то может и будет на А3? :((<br /><br /><br />___ Кто ищет тот найдет __</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Млин, точно! у меня на событие ОnViewChanged дравинга стоит вот такой код:<br />----<br />   if Assigned(MyPage) then begin<br />     MyPage.PageSheet.Cells['PageHeight'].Result['MM']:=MyDocument.PaperHeight['MM'];<br />     MyPage.PageSheet.Cells['PageWidth'].Result['MM']:=MyDocument.PaperWidth['MM'];<br />   end;<br />---<br />он нужен для того, чтобы страница меняла свои визаульные размеры при смене формата листа вот таким способом:<br />  DrawingControl.Document.PaperSize:=visPaperSizeA3;<br /><br />я его закоментировал<br />----<br />   if Assigned(MyPage) then begin<br />//     MyPage.PageSheet.Cells['PageHeight'].Result['MM']:=MyDocument.PaperHeight['MM'];<br />//     MyPage.PageSheet.Cells['PageWidth'].Result['MM']:=MyDocument.PaperWidth['MM'];<br />   end;<br />---<br />Все, теперь размер страницы менятеся свободно вот так:<br />---<br />    //A1   <br />    MyVisioApp.ActivePage.PageSheet.Get_Cells('PageWidth').Result['MM'] := 841;<br />    MyVisioApp.ActivePage.PageSheet.Get_Cells('PageHeight').Result['MM'] := 594;<br />---<br />Но когда я начинаю чертеж, у меня класс автоматического распределения элементов на листе, он определяет размер листа, и берет их видо с <br />     MyDocument.PaperHeight['MM'];<br />     MyDocument.PaperWidth['MM'];<br />и чертит сарый размер, установленный так:<br />  DrawingControl.Document.PaperSize:=visPaperSizeA3;<br />получается, что я изменил только визуально размер страници а не реально :((... Конечно, я могу взять размер страници и передать своему классу, чтобы он начертил на весь лист, но при распечатке будет ли он на А1, а то может и будет на А3? :((<br /><br /><br />___ Кто ищет тот найдет __</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=649.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -293,11 +256,11 @@ for(int i=1; i&lt;=MyPages.Count; i++)
                       <td valign="top">
                       <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;10/08/2005&nbsp;:&nbsp; 15:26:38</font>
                       &nbsp;<a href="http://www.immortal.vstu.edu.ru" target="_blank"><img src="icon_homepage.gif" width="15" height="15" border="0" alt="Visit immortal's Homepage" title="Visit immortal's Homepage" align="absmiddle" hspace="6" /></a>
-                      &nbsp;<a href="JavaScript:openWindow6('pop_messengers.asp?mode=ICQ&ID=127')"><img src="icon_icq.gif" width="15" height="15" border="0" alt="Send immortal an ICQ Message" title="Send immortal an ICQ Message" align="absmiddle" hspace="6" /></a>
+                      
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> способ 1: идёшь меняешь паже видтшь и паже хейгхт в шейпшите страницы.<br />способ 2(работает только для воланда): подходишь ко мне и я тебе покажу <img src="icon_smile_big.gif" width="15" height="15" border="0" alt="" title="" align="middle" /><br /><br />визио 2003 форэвер<br /><br />...а вобще-то я белый и пушистый.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> способ 1: идёшь меняешь паже видтшь и паже хейгхт в шейпшите страницы.<br />способ 2(работает только для воланда): подходишь ко мне и я тебе покажу <img src="icon_smile_big.gif" width="15" height="15" border="0" alt="" title="" align="middle" /><br /><br />визио 2003 форэвер<br /><br />...а вобще-то я белый и пушистый.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=649.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -319,7 +282,7 @@ for(int i=1; i&lt;=MyPages.Count; i++)
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> способ 1: идёшь меняешь паже видтшь и паже хейгхт в шейпшите страницы.<br />Да, это способ я уже опробовал, и он описан выше...<br /><br />способ 2(работает только для воланда): подходишь ко мне и я тебе покажу <br />:) ну что же, покажите... Был бы признателен...<img src="icon_smile_cool.gif" width="15" height="15" border="0" alt="" title="" align="middle" /><br /><br />___ Кто ищет тот найдет __</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> способ 1: идёшь меняешь паже видтшь и паже хейгхт в шейпшите страницы.<br />Да, это способ я уже опробовал, и он описан выше...<br /><br />способ 2(работает только для воланда): подходишь ко мне и я тебе покажу <br />:) ну что же, покажите... Был бы признателен...<img src="icon_smile_cool.gif" width="15" height="15" border="0" alt="" title="" align="middle" /><br /><br />___ Кто ищет тот найдет __</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=649.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -341,7 +304,7 @@ for(int i=1; i&lt;=MyPages.Count; i++)
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Ладно.. Пока сделал так:<br />----<br />const     A0_W=1189;A0_H=841;<br />          A1_W=841; A1_H=594;<br />----<br />//A1<br />    MyVisioApp.ActivePage.PageSheet.Get_Cells('PageWidth').Result['MM'] := A1_W;<br />    MyVisioApp.ActivePage.PageSheet.Get_Cells('PageHeight').Result['MM'] := A1_H;<br />    MyPageSize:='A1';<br />----<br /><br />Разобрался с печатанием этог дела, оказывается действительно, он будет печатать теми листами, которые были выставлены по вот такому способу: <br />  DrawingControl.Document.PaperSize:=visPaperSizeA3;<br />Т.е. получается что напечатает 4 листа А3...<br />Но, в настройках печати, можно выставить ему масштаб 1 к 1, тогда он  напечатает путем формат А1 и А0... Вот сейчас разбираюсь с этими параметрами, как программно укахать ему настройки печати в маштабе 1 к 1.<br /><br />___ Кто ищет тот найдет __</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Ладно.. Пока сделал так:<br />----<br />const     A0_W=1189;A0_H=841;<br />          A1_W=841; A1_H=594;<br />----<br />//A1<br />    MyVisioApp.ActivePage.PageSheet.Get_Cells('PageWidth').Result['MM'] := A1_W;<br />    MyVisioApp.ActivePage.PageSheet.Get_Cells('PageHeight').Result['MM'] := A1_H;<br />    MyPageSize:='A1';<br />----<br /><br />Разобрался с печатанием этог дела, оказывается действительно, он будет печатать теми листами, которые были выставлены по вот такому способу: <br />  DrawingControl.Document.PaperSize:=visPaperSizeA3;<br />Т.е. получается что напечатает 4 листа А3...<br />Но, в настройках печати, можно выставить ему масштаб 1 к 1, тогда он  напечатает путем формат А1 и А0... Вот сейчас разбираюсь с этими параметрами, как программно укахать ему настройки печати в маштабе 1 к 1.<br /><br />___ Кто ищет тот найдет __</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=649.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -363,7 +326,7 @@ for(int i=1; i&lt;=MyPages.Count; i++)
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Разобрался как выставить формат при печати 1 к 1 программно, это делается так:<br /><br />  MyVisioApp.ActivePage.PageSheet.Cells['OnPage'].Formula:='1';<br /><br />В этом случае на принтер будет выводиться страница размером установленным так:<br />const     A0_W=1189;A0_H=841;<br />          A1_W=841; A1_H=594;<br />----<br />MyVisioApp.ActivePage.PageSheet.Get_Cells('PageWidth').Result['MM'] := A1_W;<br />MyVisioApp.ActivePage.PageSheet.Get_Cells('PageHeight').Result['MM'] := A1_H;<br />----<br />Если поставить параметр "0"<br /><br />  MyVisioApp.ActivePage.PageSheet.Cells['OnPage'].Formula:='0';<br /><br />То печать будет производиться теми размерами, которые установлены в <br />MyDocument.PaperHeight['MM']<br />MyDocument.PaperWidth['MM']<br /><br />и автоматически разбито на то количество листов, которое необходимо чтобы вместить весь чертеж.<br />Еще есть такой параметр как:<br />MyVisioApp.ActiveDocument.PrintOut  (visPrintAll,1,1,False,'',True,'D:\myprint',1,False,Аalse);<br /><br />Тут вообще много интересного, не мало настроек для необходимой печати, вот ее спецификация из SDK 2003<br />object.PrintOut(PrintRange, [FromPage], [ToPage], [ScaleCurrentViewToPaper], [PrinterName], [PrintToFile], [OutputFileName], [Copies], [Collate], [ColorAsBlack])<br />object       Required. An expression that returns the Document object to print.<br /><br />PrintRange       Required VisPrintOutRange. The range of document pages to be printed. See Remarks for possible values.<br /><br />FromPage       Optional Long. If PrintRange is visPrintFromTo, the first page in the range to be printed.<br /><br />ToPage       Optional Long. If PrintRange is visPrintFromTo, the last page in the range to be printed.<br /><br />ScaleCurrentViewToPaper       Optional Boolean. If PrintRange is visPrintCurrentView, True to scale the part of the drawing that fits in the program window to fit on the current default paper size; False to print on as many printer pages as necessary. The default is False.<br /><br />PrinterName       Optional String. The name of the printer to use. The default is the default Windows printer.<br /><br />PrintToFile       Optional Boolean. True to send the information for printing to a file on a disk, rather than to the printer; False to print to the printer. The default is False.<br /><br />OutputFileName       Optional String. If PrintToFile is True, the name and path of the .prn file to which to print.<br /><br />Copies       Optional Long. The number of copies to be printed. The default is one copy.<br /><br />Collate       Optional Boolean. True to collate copies. False to not collate. The default is False.<br /><br />ColorAsBlack       Optional Boolean. True to print all colors as black to ensure that all shapes are visible in the printed drawing. This is useful if a monochrome printer translates very light colors in a drawing to white rather than a shade of gray. False to print colors normally. The default is False.<br /><br />Ну вот вроде и решил проблему <img src="icon_smile.gif" width="15" height="15" border="0" alt="" title="" align="middle" /> Всем спасибо!<br /><br /><br />___ Кто ищет тот найдет __</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Разобрался как выставить формат при печати 1 к 1 программно, это делается так:<br /><br />  MyVisioApp.ActivePage.PageSheet.Cells['OnPage'].Formula:='1';<br /><br />В этом случае на принтер будет выводиться страница размером установленным так:<br />const     A0_W=1189;A0_H=841;<br />          A1_W=841; A1_H=594;<br />----<br />MyVisioApp.ActivePage.PageSheet.Get_Cells('PageWidth').Result['MM'] := A1_W;<br />MyVisioApp.ActivePage.PageSheet.Get_Cells('PageHeight').Result['MM'] := A1_H;<br />----<br />Если поставить параметр "0"<br /><br />  MyVisioApp.ActivePage.PageSheet.Cells['OnPage'].Formula:='0';<br /><br />То печать будет производиться теми размерами, которые установлены в <br />MyDocument.PaperHeight['MM']<br />MyDocument.PaperWidth['MM']<br /><br />и автоматически разбито на то количество листов, которое необходимо чтобы вместить весь чертеж.<br />Еще есть такой параметр как:<br />MyVisioApp.ActiveDocument.PrintOut  (visPrintAll,1,1,False,'',True,'D:\myprint',1,False,Аalse);<br /><br />Тут вообще много интересного, не мало настроек для необходимой печати, вот ее спецификация из SDK 2003<br />object.PrintOut(PrintRange, [FromPage], [ToPage], [ScaleCurrentViewToPaper], [PrinterName], [PrintToFile], [OutputFileName], [Copies], [Collate], [ColorAsBlack])<br />object       Required. An expression that returns the Document object to print.<br /><br />PrintRange       Required VisPrintOutRange. The range of document pages to be printed. See Remarks for possible values.<br /><br />FromPage       Optional Long. If PrintRange is visPrintFromTo, the first page in the range to be printed.<br /><br />ToPage       Optional Long. If PrintRange is visPrintFromTo, the last page in the range to be printed.<br /><br />ScaleCurrentViewToPaper       Optional Boolean. If PrintRange is visPrintCurrentView, True to scale the part of the drawing that fits in the program window to fit on the current default paper size; False to print on as many printer pages as necessary. The default is False.<br /><br />PrinterName       Optional String. The name of the printer to use. The default is the default Windows printer.<br /><br />PrintToFile       Optional Boolean. True to send the information for printing to a file on a disk, rather than to the printer; False to print to the printer. The default is False.<br /><br />OutputFileName       Optional String. If PrintToFile is True, the name and path of the .prn file to which to print.<br /><br />Copies       Optional Long. The number of copies to be printed. The default is one copy.<br /><br />Collate       Optional Boolean. True to collate copies. False to not collate. The default is False.<br /><br />ColorAsBlack       Optional Boolean. True to print all colors as black to ensure that all shapes are visible in the printed drawing. This is useful if a monochrome printer translates very light colors in a drawing to white rather than a shade of gray. False to print colors normally. The default is False.<br /><br />Ну вот вроде и решил проблему <img src="icon_smile.gif" width="15" height="15" border="0" alt="" title="" align="middle" /> Всем спасибо!<br /><br /><br />___ Кто ищет тот найдет __</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=649.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -389,11 +352,7 @@ for(int i=1; i&lt;=MyPages.Count; i++)
     <td>
       <table width="100%">
         <tr>
-          <td align="center" valign="top" width="50%">
-          <font face="Verdana, Arial, Helvetica" size="2">
-          </font></td>
-          <td align="right" valign="top" width="50%" nowrap>
-          </td>
+          <td align="center" bgcolor="#ffffAA"><font face="Verdana, Arial, Helvetica" size="2">Данный сайт является архивом форума visio.artberg.ru, который был закрыт в связи с переходом на новую платформу <b><a href="http://visio.getbb.ru">visio.getbb.ru</a></b><br/>Все материалы доступны только для чтения! Если у вас появились вопросы, или вы хотите что-то обсудить, связанное с Visio, обращайтесь на новый форум!<br/>Архив был создан благодаря совместным усилиям Генадия Туманова @Tumanov (<a href="http://visio.artberg.ru">visio.artberg.ru</a>), Александра ака @Surrogate (<a href="http://visio.getbb.ru">visio.getbb.ru</a>), и Николая Белых @nbelyh (<a href="http://unmanagedvisio.com">unmanagedvisio.com</a>)</font></td>
         </tr>
       </table>
   </td>

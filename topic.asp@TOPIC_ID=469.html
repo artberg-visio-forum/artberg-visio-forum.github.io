@@ -4,31 +4,7 @@
 <head>
 <title>Visio - UIObject</title>
 <meta name="copyright" content="This Forum code is Copyright (C) 2000-09 Michael Anderson, Pierre Gorissen, Huw Reddick and Richard Kinser, Non-Forum Related code is Copyright (C) 2000-02 Snitz Communications">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" ><script language="JavaScript" type="text/javascript">
-<!-- hide from JavaScript-challenged browsers
-function openWindow(url) {
-	popupWin = window.open(url,'new_page','width=400,height=400')
-}
-function openWindow2(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450')
-}
-function openWindow3(url) {
-	popupWin = window.open(url,'new_page','width=400,height=450,scrollbars=yes')
-}
-function openWindow4(url) {
-	popupWin = window.open(url,'new_page','width=400,height=525')
-}
-function openWindow5(url) {
-	popupWin = window.open(url,'new_page','width=450,height=525,scrollbars=yes,toolbars=yes,menubar=yes,resizable=yes')
-}
-function openWindow6(url) {
-	popupWin = window.open(url,'new_page','width=500,height=450,scrollbars=yes')
-}
-function openWindowHelp(url) {
-	popupWin = window.open(url,'new_page','width=470,height=200,scrollbars=yes')
-}
-// done hiding -->
-</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 <style type="text/css">
 <!--
 a:link    {color:darkblue;text-decoration:underline}
@@ -48,26 +24,13 @@ input.radio {background:lightsteelblue;color:#000000}
 <body bgColor="white" text="midnightblue" link="darkblue" aLink="red" vLink="blue">
 <a name="top"></a>
 
-<script>(function() { var cx = '002792228947284598284:d9ou_dwkikw'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
+<script>(function() { var cx = '002792228947284598284:fmq7et_yt8s'; var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true; gcse.src = 'https://cse.google.com/cse.js?cx=' + cx; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s); })();</script>
 <div style='height: 61px' class='gcse-search'></div>
 <table align="center" border="0" cellPadding="0" cellSpacing="0" width="95%">
   <tr>
     <td>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function unsub_confirm(link){
-    	var where_to= confirm("Do you really want to Unsubscribe?");
-       if (where_to== true) {
-       	popupWin = window.open(link,'new_page','width=400,height=400')
-       }
-    }
-    //-->
-    </script>
-    <script language="JavaScript" type="text/javascript">
-    <!--
-    function jumpTo(s) {if (s.selectedIndex != 0) location.href = s.options[s.selectedIndex].value;return 1;}
-    // -->
-    </script>
+    
+    
       <table border="0" width="100%">
         <tr>
           <td width="50%" align="left" nowrap><font face="Verdana, Arial, Helvetica" size="2">
@@ -110,7 +73,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Как пользоваться объектом UIObject ?<br />Вычитал в SDK про него, что он хранит все Menus и ToolBars. Вызвать MenuSets я могу, но что с ним делать дальше - неизвестно. Очень сильно меня property Enabled интересует. <br />Я хочу, чтобы вызывался Visio, в котором все Menu и ToolBar не активны.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Как пользоваться объектом UIObject ?<br />Вычитал в SDK про него, что он хранит все Menus и ToolBars. Вызвать MenuSets я могу, но что с ним делать дальше - неизвестно. Очень сильно меня property Enabled интересует. <br />Я хочу, чтобы вызывался Visio, в котором все Menu и ToolBar не активны.</span></font></td>
                     </tr>
                   </table>
                 </td>
@@ -130,7 +93,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Если Вы читали про него в SDK, то там же есть и примеры использования (непосредственно в документации).<br />А если "на пальцах", то UIObject - это старый интерфейс к меню и тулбарам Visio, который сейчас заменяется CommandBars. Действовал раздельно на меню и тулбары. Основан на том, что и Application и Document могут иметь как встроенные, так и пользовательские наборы меню. Один из наборов ассоциируется с объектом UIObject, изменяется и активируется, подменяя ранее доступный пользователю набор.<br />Измененный набор может быть сохранен в файле и загружаться макросом или при старте документа или приложения.<br />UIObject - это корень выбранного Вами набора, а дальше по дереву идет обращение к отдельным панелям, меню...<br />Важно не только модифицировать меню или тулбар, но и не забыть его активировать, а то он будет в наличии, но пользователь его не почувствует.<br />Смотрите примеры...</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Если Вы читали про него в SDK, то там же есть и примеры использования (непосредственно в документации).<br />А если "на пальцах", то UIObject - это старый интерфейс к меню и тулбарам Visio, который сейчас заменяется CommandBars. Действовал раздельно на меню и тулбары. Основан на том, что и Application и Document могут иметь как встроенные, так и пользовательские наборы меню. Один из наборов ассоциируется с объектом UIObject, изменяется и активируется, подменяя ранее доступный пользователю набор.<br />Измененный набор может быть сохранен в файле и загружаться макросом или при старте документа или приложения.<br />UIObject - это корень выбранного Вами набора, а дальше по дереву идет обращение к отдельным панелям, меню...<br />Важно не только модифицировать меню или тулбар, но и не забыть его активировать, а то он будет в наличии, но пользователь его не почувствует.<br />Смотрите примеры...</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=469.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -152,7 +115,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Попробовал использовать CommandBars. Тут все еще более непонятно и запутано. В C# это object и как из него что-то получить я не знаю. <br />Главня моя задача  - запретить пользователю добавлять новые страницы и документы к моему Application. Мне кажется, что сделать меню неактивным - это простое и красивое решение проблемы. <br />Вопрос такой: как мне программно добраться до File/New/New Drawing и Insert/New Page и сделать их неактвиными ?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Попробовал использовать CommandBars. Тут все еще более непонятно и запутано. В C# это object и как из него что-то получить я не знаю. <br />Главня моя задача  - запретить пользователю добавлять новые страницы и документы к моему Application. Мне кажется, что сделать меню неактивным - это простое и красивое решение проблемы. <br />Вопрос такой: как мне программно добраться до File/New/New Drawing и Insert/New Page и сделать их неактвиными ?</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=469.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -175,7 +138,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Ну вот же пример из документации. Без изменений. Из SDK.<br />Отличие только в том, что пункт не деактивируется, а удаляется, да пункт меню для примера другой выбран.<br /><br />To remove an item, use the Delete method of that item. For example, the following statements remove the Show ShapeSheet menu item from the Window menu in the drawing window for the running Visio instance: <br /><br />Dim uiObj As Visio.UIObject<br />Dim menuSetObj As Visio.MenuSet<br />Dim menuItemsObj As Visio.MenuItems<br />Dim i As Integer<br /><br />Set uiObj = Visio.Application.BuiltInMenus<br />Set menuSetObj = _<br />    uiObj.MenuSets.ItemAtID(visUIObjSetDrawing)<br /><br />'Get the Window menu.<br />Set menuItemsObj = menuSetObj.Menus(7).MenuItems<br /><br />'Get the Show ShapeSheet menu item by its CmdNum property.<br />'This technique works with localized versions of Visio.<br />For i = 0 To menuItemsObj.Count -1<br />    If menuItemsObj(i).CmdNum = _<br />        visCmdWindowShowShapeSheet Then<br />        menuItemsObj(i).Delete<br />        Exit For<br />    End If<br />Next i<br /><br />'Replace built-in Visio menus with customized set.<br />Visio.Application.SetCustomMenus uiObj</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> Ну вот же пример из документации. Без изменений. Из SDK.<br />Отличие только в том, что пункт не деактивируется, а удаляется, да пункт меню для примера другой выбран.<br /><br />To remove an item, use the Delete method of that item. For example, the following statements remove the Show ShapeSheet menu item from the Window menu in the drawing window for the running Visio instance: <br /><br />Dim uiObj As Visio.UIObject<br />Dim menuSetObj As Visio.MenuSet<br />Dim menuItemsObj As Visio.MenuItems<br />Dim i As Integer<br /><br />Set uiObj = Visio.Application.BuiltInMenus<br />Set menuSetObj = _<br />    uiObj.MenuSets.ItemAtID(visUIObjSetDrawing)<br /><br />'Get the Window menu.<br />Set menuItemsObj = menuSetObj.Menus(7).MenuItems<br /><br />'Get the Show ShapeSheet menu item by its CmdNum property.<br />'This technique works with localized versions of Visio.<br />For i = 0 To menuItemsObj.Count -1<br />    If menuItemsObj(i).CmdNum = _<br />        visCmdWindowShowShapeSheet Then<br />        menuItemsObj(i).Delete<br />        Exit For<br />    End If<br />Next i<br /><br />'Replace built-in Visio menus with customized set.<br />Visio.Application.SetCustomMenus uiObj</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=469.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -197,7 +160,7 @@ input.radio {background:lightsteelblue;color:#000000}
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> С CommandBars разобрался. Но тут проблемы не закончились. Когда я произвожу какие-либо изменения в меню, то эти изменения касаются всего Visio. То есть при любом последующем запуске Visio, даже если запускаю не из программы, появляется измененное мной меню. Чтобы убоать изменения, надо удалить файл custom11.vsu .<br />Меню File я обрезал как надо.<br /> С меню edit началить проблемы: не могу добраться до пункта меню, который неактивный(Enabled = false Visioble = true). Как до него добраться ?<br />Есть меню View и Toolbar View, чтобы их вызвать я пишу <br />CommandBars(View). Как мне понять, что я вызвал ?</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> С CommandBars разобрался. Но тут проблемы не закончились. Когда я произвожу какие-либо изменения в меню, то эти изменения касаются всего Visio. То есть при любом последующем запуске Visio, даже если запускаю не из программы, появляется измененное мной меню. Чтобы убоать изменения, надо удалить файл custom11.vsu .<br />Меню File я обрезал как надо.<br /> С меню edit началить проблемы: не могу добраться до пункта меню, который неактивный(Enabled = false Visioble = true). Как до него добраться ?<br />Есть меню View и Toolbar View, чтобы их вызвать я пишу <br />CommandBars(View). Как мне понять, что я вызвал ?</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=469.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -218,11 +181,11 @@ input.radio {background:lightsteelblue;color:#000000}
                       <td valign="top">
                       <img src="icon_posticon.gif" width="15" height="15" border="0" alt="" title="" hspace="3" /><font color="midnightblue" face="Verdana, Arial, Helvetica" size="1">Posted&nbsp;-&nbsp;03/31/2005&nbsp;:&nbsp; 14:46:25</font>
                       &nbsp;<a href="http://www.immortal.vstu.edu.ru" target="_blank"><img src="icon_homepage.gif" width="15" height="15" border="0" alt="Visit immortal's Homepage" title="Visit immortal's Homepage" align="absmiddle" hspace="6" /></a>
-                      &nbsp;<a href="JavaScript:openWindow6('pop_messengers.asp?mode=ICQ&ID=127')"><img src="icon_icq.gif" width="15" height="15" border="0" alt="Send immortal an ICQ Message" title="Send immortal an ICQ Message" align="absmiddle" hspace="6" /></a>
+                      
                       <hr noshade size="1"></td>
                     </tr>
                     <tr>
-                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <blockquote id="quote"><font size="1" face="Verdana, Arial, Helvetica" id="quote">quote:<hr height="1" noshade id="quote"><i>Originally posted by Juri_Zivago</i><br /><br />Как пользоваться объектом UIObject ?<br />Вычитал в SDK про него, что он хранит все Menus и ToolBars. Вызвать MenuSets я могу, но что с ним делать дальше - неизвестно. Очень сильно меня property Enabled интересует. <br />Я хочу, чтобы вызывался Visio, в котором все Menu и ToolBar не активны.<br /><hr height="1" noshade id="quote"></blockquote id="quote"></font id="quote"> напишите отдельную программу, вставте туда компонент Microsoft Visio Draving Control type library<br /><br />визио 2003 форэвер<br /><br />...а вобще-то я белый и пушистый.</span id="msg"></font></td>
+                      <td valign="top" height="100%"><font face="Verdana, Arial, Helvetica" size="2" color="midnightblue"><span class="spnMessageText" id="msg"> <font size="1" face="Verdana, Arial, Helvetica" id="quote"><blockquote id="quote">quote:<hr height="1" noshade id="quote"><i>Originally posted by Juri_Zivago</i><br /><br />Как пользоваться объектом UIObject ?<br />Вычитал в SDK про него, что он хранит все Menus и ToolBars. Вызвать MenuSets я могу, но что с ним делать дальше - неизвестно. Очень сильно меня property Enabled интересует. <br />Я хочу, чтобы вызывался Visio, в котором все Menu и ToolBar не активны.<br /><hr height="1" noshade id="quote"></blockquote></font> напишите отдельную программу, вставте туда компонент Microsoft Visio Draving Control type library<br /><br />визио 2003 форэвер<br /><br />...а вобще-то я белый и пушистый.</span></font></td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" height="20"><a href="topic.asp@TOPIC_ID=469.html#top"><img src="icon_go_up.gif" width="15" height="15" border="0" alt="Go to Top of Page" title="Go to Top of Page" align="right" /></a></td>
@@ -248,11 +211,7 @@ input.radio {background:lightsteelblue;color:#000000}
     <td>
       <table width="100%">
         <tr>
-          <td align="center" valign="top" width="50%">
-          <font face="Verdana, Arial, Helvetica" size="2">
-          </font></td>
-          <td align="right" valign="top" width="50%" nowrap>
-          </td>
+          <td align="center" bgcolor="#ffffAA"><font face="Verdana, Arial, Helvetica" size="2">Данный сайт является архивом форума visio.artberg.ru, который был закрыт в связи с переходом на новую платформу <b><a href="http://visio.getbb.ru">visio.getbb.ru</a></b><br/>Все материалы доступны только для чтения! Если у вас появились вопросы, или вы хотите что-то обсудить, связанное с Visio, обращайтесь на новый форум!<br/>Архив был создан благодаря совместным усилиям Генадия Туманова @Tumanov (<a href="http://visio.artberg.ru">visio.artberg.ru</a>), Александра ака @Surrogate (<a href="http://visio.getbb.ru">visio.getbb.ru</a>), и Николая Белых @nbelyh (<a href="http://unmanagedvisio.com">unmanagedvisio.com</a>)</font></td>
         </tr>
       </table>
   </td>
